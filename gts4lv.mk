@@ -22,7 +22,7 @@ $(call inherit-product, vendor/samsung/gts4lv-common/gts4lv-common-vendor.mk)
 PRODUCT_CHARACTERISTICS := tablet
 
 # AAPT
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Boot animation
