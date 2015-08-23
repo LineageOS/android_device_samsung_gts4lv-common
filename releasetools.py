@@ -54,6 +54,11 @@ def FullOTA_InstallEnd(info):
 def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
 
+def FullOTA_PostValidate(info):
+  info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+  info.script.AppendExtra('run_program("/tmp/install/bin/resize2fs_static", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+  info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+
 def AddImage(info, basename, dest):
   path = "IMAGES/" + basename
   if path not in info.input_zip.namelist():
