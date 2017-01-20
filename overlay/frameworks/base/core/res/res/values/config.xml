@@ -832,4 +832,7 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
+    <!-- For performance and storage reasons, limit the number of fingerprints per user -->
+    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
+
 </resources>
