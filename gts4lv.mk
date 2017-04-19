@@ -277,7 +277,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.device
+    android.hardware.usb@1.1-service.wahoo
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
