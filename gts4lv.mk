@@ -187,10 +187,6 @@ PRODUCT_PACKAGES += \
     libjson \
     libtinyxml
 
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
