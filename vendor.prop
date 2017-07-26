@@ -107,6 +107,7 @@ debug.sf.high_fps_early_gl_phase_offset_ns=100000
 debug.sf.high_fps_early_phase_offset_ns=100000
 debug.sf.high_fps_late_app_phase_offset_ns=100000
 debug.sf.high_fps_late_sf_phase_offset_ns=100000
+debug.sf.latch_unsignaled=1
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
 vendor.display.disable_dynamic_fps=1
