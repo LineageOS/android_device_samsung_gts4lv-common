@@ -1,5 +1,8 @@
 # Audio
 ro.vendor.qti.va_aosp.support=1
 
+# Graphics
+debug.sf.latch_unsignaled=1
+
 # Netflix
 ro.netflix.bsp_rev=Q670-14477-1
