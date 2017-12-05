@@ -291,6 +291,10 @@ on enable-low-power
     write /dev/cpuset/background/cpus 0-5
     write /dev/cpuset/system-background/cpus 0-5
 
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 1
+    write /sys/class/drm/card0/device/idle_timeout_ms 100
+
     # Turn off scheduler boost at the end
     write /proc/sys/kernel/sched_boost 0
 
