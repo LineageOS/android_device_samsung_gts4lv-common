@@ -1,7 +1,19 @@
+allow hal_power_default sysfs_graphics:dir search;
+allow hal_power_default sysfs_graphics:file r_file_perms;
+
+# To do powerhint on nodes defined in powerhint.json
+allow hal_power_default sysfs_devfreq:dir search;
+allow hal_power_default sysfs_devfreq:file rw_file_perms;
+allow hal_power_default sysfs_devices_system_cpu:dir search;
 allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
-
-allow hal_power_default sysfs_batteryinfo:dir r_dir_perms;
-allow hal_power_default sysfs_batteryinfo:file rw_file_perms;
-
-allow hal_power_default sysfs_tsp:dir r_dir_perms;
+allow hal_power_default sysfs_kgsl:dir search;
+allow hal_power_default sysfs_kgsl:file rw_file_perms;
+allow hal_power_default sysfs_kgsl:lnk_file read;
+allow hal_power_default sysfs_msm_subsys:dir search;
+allow hal_power_default sysfs_msm_subsys:file rw_file_perms;
+allow hal_power_default sysfs_tsp:dir search;
 allow hal_power_default sysfs_tsp:file rw_file_perms;
+allow hal_power_default cgroup:dir search;
+allow hal_power_default cgroup:file rw_file_perms;
+allow hal_power_default debugfs_sched_features:file rw_file_perms;
+allow hal_power_default proc_sched:file rw_file_perms;
