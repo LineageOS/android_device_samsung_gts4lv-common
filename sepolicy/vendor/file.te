@@ -5,6 +5,9 @@ type vendor_convergence_data_file, data_file_type, file_type;
 type vendor_gps_file, data_file_type, file_type;
 type vendor_log_file, data_file_type, file_type;
 
+# debugfs
+type debugfs_sched_features, debugfs_type, fs_type;
+
 # efs
 type app_efs_file, file_type, mlstrustedobject;
 type battery_efs_file, file_type;
@@ -48,6 +51,7 @@ type sysfs_camera_writable, fs_type, sysfs_type;
 type sysfs_fpc, fs_type, sysfs_type;
 type sysfs_lcd_writable, fs_type, sysfs_type;
 type sysfs_mdnie_writable, fs_type, sysfs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_sec_keypad, fs_type, sysfs_type;
 type sysfs_sec_switch, fs_type, sysfs_type;
 type sysfs_tsp, fs_type, sysfs_type;
