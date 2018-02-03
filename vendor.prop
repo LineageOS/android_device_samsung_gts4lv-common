@@ -145,7 +145,6 @@ debug.stagefright.omx_default_rank.sw-audio=1
 ro.oem_unlock_supported=1
 
 # Perf
-ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.iocgrp.config=1
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
