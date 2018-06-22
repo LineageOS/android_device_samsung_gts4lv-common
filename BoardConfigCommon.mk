@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 COMMON_PATH := device/samsung/gts4lv-common
 
 # Platform
