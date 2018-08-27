@@ -53,6 +53,8 @@ constexpr int DISCONNECT_WAIT_US = 10000;
 #define USB_CONTROLLER_PROP "vendor.usb.controller"
 #define RNDIS_FUNC_NAME_PROP "vendor.usb.rndis.func.name"
 #define RMNET_FUNC_NAME_PROP "vendor.usb.rmnet.func.name"
+#define RMNET_INST_NAME_PROP "vendor.usb.rmnet.inst.name"
+#define DPL_INST_NAME_PROP "vendor.usb.dpl.inst.name"
 #define PERSIST_VENDOR_USB_PROP "persist.vendor.usb.config"
 
 enum mdmType {
@@ -358,6 +360,11 @@ static enum mdmType getModemType() {
   size_t pos_sda, pos_p, length;
   std::unique_ptr<DIR, int(*)(DIR*)> dir(opendir(ESOC_DEVICE_PATH), closedir);
   std::string esoc_name, path, soc_machine, esoc_dev_path = ESOC_DEVICE_PATH;
+
+ /* On some platforms, /sys/bus/esoc/ director may not exists.*/
+  if (dir == NULL)
+      return mtype;
+
   while ((entry = readdir(dir.get())) != NULL) {
     if (entry->d_name[0] == '.')
       continue;
@@ -403,12 +410,27 @@ V1_0::Status UsbGadget::setupFunctions(
   std::string gadgetName = GetProperty(USB_CONTROLLER_PROP, "");
   std::string rndisFunc = GetProperty(RNDIS_FUNC_NAME_PROP, "");
   std::string rmnetFunc = GetProperty(RMNET_FUNC_NAME_PROP, "");
+  std::string rmnetInst = GetProperty(RMNET_INST_NAME_PROP, "");
+  std::string dplInst = GetProperty(DPL_INST_NAME_PROP, "");
   std::string vendorProp = GetProperty(PERSIST_VENDOR_USB_PROP, "");
 
   if (gadgetName.empty()) {
     ALOGE("UDC name not defined");
     return Status::ERROR;
   }
+
+  if (rmnetInst.empty()) {
+    ALOGE("rmnetinstance not defined");
+    rmnetInst = "rmnet";
+  }
+
+  if (dplInst.empty()) {
+    ALOGE("dplinstance not defined");
+    dplInst = "dpl";
+  }
+
+  rmnetInst = rmnetFunc + "." + rmnetInst;
+  dplInst = rmnetFunc + "." + dplInst;
 
   if ((functions & GadgetFunction::MTP) != 0) {
     ALOGI("setCurrentUsbFunctions mtp");
@@ -450,7 +472,7 @@ V1_0::Status UsbGadget::setupFunctions(
         if (linkFunction("qdss.qdss", i++)) return Status::ERROR;
         if (linkFunction("qdss.qdss_mdm", i++)) return Status::ERROR;
         if (linkFunction("cser.dun.0", i++)) return Status::ERROR;
-        if (linkFunction((rmnetFunc + ".dpl").c_str(), i++))
+        if (linkFunction(dplInst.c_str(), i++))
           return Status::ERROR;
         if (setVidPid("0x05c6", "0x90e7") != Status::SUCCESS)
           return Status::ERROR;
@@ -459,7 +481,7 @@ V1_0::Status UsbGadget::setupFunctions(
         if (linkFunction("diag.diag", i++)) return Status::ERROR;
         if (linkFunction("qdss.qdss", i++)) return Status::ERROR;
         if (linkFunction("cser.dun.0", i++)) return Status::ERROR;
-        if (linkFunction((rmnetFunc + ".dpl").c_str(), i++))
+        if (linkFunction(dplInst.c_str(), i++))
           return Status::ERROR;
         if (setVidPid("0x05c6", "0x90e9") != Status::SUCCESS)
           return Status::ERROR;
@@ -483,9 +505,9 @@ V1_0::Status UsbGadget::setupFunctions(
       if (linkFunction("qdss.qdss", i++)) return Status::ERROR;
       if (linkFunction("qdss.qdss_mdm", i++)) return Status::ERROR;
       if (linkFunction("cser.dun.0", i++)) return Status::ERROR;
-      if (linkFunction((rmnetFunc + ".dpl").c_str(), i++))
+      if (linkFunction(dplInst.c_str(), i++))
         return Status::ERROR;
-      if (linkFunction((rmnetFunc + ".rmnet").c_str(), i++))
+      if (linkFunction(rmnetInst.c_str(), i++))
         return Status::ERROR;
       if (setVidPid("0x05c6", "0x90e5") != Status::SUCCESS)
         return Status::ERROR;
@@ -498,9 +520,9 @@ V1_0::Status UsbGadget::setupFunctions(
       ALOGI("enable QC default composition");
       if (linkFunction("diag.diag", i++)) return Status::ERROR;
       if (linkFunction("cser.dun.0", i++)) return Status::ERROR;
-      if (linkFunction((rmnetFunc + ".rmnet").c_str(), i++))
+      if (linkFunction(rmnetInst.c_str(), i++))
         return Status::ERROR;
-      if (linkFunction((rmnetFunc + ".dpl").c_str(), i++))
+      if (linkFunction(dplInst.c_str(), i++))
         return Status::ERROR;
       if (linkFunction("qdss.qdss", i++)) return Status::ERROR;
       if (setVidPid("0x05c6", "0x90db") != Status::SUCCESS)
