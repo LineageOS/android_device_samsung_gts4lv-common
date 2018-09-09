@@ -73,6 +73,7 @@
 /(vendor|system/vendor)/bin/hw/android.hardware.light@2.0-service u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.light@2.0-service\.samsung u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.power@1.0-service u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.power@1.2-service\.samsung u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.health@1.0-service u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.health@2.0-service u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.lowpan@1.0-service u:object_r:hal_lowpan_default_exec:s0

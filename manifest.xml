@@ -193,6 +193,7 @@
             <instance>default</instance>
             <instance>miscpower</instance>
         </interface>
+        <fqname>@1.2::IPower/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.renderscript</name>
