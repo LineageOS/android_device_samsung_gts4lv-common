@@ -74,7 +74,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.gfx_ubwc_disable=0 \
     debug.sf.enable_hwc_vds=1 \
-    ro.sf.lcd_density=360 \
     ro.vendor.display.cabl=2
 
 # fastbootd
