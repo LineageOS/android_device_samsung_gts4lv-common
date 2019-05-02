@@ -21,6 +21,7 @@
 #include "UsbGadget.h"
 
 using android::sp;
+using android::base::GetBoolProperty;
 
 // libhwbinder:
 using android::hardware::configureRpcThreadpool;
@@ -47,11 +48,16 @@ int main() {
         return 1;
     }
 
-    status = service2->registerAsService();
+    if (GetBoolProperty("ro.vendor.usb.use_gadget_hal", false)) {
+        status = service2->registerAsService();
 
-    if (status != OK) {
-        ALOGE("Cannot register USB Gadget HAL service");
-        return 1;
+        if (status != OK) {
+            ALOGE("Cannot register USB Gadget HAL service");
+            return 1;
+        }
+
+    } else {
+        ALOGE("USB Gadget HAL not used");
     }
 
     ALOGI("USB HAL Ready.");
