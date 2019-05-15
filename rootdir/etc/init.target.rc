@@ -535,7 +535,3 @@ service tlocd /vendor/bin/tloc_daemon
     user system
     group drmrpc gps net_raw
 
-service smcinvoked /system/bin/smcinvoked
-    class main
-    user system
-    group system
