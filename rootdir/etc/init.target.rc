@@ -205,11 +205,6 @@ on boot
 #on post-fs
 #    export LD_PRELOAD /vendor/lib/libNimsWrap.so
 
-service vendor.qseecomd /vendor/bin/qseecomd
-    class core
-    user root
-    group root
-
 service spdaemon /vendor/bin/spdaemon
     class core
     user system
