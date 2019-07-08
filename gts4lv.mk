@@ -26,6 +26,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1600
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
+
 # Recovery
 PRODUCT_COPY_FILES += \
     device/samsung/gts4lv-common/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
