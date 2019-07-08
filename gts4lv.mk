@@ -26,6 +26,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1600
 
+# Init
+PRODUCT_PACKAGES += \
+    init.qcom.rc_system
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     device/samsung/gts4lv-common/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
