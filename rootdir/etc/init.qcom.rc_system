@@ -1,3 +1,0 @@
-on fs
-    mount none /vendor/etc/audio_policy_configuration_sec.xml /vendor/etc/audio_policy_configuration.xml bind
-    mount none /vendor/etc/audio_effects_sec.xml /vendor/etc/audio_effects.xml bind
