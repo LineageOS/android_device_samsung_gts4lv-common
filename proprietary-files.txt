@@ -354,6 +354,14 @@ vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@2.1.so
 
+# Firmware
+vendor/firmware/Data.msc
+vendor/firmware/dbmd8_va_asrp_fw.bin
+vendor/firmware/dbmd8_va_fw.bin
+vendor/firmware/ipa_fws.elf
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+
 # FM
 vendor/lib/ftm_fm_lib.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
@@ -657,6 +665,10 @@ vendor/etc/init/hw/init.qcom.usb.rc
 vendor/etc/init/hw/init.target.rc
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/wifi_qcom.rc
+vendor/etc/init/wifi.rc
+vendor/etc/fstab.qcom
+vendor/etc/wlan_common_rc
+vendor/etc/wlan_vendor_rc
 
 # IRQ Balance
 vendor/etc/msm_irqbalance.conf
@@ -712,6 +724,7 @@ vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc
 vendor/lib64/libhexagon_nn_stub.so
 
 # OMX
+vendor/etc/somxreg.conf
 vendor/lib/libarac.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
@@ -862,9 +875,11 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
 # QMI
+vendor/bin/adpl
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
+vendor/etc/graphite_ipc_platform_info.xml
 vendor/etc/sec_config
 vendor/lib/libdiagjni.so
 vendor/lib/libdiag.so
@@ -1186,10 +1201,11 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/secure_ui_sample_client
 vendor/bin/ssgtzd
 vendor/bin/StoreKeybox
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/bin/qseecomd
 vendor/bin/qseecom_sample_client
 vendor/bin/SoterProvisioningTool
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/etc/gpfspath_oem_config.xml
 vendor/lib/libGPMTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
@@ -1243,6 +1259,9 @@ vendor/bin/pktlogconf
 vendor/bin/PktRspTest
 vendor/bin/sigma_dut
 vendor/bin/spectraltool
+vendor/bin/vendor_cmd_tool
+vendor/lib/libwpa_drv_oem.so
+vendor/lib64/libwpa_drv_oem.so
 
 # WLAN - Firmware
 vendor/firmware/wlanmdsp.mbn
