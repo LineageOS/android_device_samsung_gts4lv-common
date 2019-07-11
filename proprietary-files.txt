@@ -989,6 +989,7 @@ vendor/lib64/vendor.samsung.security.wvkprov_server@1.0.so
 # Samsung - Process Authenticator
 vendor/bin/vendor.samsung.security.proca@1.0-service
 vendor/etc/init/pa_daemon_qsee.rc
+vendor/etc/process_authenticator/pa_config
 vendor/lib/libpadm.so
 vendor/lib/libpa.so
 vendor/lib/vendor.samsung.security.proca@1.0.so
