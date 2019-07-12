@@ -29,6 +29,33 @@ ifneq ($(filter gts4lvwifi,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+FIRMWARE_MODEM_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware-modem
+FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
+BT_FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/bt_firmware
+DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
+
+$(FIRMWARE_MODEM_MOUNT_POINT):
+	@echo "Creating $(FIRMWARE_MODEM_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/firmware-modem
+
+$(FIRMWARE_MOUNT_POINT):
+	@echo "Creating $(FIRMWARE_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
+
+$(BT_FIRMWARE_MOUNT_POINT):
+	@echo "Creating $(BT_FIRMWARE_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/bt_firmware
+
+$(DSP_MOUNT_POINT):
+	@echo "Creating $(DSP_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
+
+ALL_DEFAULT_INSTALLED_MODULES += \
+    $(FIRMWARE_MODEM_MOUNT_POINT) \
+    $(FIRMWARE_MOUNT_POINT) \
+    $(BT_FIRMWARE_MOUNT_POINT) \
+    $(DSP_MOUNT_POINT)
+
 RFS_APQ_GNSS_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/apq/gnss/
 $(RFS_APQ_GNSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS APQ GNSS folder structure: $@"
