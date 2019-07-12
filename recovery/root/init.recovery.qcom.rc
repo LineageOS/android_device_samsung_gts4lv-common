@@ -44,6 +44,9 @@ on init
     write /config/usb_gadget/g1/os_desc/qw_sign "MSFT100"
     setprop sys.usb.configfs 1
 
+    # Samsung's bootloader doesn't set this for some reason
+    setprop ro.boot.vbmeta.avb_version ${ro.boot.avb_version}
+
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
 
