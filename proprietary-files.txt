@@ -13,7 +13,7 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
 vendor/bin/audioflacapp
-vendor/lib/hw/audio.primary.sdm710.so
+vendor/bin/cplay
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -102,6 +102,54 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libvolumelistener.so
 
+# Audio - HALs
+vendor/bin/hw/android.hardware.audio@2.0-service
+vendor/etc/init/android.hardware.audio@2.0-service.rc
+vendor/lib/hw/android.hardware.audio@2.0-impl.so
+vendor/lib/hw/android.hardware.audio@4.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so
+vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
+vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
+vendor/lib/hw/audio.primary.default.so
+vendor/lib/hw/audio.primary.sdm710.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
+vendor/lib64/hw/android.hardware.audio@2.0-impl.so
+vendor/lib64/hw/android.hardware.audio@4.0-impl.so
+vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib64/hw/android.hardware.audio.effect@4.0-impl.so
+vendor/lib64/hw/audio.primary.default.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
+
+# Audio - Other
+vendor/lib/libavservices_minijail_vendor.so
+vendor/lib/libeffects.so
+vendor/lib/libeffectsconfig.so
+vendor/lib/libwebrtc_audio_preprocessing.so
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libbundlewrapper.so
+vendor/lib/soundfx/libdownmix.so
+vendor/lib/soundfx/libdynproc.so
+vendor/lib/soundfx/libeffectproxy.so
+vendor/lib/soundfx/libldnhncr.so
+vendor/lib/soundfx/libreverbwrapper.so
+vendor/lib/soundfx/libvisualizer.so
+vendor/lib64/libeffects.so
+vendor/lib64/libeffectsconfig.so
+vendor/lib64/libhwminijail.so
+vendor/lib64/libtinycompress.so
+vendor/lib64/libwebrtc_audio_preprocessing.so
+vendor/lib64/soundfx/libaudiopreprocessing.so
+vendor/lib64/soundfx/libbundlewrapper.so
+vendor/lib64/soundfx/libdownmix.so
+vendor/lib64/soundfx/libdynproc.so
+vendor/lib64/soundfx/libeffectproxy.so
+vendor/lib64/soundfx/libldnhncr.so
+vendor/lib64/soundfx/libreverbwrapper.so
+vendor/lib64/soundfx/libvisualizer.so
+
 # Audio - Speaker Firmware
 vendor/firmware/cs35l41-dsp1-spk-prot.bin
 vendor/firmware/cs35l41-dsp1-spk-prot-calib.bin
@@ -116,6 +164,9 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
+
+# Bluetooth - APT-X
+lib64/libaptX_encoder.so
 
 # Bluetooth - Audio
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -249,9 +300,30 @@ vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so
 # Camera - Firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera - HIDL
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+
 # CNSS
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
+
+# ConfigStore
+vendor/bin/hw/android.hardware.configstore@1.1-service
+
+# Default HALs
+vendor/lib/hw/local_time.default.so
+vendor/lib/hw/power.default.so
+vendor/lib/hw/vibrator.default.so
+vendor/lib64/hw/local_time.default.so
+vendor/lib64/hw/power.default.so
+vendor/lib64/hw/vibrator.default.so
 
 # Device Health
 vendor/bin/hw/android.hardware.health@2.0-service.samsung
@@ -298,6 +370,19 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.samsung.hardware.qchdcpkprov_server@1.0.so
+
+# DRM - ClearKey
+vendor/bin/hw/android.hardware.cas@1.0-service
+vendor/bin/hw/android.hardware.drm@1.1-service.clearkey
+vendor/etc/init/android.hardware.drm@1.1-service.clearkey.rc
+vendor/lib/mediacas/libclearkeycasplugin.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib64/mediacas/libclearkeycasplugin.so
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+
+# DRM - HIDL
+vendor/bin/hw/android.hardware.drm@1.0-service
+vendor/lib/hw/android.hardware.drm@1.0-impl.so
 
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
@@ -369,6 +454,10 @@ vendor/lib64/ftm_fm_lib.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # GPS
@@ -382,6 +471,7 @@ vendor/etc/gps.conf
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
+vendor/etc/xtra_root_cert.pem
 vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/lib/hw/vendor.qti.gnss@1.2-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@1.0-impl.so
@@ -536,12 +626,62 @@ vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 
 # Graphics - HALs
+vendor/bin/hw/android.hardware.graphics.composer@2.1-service
+vendor/bin/hw/android.hardware.memtrack@1.0-service
+vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service
+vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
+vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
+vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
+vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
+vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
+vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.sdm710.so
 vendor/lib/hw/hwcomposer.sdm710.so
 vendor/lib/hw/memtrack.sdm710.so
+vendor/lib/vendor.display.config@1.0.so
+vendor/lib/vendor.display.config@1.1.so
+vendor/lib/vendor.display.config@1.2.so
+vendor/lib/vendor.display.config@1.3.so
+vendor/lib/vendor.display.config@1.4.so
+vendor/lib/vendor.display.config@1.5.so
+vendor/lib/vendor.display.config@1.6.so
+vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so
+vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
+vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
+vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/hw/gralloc.sdm710.so
+vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.sdm710.so
 vendor/lib64/hw/memtrack.sdm710.so
+vendor/lib64/vendor.display.config@1.0.so
+vendor/lib64/vendor.display.config@1.1.so
+vendor/lib64/vendor.display.config@1.2.so
+vendor/lib64/vendor.display.config@1.3.so
+vendor/lib64/vendor.display.config@1.4.so
+vendor/lib64/vendor.display.config@1.5.so
+vendor/lib64/vendor.display.config@1.6.so
+
+# Graphics - Other
+vendor/lib/libdisplaydebug.so
+vendor/lib/libdrm.so
+vendor/lib/libdrmutils.so
+vendor/lib/libgralloccore.so
+vendor/lib/libgrallocutils.so
+vendor/lib/libhwc2on1adapter.so
+vendor/lib/libhwc2onfbadapter.so
+vendor/lib/libplatformconfig.so
+vendor/lib/libqdMetaData.so
+vendor/lib/libqdutils.so
+vendor/lib/libqservice.so
+vendor/lib64/libdisplaydebug.so
+vendor/lib64/libgralloccore.so
+vendor/lib64/libgrallocutils.so
+vendor/lib64/libhwc2on1adapter.so
+vendor/lib64/libhwc2onfbadapter.so
+vendor/lib64/libplatformconfig.so
+vendor/lib64/libqdMetaData.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libqservice.so
 
 # Graphics - Post Processing
 vendor/bin/vppservice
@@ -592,6 +732,14 @@ vendor/lib64/libsnap_caffe_wrapper.so
 vendor/lib64/libsnap_compute.so
 vendor/lib64/libsnap_compute_wrapper.so
 vendor/lib64/libsnap_vndk.so
+
+# HIDL
+vendor/lib/android.hidl.base@1.0.so
+vendor/lib64/android.hidl.base@1.0.so
+
+# HostAP
+vendor/bin/hw/hostapd
+vendor/bin/hostapd_cli
 
 # Hotword Enrollment
 -priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk;PRESIGNED
@@ -663,6 +811,7 @@ vendor/etc/init/wifi.rc
 vendor/etc/fstab.qcom
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
+vendor/ueventd.rc
 
 # IRQ Balance
 vendor/etc/msm_irqbalance.conf
@@ -672,8 +821,8 @@ vendor/bin/hw/android.hardware.keymaster@4.0-service
 vendor/etc/init/android.hardware.keymaster@4.0-service.rc
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
-vendor/lib/libqtikeymaster4.so
 vendor/lib/libkeymasterutils.so
+vendor/lib/libqtikeymaster4.so
 vendor/lib64/libkeymaster4.so
 vendor/lib64/libkeymaster4support.so
 vendor/lib64/libkeymaster_helper_vendor.so
@@ -712,12 +861,48 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_proprietary.so
 
+# Misc
+vendor/etc/cacert_location.pem
+vendor/etc/system_properties.xml
+vendor/lib/libadpcmdec.so
+vendor/lib/libbase64.so
+vendor/lib/libchiss3alogdebug.so
+vendor/lib/libc++_shared.so
+vendor/lib/libdrc.so
+vendor/lib/libdsd2pcm.so
+vendor/lib/libgarden.so
+vendor/lib/libgdtap.so
+vendor/lib/libmdf.so
+vendor/lib/libmulawdec.so
+vendor/lib/liboemaids_vendor.so
+vendor/lib/libqdp.so
+vendor/lib/libsi.so
+vendor/lib/libspcom.so
+vendor/lib/libspiris.so
+vendor/lib/libstreamparser.so
+vendor/lib/libvideoutils.so
+vendor/lib64/libbase64.so
+vendor/lib64/libc++_shared.so
+vendor/lib64/libgarden.so
+vendor/lib64/libgdtap.so
+vendor/lib64/libmdf.so
+vendor/lib64/libmulawdec.so
+vendor/lib64/liboemaids_vendor.so
+vendor/lib64/libqdp.so
+vendor/lib64/libsi.so
+vendor/lib64/libspcom.so
+vendor/lib64/libspiris.so
+vendor/lib64/libucsengine.so
+vendor/lib64/vndk/libcrypto.so
+vendor/lib64/vndk/libssl.so
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc
 vendor/lib64/libhexagon_nn_stub.so
 
 # OMX
+vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/somxreg.conf
 vendor/lib/libarac.so
 vendor/lib/libAlacSwDec.so
@@ -837,12 +1022,15 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Power
+vendor/bin/hw/android.hardware.power@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
 vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc
 vendor/etc/powerhint.xml
+vendor/lib/hw/android.hardware.power@1.0-impl.so
 vendor/lib/hw/power.qcom.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
+vendor/lib64/hw/android.hardware.power@1.0-impl.so
 vendor/lib64/hw/power.qcom.so
 vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsymphonypower.so
@@ -867,6 +1055,12 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
+
+# QCOM
+vendor/lib/libjson.so
+vendor/lib/libtinyxml.so
+vendor/lib64/libjson.so
+vendor/lib64/libtinyxml.so
 
 # QMI
 vendor/bin/adpl
@@ -918,6 +1112,7 @@ vendor/bin/ssgqmigd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
+vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
@@ -928,6 +1123,9 @@ vendor/lib/libnetmgr.so
 vendor/lib/libnlnetmgr.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
+vendor/lib/libreference-ril.so
+vendor/lib/libril.so
+vendor/lib/librilutils.so
 vendor/lib/librmnetctl.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
@@ -940,6 +1138,7 @@ vendor/lib/vendor.qti.latency@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@1.2.so
 vendor/lib/vendor.samsung.hardware.radio.secbridge@1.0.so
 vendor/lib/vendor.samsung.hardware.radio.sechook@1.0.so
+vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmdetect.so
@@ -950,6 +1149,9 @@ vendor/lib64/libnetmgr.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
+vendor/lib64/libreference-ril.so
+vendor/lib64/libril.so
+vendor/lib64/librilutils.so
 vendor/lib64/librmnetctl.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
@@ -1048,20 +1250,24 @@ vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SELinux
-vendor/etc/selinux/vndservice_contexts
-vendor/etc/selinux/precompiled_sepolicy
+vendor/etc/selinux/apm/authorize.xml
 vendor/etc/selinux/plat_pub_versioned.cil
-vendor/etc/selinux/vendor_seapp_contexts
-vendor/etc/selinux/vendor_file_contexts
-vendor/etc/selinux/vendor_sepolicy.cil
-vendor/etc/selinux/vendor_hwservice_contexts
-vendor/etc/selinux/vendor_property_contexts
-vendor/etc/selinux/vendor_mac_permissions.xml
+vendor/etc/selinux/plat_sepolicy_vers.txt
+vendor/etc/selinux/precompiled_sepolicy
 vendor/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256
+vendor/etc/selinux/vendor_file_contexts
+vendor/etc/selinux/vendor_hwservice_contexts
+vendor/etc/selinux/vendor_mac_permissions.xml
+vendor/etc/selinux/vendor_property_contexts
+vendor/etc/selinux/vendor_seapp_contexts
+vendor/etc/selinux/vendor_sepolicy.cil
+vendor/etc/selinux/vndservice_contexts
 
 # Sensors
+vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/lsm6dsm_0.json
 vendor/etc/sensors/config/sdm710_ak991x_0.json
@@ -1082,6 +1288,7 @@ vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/veml3328_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libsensorslog.so
@@ -1094,6 +1301,7 @@ vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
+vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
@@ -1158,6 +1366,15 @@ vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
+# Standard Binaries
+vendor/bin/awk
+vendor/bin/grep
+vendor/bin/logwrapper
+vendor/bin/sh
+vendor/bin/toolbox
+vendor/bin/vndservice
+vendor/bin/vndservicemanager
+
 # SPNE
 vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libSNPE.so
@@ -1176,10 +1393,13 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/thermal.sdm710.so
 vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/thermal.sdm710.so
 vendor/lib64/libthermalclient.so
 
@@ -1256,6 +1476,22 @@ vendor/bin/spectraltool
 vendor/bin/vendor_cmd_tool
 vendor/lib/libwpa_drv_oem.so
 vendor/lib64/libwpa_drv_oem.so
+
+# WLAN - Hal
+vendor/bin/hw/android.hardware.wifi@1.0-service
+vendor/bin/hw/wpa_supplicant
+vendor/lib/libcld80211.so
+vendor/lib/libqsap_sdk.so
+vendor/lib/libwifi-hal-qcom.so
+vendor/lib/libwifi-hal.so
+vendor/lib/libwpa_client.so
+vendor/lib64/libcld80211.so
+vendor/lib64/libkeystore-engine-wifi-hidl.so
+vendor/lib64/libkeystore-wifi-hidl.so
+vendor/lib64/libqsap_sdk.so
+vendor/lib64/libwifi-hal-qcom.so
+vendor/lib64/libwifi-hal.so
+vendor/lib64/libwpa_client.so
 
 # WLAN - Firmware
 vendor/firmware/wlanmdsp.mbn
