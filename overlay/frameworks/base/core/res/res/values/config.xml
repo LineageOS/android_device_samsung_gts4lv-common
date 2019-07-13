@@ -689,14 +689,6 @@
         <item>253</item>
         <item>254</item>
         <item>255</item>
-        <item>268</item>
-        <item>280</item>
-        <item>293</item>
-        <item>305</item>
-        <item>318</item>
-        <item>330</item>
-        <item>342</item>
-        <item>355</item>
     </integer-array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
@@ -963,14 +955,6 @@
         <item>355</item>
         <item>357</item>
         <item>360</item>
-        <item>378</item>
-        <item>395</item>
-        <item>413</item>
-        <item>430</item>
-        <item>448</item>
-        <item>465</item>
-        <item>483</item>
-        <item>500</item>
     </array>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
@@ -1011,5 +995,23 @@
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
+    <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
+         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <bool name="config_automatic_brightness_available">true</bool>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Disable AOD by default -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
+         it causes the device to wake up.
+         The default is false. -->
+    <bool name="config_lidControlsSleep">true</bool>
 
 </resources>
