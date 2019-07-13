@@ -1477,22 +1477,6 @@ vendor/bin/vendor_cmd_tool
 vendor/lib/libwpa_drv_oem.so
 vendor/lib64/libwpa_drv_oem.so
 
-# WLAN - Hal
-vendor/bin/hw/android.hardware.wifi@1.0-service
-vendor/bin/hw/wpa_supplicant
-vendor/lib/libcld80211.so
-vendor/lib/libqsap_sdk.so
-vendor/lib/libwifi-hal-qcom.so
-vendor/lib/libwifi-hal.so
-vendor/lib/libwpa_client.so
-vendor/lib64/libcld80211.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib64/libqsap_sdk.so
-vendor/lib64/libwifi-hal-qcom.so
-vendor/lib64/libwifi-hal.so
-vendor/lib64/libwpa_client.so
-
 # WLAN - Firmware
 vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/bdwlan.bin
