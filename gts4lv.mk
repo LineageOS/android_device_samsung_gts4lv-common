@@ -31,6 +31,8 @@ TARGET_SCREEN_WIDTH := 1600
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gts4lv-common/overlay
+PRODUCT_ENFORCE_RRO_TARGETS += \
+    framework-res
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
