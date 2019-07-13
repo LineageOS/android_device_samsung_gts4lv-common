@@ -34,6 +34,9 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/gts4lv-common/overlay
 PRODUCT_ENFORCE_RRO_TARGETS += \
     framework-res
 
+# Properties
+-include device/samsung/gts4lv-common/vendor_prop.mk
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     device/samsung/gts4lv-common/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
