@@ -1366,15 +1366,6 @@ vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
-# Standard Binaries
-vendor/bin/awk
-vendor/bin/grep
-vendor/bin/logwrapper
-vendor/bin/sh
-vendor/bin/toolbox
-vendor/bin/vndservice
-vendor/bin/vndservicemanager
-
 # SPNE
 vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libSNPE.so
