@@ -39,6 +39,17 @@ write_headers "gts4lvwifi"
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
 
+cat << EOF >> "$ANDROIDMK"
+
+\$(shell mkdir -p \$(PRODUCT_OUT)/vendor/lib/egl && pushd \$(PRODUCT_OUT)/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+\$(shell mkdir -p \$(PRODUCT_OUT)/vendor/lib/egl && pushd \$(PRODUCT_OUT)/vendor/lib > /dev/null && ln -s egl/libGLESv2_adreno.so libGLESv2_adreno.so && popd > /dev/null)
+\$(shell mkdir -p \$(PRODUCT_OUT)/vendor/lib/egl && pushd \$(PRODUCT_OUT)/vendor/lib > /dev/null && ln -s egl/libq3dtools_adreno.so libq3dtools_adreno.so && popd > /dev/null)
+\$(shell mkdir -p \$(PRODUCT_OUT)/vendor/lib64/egl && pushd \$(PRODUCT_OUT)/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+\$(shell mkdir -p \$(PRODUCT_OUT)/vendor/lib64/egl && pushd \$(PRODUCT_OUT)/vendor/lib64 > /dev/null && ln -s egl/libGLESv2_adreno.so libGLESv2_adreno.so && popd > /dev/null)
+\$(shell mkdir -p \$(PRODUCT_OUT)/vendor/lib64/egl && pushd \$(PRODUCT_OUT)/vendor/lib64 > /dev/null && ln -s egl/libq3dtools_adreno.so libq3dtools_adreno.so && popd > /dev/null)
+
+EOF
+
 # We are done!
 write_footers
 
