@@ -254,16 +254,6 @@ vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so
 # Camera - Firmware
 vendor/firmware/CAMERA_ICP.elf
 
-# Camera - HIDL
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-
 # CNSS
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
