@@ -261,14 +261,6 @@ vendor/bin/cnss_diag
 # ConfigStore
 vendor/bin/hw/android.hardware.configstore@1.1-service
 
-# Default HALs
-vendor/lib/hw/local_time.default.so
-vendor/lib/hw/power.default.so
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/local_time.default.so
-vendor/lib64/hw/power.default.so
-vendor/lib64/hw/vibrator.default.so
-
 # Device Health
 vendor/bin/hw/android.hardware.health@2.0-service.samsung
 vendor/bin/seemp_healthd
