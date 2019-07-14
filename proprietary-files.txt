@@ -790,7 +790,6 @@ vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc
 vendor/lib64/libhexagon_nn_stub.so
 
 # OMX
-vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/somxreg.conf
 vendor/lib/libarac.so
 vendor/lib/libAlacSwDec.so
@@ -910,15 +909,12 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Power
-vendor/bin/hw/android.hardware.power@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
 vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc
 vendor/etc/powerhint.xml
-vendor/lib/hw/android.hardware.power@1.0-impl.so
 vendor/lib/hw/power.qcom.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
-vendor/lib64/hw/android.hardware.power@1.0-impl.so
 vendor/lib64/hw/power.qcom.so
 vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsymphonypower.so
@@ -943,12 +939,6 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
-
-# QCOM
-vendor/lib/libjson.so
-vendor/lib/libtinyxml.so
-vendor/lib64/libjson.so
-vendor/lib64/libtinyxml.so
 
 # QMI
 vendor/bin/adpl
@@ -1000,7 +990,6 @@ vendor/bin/ssgqmigd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
-vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
@@ -1026,7 +1015,6 @@ vendor/lib/vendor.qti.latency@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@1.2.so
 vendor/lib/vendor.samsung.hardware.radio.secbridge@1.0.so
 vendor/lib/vendor.samsung.hardware.radio.sechook@1.0.so
-vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmdetect.so
@@ -1152,10 +1140,8 @@ vendor/etc/selinux/vendor_sepolicy.cil
 vendor/etc/selinux/vndservice_contexts
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/lsm6dsm_0.json
 vendor/etc/sensors/config/sdm710_ak991x_0.json
@@ -1176,7 +1162,6 @@ vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/veml3328_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
-vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libsensorslog.so
@@ -1189,7 +1174,6 @@ vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
-vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
@@ -1272,13 +1256,10 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 
 # Thermal
-vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/thermal.sdm710.so
 vendor/lib/libthermalclient.so
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/thermal.sdm710.so
 vendor/lib64/libthermalclient.so
 
