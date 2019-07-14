@@ -307,19 +307,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.samsung.hardware.qchdcpkprov_server@1.0.so
 
-# DRM - ClearKey
-vendor/bin/hw/android.hardware.cas@1.0-service
-vendor/bin/hw/android.hardware.drm@1.1-service.clearkey
-vendor/etc/init/android.hardware.drm@1.1-service.clearkey.rc
-vendor/lib/mediacas/libclearkeycasplugin.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediacas/libclearkeycasplugin.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-
-# DRM - HIDL
-vendor/bin/hw/android.hardware.drm@1.0-service
-vendor/lib/hw/android.hardware.drm@1.0-impl.so
-
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
