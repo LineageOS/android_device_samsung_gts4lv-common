@@ -625,10 +625,6 @@ vendor/lib64/libsnap_compute.so
 vendor/lib64/libsnap_compute_wrapper.so
 vendor/lib64/libsnap_vndk.so
 
-# HIDL
-vendor/lib/android.hidl.base@1.0.so
-vendor/lib64/android.hidl.base@1.0.so
-
 # HostAP
 vendor/bin/hw/hostapd
 vendor/bin/hostapd_cli
