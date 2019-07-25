@@ -69,6 +69,9 @@ vendor.qcom.bluetooth.soc=cherokee
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM670
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Dalvik
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapmaxfree=8m
