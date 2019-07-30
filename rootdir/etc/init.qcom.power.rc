@@ -268,7 +268,8 @@ on property:init.svc.recovery=running
 
 service charger /system/bin/charger
     class charger
-    group system graphics
+    user system
+    group system graphics input
     seclabel u:r:charger:s0
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
