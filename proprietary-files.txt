@@ -636,16 +636,6 @@ vendor/bin/hostapd_cli
 # HVDCP
 vendor/bin/hvdcp_opti
 
-# I/O Prefetcher
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # Image Understanding
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn_light.caffemodel
@@ -700,6 +690,16 @@ vendor/etc/fstab.qcom
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
 vendor/ueventd.rc
+
+# I/O Prefetcher
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # IRQ Balance
 vendor/etc/msm_irqbalance.conf
@@ -1219,6 +1219,23 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
+# SPNE
+vendor/lib/libsnpe_dsp_domains_v2.so
+vendor/lib/libSNPE.so
+vendor/lib/libsnpe_wrapper.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/lib64/libSNPE.so
+vendor/lib64/libsnpe_wrapper.so
+
+# SSR
+vendor/bin/ssr_diag
+vendor/bin/ssr_setup
+vendor/bin/subsystem_ramdump
+vendor/lib/libsubsystem_control.so
+vendor/lib/libSubSystemShutdown.so
+vendor/lib64/libsubsystem_control.so
+vendor/lib64/libSubSystemShutdown.so
+
 # Stagefright
 vendor/lib/libgui_vendor.so
 vendor/lib/libprofileparamstorage.so
@@ -1237,23 +1254,6 @@ vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
-
-# SPNE
-vendor/lib/libsnpe_dsp_domains_v2.so
-vendor/lib/libSNPE.so
-vendor/lib/libsnpe_wrapper.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libSNPE.so
-vendor/lib64/libsnpe_wrapper.so
-
-# SSR
-vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
-vendor/lib/libsubsystem_control.so
-vendor/lib/libSubSystemShutdown.so
-vendor/lib64/libsubsystem_control.so
-vendor/lib64/libSubSystemShutdown.so
 
 # Thermal
 vendor/bin/thermal-engine
