@@ -132,7 +132,7 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/samsung/gts4lv-common
+    $(COMMON_PATH)
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
