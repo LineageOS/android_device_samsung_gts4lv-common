@@ -7,7 +7,6 @@
             <name>IDevicesFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@4.0::IDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
@@ -17,7 +16,6 @@
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@4.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
@@ -27,7 +25,6 @@
             <name>IBiometricsFingerprint</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
@@ -37,7 +34,6 @@
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.camera.provider</name>
@@ -47,7 +43,6 @@
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
-        <fqname>@2.4::ICameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.cas</name>
@@ -57,7 +52,6 @@
             <name>IMediaCasService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IMediaCasService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.configstore</name>
@@ -67,7 +61,6 @@
             <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.drm</name>
@@ -81,8 +74,6 @@
             <name>IDrmFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ICryptoFactory/default</fqname>
-        <fqname>@1.0::IDrmFactory/default</fqname>
         <fqname>@1.1::ICryptoFactory/clearkey</fqname>
         <fqname>@1.1::ICryptoFactory/widevine</fqname>
         <fqname>@1.1::IDrmFactory/clearkey</fqname>
@@ -96,7 +87,6 @@
             <name>IGatekeeper</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gnss</name>
@@ -106,7 +96,6 @@
             <name>IGnss</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IGnss/default</fqname>
         <fqname>@1.0::IGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl">
@@ -117,7 +106,6 @@
             <name>IAllocator</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IAllocator/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
@@ -127,7 +115,6 @@
             <name>IComposer</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::IComposer/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
@@ -137,7 +124,6 @@
             <name>IMapper</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IMapper/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.health</name>
@@ -148,8 +134,6 @@
             <instance>default</instance>
             <instance>exthealth</instance>
         </interface>
-        <fqname>@2.0::IHealth/default</fqname>
-        <fqname>@2.0::IHealth/exthealth</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
@@ -159,7 +143,6 @@
             <name>IKeymasterDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.light</name>
@@ -169,7 +152,6 @@
             <name>ILight</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ILight/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -183,8 +165,6 @@
             <name>IOmxStore</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IOmx/default</fqname>
-        <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.memtrack</name>
@@ -194,7 +174,6 @@
             <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.neuralnetworks</name>
@@ -204,7 +183,6 @@
             <name>IDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::IDevice/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.power</name>
@@ -215,8 +193,6 @@
             <instance>default</instance>
             <instance>miscpower</instance>
         </interface>
-        <fqname>@1.0::IPower/default</fqname>
-        <fqname>@1.0::IPower/miscpower</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
@@ -234,7 +210,6 @@
             <name>IDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -244,7 +219,6 @@
             <name>ISensors</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
@@ -254,7 +228,6 @@
             <name>ISoundTriggerHw</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.tetheroffload.config</name>
@@ -272,7 +245,6 @@
             <name>IThermal</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.usb</name>
@@ -282,7 +254,6 @@
             <name>IUsb</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::IUsb/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.wifi</name>
@@ -292,7 +263,6 @@
             <name>IWifi</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.2::IWifi/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.wifi.hostapd</name>
@@ -302,7 +272,6 @@
             <name>IHostapd</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IHostapd/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.wifi.supplicant</name>
@@ -312,7 +281,6 @@
             <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.ant</name>
@@ -322,7 +290,6 @@
             <name>IAntHci</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IAntHci/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>com.qualcomm.qti.dpm.api</name>
@@ -348,7 +315,6 @@
             <name>IDisplayColor</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.2::IDisplayColor/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.display.config</name>
@@ -358,7 +324,6 @@
             <name>IDisplayConfig</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.6::IDisplayConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.display.postproc</name>
@@ -368,7 +333,6 @@
             <name>IDisplayPostproc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IDisplayPostproc/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.data.factory</name>
@@ -382,7 +346,6 @@
             <name>ILocHidlGnss</name>
             <instance>gnss_vendor</instance>
         </interface>
-        <fqname>@1.2::ILocHidlGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.alarm</name>
@@ -412,7 +375,6 @@
             <name>IPerf</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qdutils_disp</name>
@@ -422,7 +384,6 @@
             <name>IQdutilsDisp</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IQdutilsDisp/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.am</name>
@@ -468,7 +429,6 @@
             <name>ITuiComm</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ITuiComm/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.vpp</name>
@@ -502,7 +462,6 @@
             <name>ISecureStorage</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ISecureStorage/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.biometrics.fingerprint</name>
@@ -512,7 +471,6 @@
             <name>ISecBiometricsFingerprint</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::ISecBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth</name>
@@ -522,7 +480,6 @@
             <name>IBTVendor</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IBTVendor/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.camera.provider</name>
@@ -532,7 +489,6 @@
             <name>ISecCameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
-        <fqname>@2.4::ISecCameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.exthealth</name>
@@ -542,7 +498,6 @@
             <name>IExtHealth</name>
             <instance>exthealth</instance>
         </interface>
-        <fqname>@1.0::IExtHealth/exthealth</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
@@ -552,7 +507,6 @@
             <name>ISecGnss</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISecGnss/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.light</name>
@@ -562,7 +516,6 @@
             <name>ISecLight</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ISecLight/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.miscpower</name>
@@ -572,7 +525,6 @@
             <name>ISecMiscPower</name>
             <instance>miscpower</instance>
         </interface>
-        <fqname>@1.0::ISecMiscPower/miscpower</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.qchdcpkprov_server</name>
@@ -582,7 +534,6 @@
             <name>Iqchdcpkprov_server</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::Iqchdcpkprov_server/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi</name>
@@ -592,7 +543,6 @@
             <name>IWifiExt</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IWifiExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi.hostapd</name>
@@ -602,7 +552,6 @@
             <name>ISemHostapd</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISemHostapd/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi.supplicant</name>
@@ -612,7 +561,6 @@
             <name>ISupplicantExt</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISupplicantExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.security.drk</name>
@@ -622,7 +570,6 @@
             <name>IDrkService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IDrkService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.security.proca</name>
@@ -632,7 +579,6 @@
             <name>IProcaDaemon</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IProcaDaemon/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.security.sem</name>
@@ -642,7 +588,6 @@
             <name>ISem</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISem/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.security.skpm</name>
@@ -652,7 +597,6 @@
             <name>ISkpm</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISkpm/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.security.vaultkeeper_server</name>
@@ -662,7 +606,6 @@
             <name>Ivaultkeeper_server</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::Ivaultkeeper_server/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.security.wvkprov_server</name>
@@ -672,6 +615,5 @@
             <name>Iwvkprov_server</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::Iwvkprov_server/default</fqname>
     </hal>
 </manifest>
