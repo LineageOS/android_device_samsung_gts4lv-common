@@ -191,10 +191,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
-# Recovery
-PRODUCT_COPY_FILES += \
-    device/samsung/gts4lv-common/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
