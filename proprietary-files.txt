@@ -173,6 +173,7 @@ vendor/lib/camera/s5k5e9tuned.bin
 vendor/lib/camera/systemdefault.bin
 vendor/lib/camera/titan17x_usecases.bin
 vendor/lib/hw/camera.qcom.so
+vendor/lib/hw/com.samsung.chi.override.so
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
 vendor/lib/com.qti.node.eisv2.so
 vendor/lib/com.qti.node.eisv3.so
@@ -279,19 +280,11 @@ vendor/bin/diag_uart_log
 vendor/bin/test_diag
 
 # DRM
-vendor/bin/hw/vendor.samsung.hardware.qchdcpkprov_server@1.0-service
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/bin/wvkprov
-vendor/etc/init/vendor.samsung.hardware.qchdcpkprov_server@1.0-service.rc
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libcpion.so
 vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdcpsrm.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib64/libcpion.so
@@ -300,17 +293,32 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/libdrm.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libdrmutils.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libtzdrmgenprov.so
+
+# DRM - HDCP key provisioning
+vendor/bin/hw/vendor.samsung.hardware.qchdcpkprov_server@1.0-service
+vendor/bin/hdcp1prov
+vendor/bin/hdcp2p2prov
+vendor/etc/init/vendor.samsung.hardware.qchdcpkprov_server@1.0-service.rc
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.samsung.hardware.qchdcpkprov_server@1.0.so
 
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib/libwvhidl.so
+
+# DRM - Widevine key provisioning
+vendor/bin/wvkprov
+vendor/bin/vendor.samsung.security.wvkprov_server@1.0-service
+vendor/etc/init/vendor.samsung.security.wvkprov_server@1.0-service.rc
+vendor/lib64/vendor.samsung.security.wvkprov_server@1.0.so
 
 # DSP
 vendor/bin/cdsprpcd
@@ -366,7 +374,6 @@ vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@2.1.so
 vendor/firmware/Data.msc
 vendor/firmware/dbmd8_va_asrp_fw.bin
 vendor/firmware/dbmd8_va_fw.bin
-vendor/firmware/ipa_fws.elf
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
@@ -386,6 +393,7 @@ vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/init/vendor.qti.gnss@1.2-service.rc
+vendor/etc/cacert_location.pem
 vendor/etc/flp.conf
 vendor/etc/gps.conf
 vendor/etc/izat.conf
@@ -400,6 +408,7 @@ vendor/lib/libdataitems.so
 vendor/lib/libevent_observer.so
 vendor/lib/libfloatingfeature.so
 vendor/lib/libflp.so
+vendor/lib/libgarden.so
 vendor/lib/libgeofence.so
 vendor/lib/libgnsspps.so
 vendor/lib/libgnss.so
@@ -432,6 +441,7 @@ vendor/lib64/libdataitems.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libflp.so
+vendor/lib64/libgarden.so
 vendor/lib64/libgeofence.so
 vendor/lib64/libgnsspps.so
 vendor/lib64/libgnss.so
@@ -679,6 +689,9 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
+# IPA firmware
+vendor/firmware/ipa_fws.elf
+
 # IRQ Balance
 vendor/etc/msm_irqbalance.conf
 
@@ -715,6 +728,7 @@ vendor/lib64/libmeters.so
 vendor/lib64/libreffeature.so
 
 # Media
+vendor/etc/system_properties.xml
 vendor/lib/libc2dcolorconvert.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
@@ -728,35 +742,29 @@ vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_proprietary.so
 
 # Misc
-vendor/etc/cacert_location.pem
-vendor/etc/system_properties.xml
 vendor/lib/libadpcmdec.so
 vendor/lib/libbase64.so
 vendor/lib/libchiss3alogdebug.so
 vendor/lib/libc++_shared.so
 vendor/lib/libdrc.so
 vendor/lib/libdsd2pcm.so
-vendor/lib/libgarden.so
 vendor/lib/libgdtap.so
 vendor/lib/libmdf.so
 vendor/lib/libmulawdec.so
 vendor/lib/liboemaids_vendor.so
 vendor/lib/libqdp.so
 vendor/lib/libsi.so
-vendor/lib/libspcom.so
 vendor/lib/libspiris.so
 vendor/lib/libstreamparser.so
 vendor/lib/libvideoutils.so
 vendor/lib64/libbase64.so
 vendor/lib64/libc++_shared.so
-vendor/lib64/libgarden.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libmdf.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libqdp.so
 vendor/lib64/libsi.so
-vendor/lib64/libspcom.so
 vendor/lib64/libspiris.so
 vendor/lib64/libucsengine.so
 vendor/lib64/vndk/libcrypto.so
@@ -884,7 +892,9 @@ vendor/bin/pm-proxy
 vendor/bin/pm_proxy_helper
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
+vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
+vendor/lib64/libspcom.so
 
 # Power
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
@@ -1033,23 +1043,15 @@ vendor/bin/icd
 vendor/bin/vendor.samsung.security.drk@1.0-service
 vendor/bin/vendor.samsung.security.sem@1.0-service
 vendor/bin/vendor.samsung.security.skpm@1.0-service
-vendor/bin/vendor.samsung.security.wvkprov_server@1.0-service
 vendor/etc/init/vendor.samsung.security.drk@1.0-service.rc
 vendor/etc/init/vendor.samsung.security.sem@1.0-service.rc
 vendor/etc/init/vendor.samsung.security.skpm@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.wvkprov_server@1.0-service.rc
-vendor/lib/hw/com.samsung.chi.override.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/vendor.samsung.security.drk@1.0_vendor.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib64/vendor.samsung.frameworks.ucm.wifi@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@1.0.so
 vendor/lib64/vendor.samsung.security.drk@1.0_vendor.so
 vendor/lib64/vendor.samsung.security.sem@1.0.so
 vendor/lib64/vendor.samsung.security.skpm@1.0.so
-vendor/lib64/vendor.samsung.security.wvkprov_server@1.0.so
 
 # Samsung - Process Authenticator
 vendor/bin/vendor.samsung.security.proca@1.0-service
@@ -1249,14 +1251,12 @@ vendor/lib64/libtime_genoff.so
 
 # TrustZone
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/secure_ui_sample_client
 vendor/bin/ssgtzd
 vendor/bin/StoreKeybox
 vendor/bin/qseecomd
 vendor/bin/qseecom_sample_client
 vendor/bin/SoterProvisioningTool
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib/libGPMTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
@@ -1274,7 +1274,6 @@ vendor/lib/libsecureui_svcsock.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
 vendor/lib/vendor.qti.hardware.soter@1.0.so
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -1291,17 +1290,18 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
+
+# Trusted User Interface
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # USB
 vendor/bin/hw/android.hardware.usb@1.1-service.wahoo
 vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
 
-# WiGig
-vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-
-# WLAN
+# WiFi
 vendor/bin/athdiag
 vendor/bin/ftmdaemon
 vendor/bin/hal_proxy_daemon
@@ -1314,10 +1314,18 @@ vendor/bin/spectraltool
 vendor/bin/vendor_cmd_tool
 vendor/lib/libwpa_drv_oem.so
 vendor/lib64/libwpa_drv_oem.so
+vendor/lib64/vendor.samsung.frameworks.ucm.wifi@1.0.so
+vendor/lib64/vendor.samsung.hardware.wifi@1.0.so
+vendor/lib64/vendor.samsung.hardware.wifi.hostapd@1.0.so
+vendor/lib64/vendor.samsung.hardware.wifi.supplicant@1.0.so
 
-# WLAN - Firmware
+# WiFi firmware
 vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin_FEM
 vendor/firmware/wlan/qca_cld/grippower.info
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+
+# WiGig
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
