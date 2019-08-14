@@ -70,6 +70,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.gralloc.gfx_ubwc_disable=0 \
+    debug.sf.enable_hwc_vds=1 \
     ro.sf.lcd_density=360 \
     ro.vendor.display.cabl=2
 
@@ -121,3 +123,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
+
+# WiFi Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
