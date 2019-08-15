@@ -654,39 +654,6 @@ vendor/saiv/image_understanding/db/text_verifier/text_verifier_cnn.prototxt
 vendor/saiv/image_understanding/db/wine_verifier/wine_verifier_cnn_light.caffemodel
 vendor/saiv/image_understanding/db/wine_verifier/wine_verifier_cnn.prototxt
 
-# Init Scripts
-vendor/bin/init.class_late.sh
-vendor/bin/init.class_main.sh
-vendor/bin/init.crda.sh
-vendor/bin/init.mdm.sh
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.coex.sh
-vendor/bin/init.qcom.crashdata.sh
-vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.efs.sync.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qcom.sdio.sh
-vendor/bin/init.qcom.sensors.sh
-vendor/bin/init.qcom.sh
-vendor/bin/init.qcom.usb.sh
-vendor/bin/init.qti.can.sh
-vendor/bin/init.qti.fm.sh
-vendor/bin/init.qti.qseecomd.sh
-vendor/bin/qca6234-service.sh
-vendor/etc/init/hw/init.carrier.rc
-vendor/etc/init/hw/init.msm.usb.configfs.rc
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qcom.usb.rc
-vendor/etc/init/hw/init.target.rc
-vendor/etc/init/init.qti.fm.rc
-vendor/etc/init/wifi_qcom.rc
-vendor/etc/init/wifi.rc
-vendor/etc/fstab.qcom
-vendor/etc/wlan_common_rc
-vendor/etc/wlan_vendor_rc
-vendor/ueventd.rc
-
 # I/O Prefetcher
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/libqti-iopd-client.so

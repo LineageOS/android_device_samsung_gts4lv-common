@@ -103,6 +103,37 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl \
     camera.device@3.4-impl
 
+# Common init scripts
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.carrier.rc \
+    init.class_late.sh \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.msm.usb.configfs.rc \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.crashdata.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.factory.rc \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.qti.can.sh \
+    init.qti.fm.rc \
+    init.qti.fm.sh \
+    init.qti.qseecomd.sh \
+    init.target.rc \
+    ueventd.qcom.rc \
+    wifi_qcom.rc \
+    wifi.rc
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
