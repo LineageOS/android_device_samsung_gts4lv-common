@@ -1318,7 +1318,6 @@ vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin_FEM
 vendor/firmware/wlan/qca_cld/grippower.info
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # WiGig
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
