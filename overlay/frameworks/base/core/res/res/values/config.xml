@@ -23,9 +23,6 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
-    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
-    <bool name="config_cellBroadcastAppLinks">true</bool>
-
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
@@ -37,12 +34,6 @@
 
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
-
-    <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
-    <bool translatable="false" name="config_wifi_softap_acs_supported">false</bool>
-
-    <!-- Wifi driver supports IEEE80211AC for softap -->
-    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">false</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
@@ -99,65 +90,14 @@
          provisioning, availability etc -->
     <bool name="config_carrier_volte_available">true</bool>
 
-    <!-- Whether UI for multi user should be shown -->
-    <bool name="config_enableMultiUserUI">true</bool>
-
-    <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">4</integer>
-
     <!-- Config determines whether to update phone object when voice registration
          state changes. Voice radio tech change will always trigger an update of
          phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
 
-    <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
-    <bool name="config_supportAudioSourceUnprocessed">false</bool>
-
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
-
-    <!-- Whether to enable network location overlay which allows network
-         location provider to be replaced by an app at run-time. When disabled,
-         only the config_networkLocationProviderPackageName package will be
-         searched for network location provider, otherwise packages whose
-         signature matches the signatures of config_locationProviderPackageNames
-         will be searched, and the service with the highest version number will
-         be picked. Anyone who wants to disable the overlay mechanism can set it
-         to false.
-         -->
-    <bool name="config_enableNetworkLocationOverlay" translatable="false">true</bool>
-
-    <!-- Whether to enable fused location provider overlay which allows fused
-         location provider to be replaced by an app at run-time. When disabled,
-         only the config_fusedLocationProviderPackageName package will be
-         searched for fused location provider, otherwise packages whose
-         signature matches the signatures of config_locationProviderPackageNames
-         will be searched, and the service with the highest version number will
-         be picked. Anyone who wants to disable the overlay mechanism can set it
-         to false.
-         -->
-    <bool name="config_enableFusedLocationOverlay" translatable="false">true</bool>
-
-    <!-- Whether to enable geocoder overlay which allows geocoder to be replaced
-         by an app at run-time. When disabled, only the
-         config_geocoderProviderPackageName package will be searched for
-         geocoder, otherwise packages whose signature matches the signatures of
-         config_locationProviderPackageNames will be searched, and the service
-         with the highest version number will be picked. Anyone who wants to
-         disable the overlay mechanism can set it to false.
-         -->
-    <bool name="config_enableGeocoderOverlay" translatable="false">true</bool>
-
-    <!-- Whether to enable geofence overlay which allows geofence to be replaced
-         by an app at run-time. When disabled, only the
-         config_geofenceProviderPackageName package will be searched for
-         geofence implementation, otherwise packages whose signature matches the
-         signatures of config_locationProviderPackageNames will be searched, and
-         the service with the highest version number will be picked. Anyone who
-         wants to disable the overlay mechanism can set it to false.
-         -->
-    <bool name="config_enableGeofenceOverlay" translatable="false">true</bool>
 
     <!-- Flag indicating whether the current device is "voice capable".
          If true, this means that the device supports circuit-switched
@@ -185,25 +125,6 @@
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-
-    <!-- Power Management: Specifies whether to decouple the interactive state of the
-         device from the display on/off state.
-
-         When false, setInteractive(..., true) will be called before the display is turned on
-         and setInteractive(..., false) will be called after the display is turned off.
-         This mode provides best compatibility for devices that expect the interactive
-         state to be tied to the display state.
-
-         When true, setInteractive(...) will be called independently of whether the display
-         is being turned on or off.  This mode enables the power manager to reduce
-         clocks and disable the touch controller while the display is on.
-
-         This resource should be set to "true" when a doze component has been specified
-         to maximize power savings but not all devices support it.
-
-         Refer to power.h for details.
-    -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
@@ -975,10 +896,6 @@
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">0</integer>
 
-    <!-- Maximum screen brightness allowed by the power manager.
-         The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
-
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">125</integer>
@@ -995,9 +912,6 @@
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
-
-    <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
