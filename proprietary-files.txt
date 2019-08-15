@@ -201,7 +201,6 @@ vendor/lib/libuniplugin.so
 vendor/lib/libvdis_core.so
 vendor/lib/libvdis_interface.so
 vendor/lib/libxcv.camera.samsung.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib/vendor.samsung.camera.device@3.2-impl.so
 vendor/lib/vendor.samsung.camera.device@3.3-impl.so
@@ -241,7 +240,6 @@ vendor/lib64/libuniplugin.so
 vendor/lib64/libvdis_core.so
 vendor/lib64/libvdis_interface.so
 vendor/lib64/libxcv.camera.samsung.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.samsung.camera.device@1.0-impl.so
 vendor/lib64/vendor.samsung.camera.device@3.2-impl.so
 vendor/lib64/vendor.samsung.camera.device@3.3-impl.so
