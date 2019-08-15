@@ -18,11 +18,9 @@ vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
-vendor/lib/libalsautils.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libHMT.so
-vendor/lib/libnbaio_mono.so
 vendor/lib/libqtigef.so
 vendor/lib/librecordalive.so
 vendor/lib/libSamsungPostProcessConvertor.so
@@ -35,10 +33,8 @@ vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
-vendor/lib64/libnbaio_mono.so
 vendor/lib64/libqtigef.so
 
 # Audio - Configuration
@@ -573,10 +569,6 @@ vendor/lib64/libsnap_compute.so
 vendor/lib64/libsnap_compute_wrapper.so
 vendor/lib64/libsnap_vndk.so
 
-# HostAP
-vendor/bin/hw/hostapd
-vendor/bin/hostapd_cli
-
 # Hotword Enrollment
 -priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk;PRESIGNED
 -priv-app/HotwordEnrollmentXGoogleExTL3210/HotwordEnrollmentXGoogleExTL3210.apk;PRESIGNED
@@ -629,8 +621,6 @@ vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
-vendor/lib64/libkeymaster4.so
-vendor/lib64/libkeymaster4support.so
 vendor/lib64/libkeymaster_helper_vendor.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
@@ -1057,7 +1047,6 @@ vendor/etc/sensors/config/veml3328_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/lib/libsensorlistener.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/libsensorslog.so
 vendor/lib/libsnsapi.so
 vendor/lib/libsns_device_mode_stub.so
@@ -1069,7 +1058,6 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/libsensorlistener.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsns_device_mode_stub.so
@@ -1131,7 +1119,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 
 # Stagefright
-vendor/lib/libgui_vendor.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_omx_vendor.so

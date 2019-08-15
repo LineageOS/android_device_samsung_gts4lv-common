@@ -197,6 +197,7 @@ PRODUCT_COPY_FILES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
+    libgui_vendor \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -263,7 +264,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-service \
+    libsensorndkbridge
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -280,7 +282,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    hostapd_cli \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
