@@ -288,9 +288,7 @@ vendor/lib/libtzdrmgenprov.so
 vendor/lib64/libcpion.so
 vendor/lib64/libcppf.so
 vendor/lib64/libdrmfs.so
-vendor/lib64/libdrm.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtzdrmgenprov.so
 
@@ -483,7 +481,6 @@ vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libCB.so
-vendor/lib/libgpu_tonemapper.so
 vendor/lib/libgsl.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
@@ -511,7 +508,6 @@ vendor/lib64/libbccQTI.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libCB.so
-vendor/lib64/libgpu_tonemapper.so
 vendor/lib64/libgsl.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libllvm-glnext.so
@@ -530,36 +526,6 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 # Graphics - GPU Firmware
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
-
-# Graphics - HALs
-vendor/lib/hw/gralloc.sdm710.so
-vendor/lib/hw/hwcomposer.sdm710.so
-vendor/lib/hw/memtrack.sdm710.so
-vendor/lib64/hw/gralloc.sdm710.so
-vendor/lib64/hw/hwcomposer.sdm710.so
-vendor/lib64/hw/memtrack.sdm710.so
-
-# Graphics - Other
-vendor/lib/libdisplaydebug.so
-vendor/lib/libdrm.so
-vendor/lib/libdrmutils.so
-vendor/lib/libgralloccore.so
-vendor/lib/libgrallocutils.so
-vendor/lib/libhwc2on1adapter.so
-vendor/lib/libhwc2onfbadapter.so
-vendor/lib/libplatformconfig.so
-vendor/lib/libqdMetaData.so
-vendor/lib/libqdutils.so
-vendor/lib/libqservice.so
-vendor/lib64/libdisplaydebug.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libhwc2on1adapter.so
-vendor/lib64/libhwc2onfbadapter.so
-vendor/lib64/libplatformconfig.so
-vendor/lib64/libqdMetaData.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libqservice.so
 
 # Graphics - Post Processing
 vendor/bin/vppservice
@@ -581,20 +547,16 @@ vendor/bin/qdcmss
 vendor/lib/libdisplayqos.so
 vendor/lib/libsdedrm.so
 vendor/lib/libsdm-color.so
-vendor/lib/libsdmcore.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
-vendor/lib/libsdmutils.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
-vendor/lib64/libsdmcore.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml2_1.so
 
 # Graphics - Snap
