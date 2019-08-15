@@ -81,8 +81,8 @@
     <ctl name="RL VPBR Max Attenuation" value="2" />
     <ctl name="RL VPBR Threshold 1" value="2.687" />
     <ctl name="RL VPBR Enable" value="Enabled" />
-    <ctl name="RL ASPRX1 Slot Position" value="2" />
-    <ctl name="RL ASPRX2 Slot Position" value="3" />
+    <ctl name="RL ASPRX1 Slot Position" value="0" />
+    <ctl name="RL ASPRX2 Slot Position" value="1" />
     <ctl name="RL PCM Source" value="0" />
     <ctl name="RL Boost Enable" value="0" />
     <ctl name="RR DSP1 Firmware" value="Protection" />
@@ -100,8 +100,8 @@
     <ctl name="RR VPBR Max Attenuation" value="2" />
     <ctl name="RR VPBR Threshold 1" value="2.687" />
     <ctl name="RR VPBR Enable" value="Enabled" />
-    <ctl name="RR ASPRX1 Slot Position" value="3" />
-    <ctl name="RR ASPRX2 Slot Position" value="4" />    
+    <ctl name="RR ASPRX1 Slot Position" value="1" />
+    <ctl name="RR ASPRX2 Slot Position" value="2" />    
     <ctl name="RR PCM Source" value="0" />
     <ctl name="RR Boost Enable" value="0" />
     <ctl name="FL ASPTX1 Slot Position" value="0" />
