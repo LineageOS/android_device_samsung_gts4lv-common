@@ -16,10 +16,8 @@
 
 COMMON_PATH := device/samsung/gts4lv-common
 
-# Inherit from qcom-common
--include device/samsung/qcom-common/BoardConfigCommon.mk
-
 # Platform
+BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno615
 
@@ -119,7 +117,11 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_MKE2FS := true
 
+# QCOM
+BOARD_USES_QCOM_HARDWARE := true
+
 # Recovery
+BOARD_HAS_DOWNLOAD_MODE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
