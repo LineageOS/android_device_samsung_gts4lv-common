@@ -931,8 +931,6 @@ vendor/bin/hw/mfgloader
 vendor/lib64/libnanopb.so
 
 # Samsung - Misc
--vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
--vendor/app/SSGTelemetryService/SSGTelemetryService.apk
 vendor/bin/e_loop
 vendor/bin/icd
 vendor/bin/vendor.samsung.security.drk@1.0-service
