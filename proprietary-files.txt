@@ -795,10 +795,8 @@ vendor/lib64/libspcom.so
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
 vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc
 vendor/etc/powerhint.xml
-vendor/lib/hw/power.qcom.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
-vendor/lib64/hw/power.qcom.so
 vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsymphonypower.so
 vendor/lib64/vendor.samsung.hardware.miscpower@1.0.so
