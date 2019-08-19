@@ -101,7 +101,7 @@
 /(vendor|system/vendor)/bin/hw/android.hardware.bluetooth@1.0-service u:object_r:hal_bluetooth_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.dumpstate@1.0-service u:object_r:hal_dumpstate_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.keymaster@4.0-service u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android.hardware.keymaster@4.0-service\.samsung_gts4lv u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.keymaster@4.0-service\.samsung u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.keymaster@3.0-service u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.media.omx@1.0-service u:object_r:mediacodec_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.radio@1.2-sap-service u:object_r:hal_radio_default_exec:s0

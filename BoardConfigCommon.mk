@@ -99,6 +99,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm670
 
+# Keymaster
+TARGET_KEYMASTER_VARIANT := samsung
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 

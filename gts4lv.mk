@@ -184,7 +184,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung_gts4lv
+    android.hardware.keymaster@4.0-service.samsung
 
 # Media
 PRODUCT_COPY_FILES += \
