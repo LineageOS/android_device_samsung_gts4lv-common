@@ -552,27 +552,6 @@ on property:persist.debug.trace=1
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd
 
-#on property:vendor.bluetooth.dun.status=running
-#    start vendor.bt-dun
-
-#on property:vendor.bluetooth.dun.status=stopped
-#    stop vendor.bt-dun
-
-#on property:ro.bluetooth.ftm_enabled=true
-#    start ftmd
-
-#on property:vendor.bluetooth.startbtsnoop=true
-#    start vendor.btsnoop
-
-#on property:vendor.bluetooth.startbtsnoop=false
-#    stop vendor.btsnoop
-
-#on property:vendor.bluetooth.startbtlogger=true
-#    start vendor.bt_logger
-
-#on property:vendor.bluetooth.startbtlogger=false
-#    stop vendor.bt_logger
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
@@ -621,47 +600,6 @@ service vendor.rmt_storage /vendor/bin/rmt_storage
 service vendor.tftp_server /vendor/bin/tftp_server
    class core
    user root
-
-on property:vendor.wc_transport.start_hci=true
-    start vendor.start_hci_filter
-
-on property:vendor.wc_transport.start_hci=false
-    stop vendor.start_hci_filter
-
-#service vendor.start_hci_filter /system/vendor/bin/wcnss_filter
-#    class late_start
-#    user bluetooth
-#    group bluetooth diag system wakelock
-#    seclabel u:r:bluetooth:s0
-#    disabled
-
-#service vendor.bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
-#    class late_start
-#    user bluetooth
-#    group bluetooth net_bt_admin inet
-#    disabled
-#    oneshot
-
-#service vendor.btsnoop /system/bin/btsnoop
-#   user bluetooth
-#   group bluetooth net_bt_admin sdcard_rw sdcard_r media_rw
-#   class late_start
-#   disabled
-#   oneshot
-
-#service vendor.bt_logger /system/bin/bt_logger
-#   user bluetooth
-#   group bluetooth net_bt_admin sdcard_rw sdcard_r media_rw
-#   class late_start
-#   disabled
-#   oneshot
-
-#service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
-#    class late_start
-#    user root
-#    group bluetooth net_bt_admin misc net_bt_stack diag net_bt
-#    disabled
-#    oneshot
 
 service vendor.port-bridge /system/vendor/bin/port-bridge
     class main
