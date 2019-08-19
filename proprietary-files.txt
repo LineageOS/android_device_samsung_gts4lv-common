@@ -625,16 +625,6 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 -vendor/lib64/libskeymaster4device.so
 
-# Lights
-vendor/bin/hw/vendor.samsung.hardware.light@2.0-service
-vendor/etc/init/vendor.samsung.hardware.light@2.0-service.rc
-vendor/lib/hw/lights.sdm710.so
-vendor/lib/hw/vendor.samsung.hardware.light@2.0-impl.so
-vendor/lib/vendor.samsung.hardware.light@2.0.so
-vendor/lib64/hw/lights.sdm710.so
-vendor/lib64/hw/vendor.samsung.hardware.light@2.0-impl.so
-vendor/lib64/vendor.samsung.hardware.light@2.0.so
-
 # Machine Learning
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/lib64/liblearningmodule.so
