@@ -174,6 +174,9 @@ on boot
     chmod 0600 /dev/btlock
     chown bluetooth bluetooth /dev/btlock
 
+    # Permissions for Power HAL
+    chown system system /sys/class/sec/tsp/cmd
+
     # Fingerprint sensor
     chmod 0660 /dev/esfp0
     chown system system /dev/esfp0
