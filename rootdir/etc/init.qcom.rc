@@ -107,10 +107,6 @@ on early-boot
     chmod 0660 /sys/class/dp_sec/dp_sbu_sw_sel
     chown system system /sys/class/dp_sec/dp_sbu_sw_sel
 
-on property:ro.hardware.type=automotive
-    wait /sys/class/net/can0
-    start can
-
 on boot
     #chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     #chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
@@ -607,11 +603,6 @@ on property:init.svc.wpa_supplicant=stopped
 #on property:vendor.bluetooth.startbtlogger=false
 #    stop vendor.bt_logger
 
-service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
-    class core
-    user root
-    oneshot
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
@@ -1008,29 +999,12 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     user root
     oneshot
 
-service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-    class late_start
-    user root
-    oneshot
-
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
     group root system wakelock graphics
     disabled
     oneshot
-
-service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
-    class late_start
-    group wifi inet
-    disabled
-    oneshot
-
-service wifi-crda /vendor/bin/init.crda.sh
-   class late_start
-   user root
-   disabled
-   oneshot
 
 on property:sys.boot_completed=1
     start qcom-post-boot
@@ -1102,12 +1076,6 @@ service profiler_daemon /system/bin/profiler_daemon
     user root
     group root
     disabled
-
-service can /vendor/bin/init.qti.can.sh
-   class late_start
-   user root
-   disabled
-   oneshot
 
 service charger /charger
     class charger
