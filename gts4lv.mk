@@ -137,8 +137,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.qti.can.sh \
-    init.qti.fm.rc \
-    init.qti.fm.sh \
     init.qti.qseecomd.sh \
     init.target.rc \
     ueventd.qcom.rc \
