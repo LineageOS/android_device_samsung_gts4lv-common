@@ -194,14 +194,6 @@
             <instance>miscpower</instance>
         </interface>
     </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.radio</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.radio.config</name>
-        <transport>hwbinder</transport>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.renderscript</name>
         <transport arch="32+64">passthrough</transport>
@@ -228,14 +220,6 @@
             <name>ISoundTriggerHw</name>
             <instance>default</instance>
         </interface>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.tetheroffload.config</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.tetheroffload.control</name>
-        <transport>hwbinder</transport>
     </hal>
     <hal format="hidl">
         <name>android.hardware.thermal</name>
@@ -292,18 +276,6 @@
         </interface>
     </hal>
     <hal format="hidl" override="true">
-        <name>com.qualcomm.qti.dpm.api</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>com.qualcomm.qti.imscmservice</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>com.qualcomm.qti.uceservice</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
         <name>com.qualcomm.qti.wifidisplayhal</name>
         <transport>hwbinder</transport>
     </hal>
@@ -334,10 +306,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.data.factory</name>
-        <transport>hwbinder</transport>
-    </hal>
     <hal format="hidl">
         <name>vendor.qti.gnss</name>
         <transport>hwbinder</transport>
@@ -349,14 +317,6 @@
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.alarm</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.data.connection</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.data.latency</name>
         <transport>hwbinder</transport>
     </hal>
     <hal format="hidl" override="true">
@@ -386,38 +346,6 @@
         </interface>
     </hal>
     <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.am</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.ims</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.lpa</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.qcrilhook</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.uim</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.uim_remote_client</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.uim_remote_server</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
         <name>vendor.qti.hardware.sensorscalibrate</name>
         <transport>hwbinder</transport>
     </hal>
@@ -444,14 +372,6 @@
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.wigig.supptunnel</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.ims.callinfo</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
     </hal>
     <hal format="hidl">
