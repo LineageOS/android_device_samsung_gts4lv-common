@@ -611,9 +611,6 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
-# IPA firmware
-vendor/firmware/ipa_fws.elf
-
 # IRQ Balance
 vendor/etc/msm_irqbalance.conf
 
@@ -822,17 +819,19 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
 # QMI
-vendor/bin/adpl
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
-vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
-vendor/etc/graphite_ipc_platform_info.xml
+vendor/bin/rmt_storage
+vendor/bin/ssgqmigd
+vendor/bin/tftp_server
+vendor/etc/data/dsi_config.xml
 vendor/etc/sec_config
 vendor/lib/libdiagjni.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
+vendor/lib/libmdmdetect.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqdi.so
@@ -844,11 +843,14 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
+vendor/lib/libqrtr.so
+vendor/lib/libqsocket.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
+vendor/lib64/libmdmdetect.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqcmaputils.so
@@ -860,67 +862,8 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libqmi.so
-
-# Radio
-vendor/bin/hw/rild
-vendor/bin/ATFWD-daemon
-vendor/bin/netmgrd
-vendor/bin/port-bridge
-vendor/bin/rmt_storage
-vendor/bin/ssgqmigd
-vendor/bin/tftp_server
-vendor/etc/data/dsi_config.xml
-vendor/etc/data/netmgr_config.xml
-vendor/lib/com.qualcomm.qti.uceservice@2.0.so
-vendor/lib/libconfigdb.so
-vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr_common.so
-vendor/lib/libnetmgr_nr_fusion.so
-vendor/lib/libnetmgr_rmnet_ext.so
-vendor/lib/libnetmgr.so
-vendor/lib/libnlnetmgr.so
-vendor/lib/libpdmapper.so
-vendor/lib/libpdnotifier.so
-vendor/lib/libreference-ril.so
-vendor/lib/libril.so
-vendor/lib/librilutils.so
-vendor/lib/librmnetctl.so
-vendor/lib/libqrtr.so
-vendor/lib/libqsocket.so
-vendor/lib/libxml.so
-vendor/lib/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
-vendor/lib/vendor.qti.latency@2.0.so
-vendor/lib/vendor.samsung.hardware.radio@1.2.so
-vendor/lib/vendor.samsung.hardware.radio.secbridge@1.0.so
-vendor/lib/vendor.samsung.hardware.radio.sechook@1.0.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
-vendor/lib64/libconfigdb.so
-vendor/lib64/libmdmdetect.so
-vendor/lib64/libnetmgr_common.so
-vendor/lib64/libnetmgr_nr_fusion.so
-vendor/lib64/libnetmgr_rmnet_ext.so
-vendor/lib64/libnetmgr.so
-vendor/lib64/libnlnetmgr.so
-vendor/lib64/libpdmapper.so
-vendor/lib64/libpdnotifier.so
-vendor/lib64/libreference-ril.so
-vendor/lib64/libril.so
-vendor/lib64/librilutils.so
-vendor/lib64/librmnetctl.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libxml.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
-vendor/lib64/vendor.qti.latency@2.0.so
-vendor/lib64/vendor.samsung.hardware.radio@1.2.so
-vendor/lib64/vendor.samsung.hardware.radio.secbridge@1.0.so
-vendor/lib64/vendor.samsung.hardware.radio.sechook@1.0.so
 
 # Samsung
 vendor/bin/factory.ssc
@@ -1071,6 +1014,7 @@ vendor/lib/lib_SoundBooster_ver900.so
 vendor/lib/lib_SoundBooster_ver_Quad_1000.so
 
 # Soundtrigger
+vendor/etc/graphite_ipc_platform_info.xml
 vendor/lib/hw/sound_trigger.primary.sdm710.so
 vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libcapiv2svacnn.so
