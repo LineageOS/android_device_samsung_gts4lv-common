@@ -52,23 +52,24 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@4.0-impl \
     android.hardware.soundtrigger@2.0-impl:32 \
     android.hardware.soundtrigger@2.1-impl \
     audio.primary.sdm710:32 \
     audio.r_submix.default \
     audio.usb.default \
+    AudioRotationMonitor \
+    cplay \
     libaudioroute \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    cplay \
-
+    set-audio-rotation \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
