@@ -320,10 +320,6 @@
         <transport>hwbinder</transport>
     </hal>
     <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.factory</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
         <name>vendor.qti.hardware.improvetouch.touchcompanion</name>
         <transport>hwbinder</transport>
     </hal>
