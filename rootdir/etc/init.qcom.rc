@@ -25,6 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.target.rc
@@ -1042,42 +1043,11 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service charger /charger
-    class charger
-    group system graphics
-    seclabel u:r:healthd:s0
-
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
     user system
     group system
     disabled
-
-service hvdcp /system/bin/hvdcp
-    class core
-    user root
-    disabled
-
-on property:persist.usb.hvdcp.detect=true
-    start hvdcp
-
-on property:persist.usb.hvdcp.detect=false
-    stop hvdcp
-
-service charger_monitor /system/bin/charger_monitor
-    user root
-    group root
-    disabled
-
-service qbcharger /charger -m 1
-    disabled
-    oneshot
-
-on property:sys.qbcharger.enable=true
-    start qbcharger
-
-on property:sys.qbcharger.enable=false
-    stop qbcharger
 
 service diag_mdlog_start /system/bin/diag_mdlog_system
     class late_start
@@ -1151,19 +1121,6 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     user system
     group nfc
 
-on charger
-#    setprop persist.sys.usb.config mass_storage
-    load_system_props
-    start qcom-post-boot
-
-#add poweroffhandler
-service poweroffhandler /system/vendor/bin/poweroffhandler
-    class core
-    user media
-    group graphics audio
-    disabled
-    oneshot
-
 #Mixed HWC versions among targets
 on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-1
@@ -1195,12 +1152,6 @@ service seemp_healthd /vendor/bin/seemp_healthd
     class late_start
     user system
     group system
-
-service vendor.power_off_alarm /vendor/bin/power_off_alarm
-    class core
-    group system
-    disabled
-    oneshot
 
 service vendor.move_time_data /system/bin/move_time_data.sh
     class main
