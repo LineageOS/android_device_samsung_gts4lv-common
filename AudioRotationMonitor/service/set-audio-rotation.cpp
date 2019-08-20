@@ -18,10 +18,10 @@
 #include <android-base/logging.h>
 #include <tinyalsa/asoundlib.h>
 
-constexpr int SLOT_POSITIONS_0[] = { 1, 0, 1, 2, 0, 1, 0, 1 };
-constexpr int SLOT_POSITIONS_1[] = { 1, 0, 1, 2, 0, 1, 0, 1 };
-constexpr int SLOT_POSITIONS_2[] = { 0, 1, 0, 1, 1, 0, 1, 2 };
-constexpr int SLOT_POSITIONS_3[] = { 0, 1, 0, 1, 1, 0, 1, 2 };
+constexpr int SLOT_POSITIONS_0[] = { 0, 1, 0, 1 };
+constexpr int SLOT_POSITIONS_1[] = { 1, 1, 0, 0 };
+constexpr int SLOT_POSITIONS_2[] = { 1, 0, 1, 0 };
+constexpr int SLOT_POSITIONS_3[] = { 0, 0, 1, 1 };
 
 void setMixerValueByName(mixer *mixer, const char *name, int value) {
     const auto ctl = mixer_get_ctl_by_name(mixer, name);
@@ -46,13 +46,9 @@ void setSlotPositions(const int *values) {
     }
 
     setMixerValueByName(mixer, "FL ASPRX1 Slot Position", values[0]);
-    setMixerValueByName(mixer, "FL ASPRX2 Slot Position", values[1]);
-    setMixerValueByName(mixer, "FR ASPRX1 Slot Position", values[2]);
-    setMixerValueByName(mixer, "FR ASPRX2 Slot Position", values[3]);
-    setMixerValueByName(mixer, "RL ASPRX1 Slot Position", values[4]);
-    setMixerValueByName(mixer, "RL ASPRX2 Slot Position", values[5]);
-    setMixerValueByName(mixer, "RR ASPRX1 Slot Position", values[6]);
-    setMixerValueByName(mixer, "RR ASPRX2 Slot Position", values[7]);
+    setMixerValueByName(mixer, "FR ASPRX1 Slot Position", values[1]);
+    setMixerValueByName(mixer, "RL ASPRX1 Slot Position", values[2]);
+    setMixerValueByName(mixer, "RR ASPRX1 Slot Position", values[3]);
 
     mixer_close(mixer);
 };
