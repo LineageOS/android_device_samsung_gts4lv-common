@@ -162,6 +162,7 @@
 /(vendor|system/vendor)/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service u:object_r:vendor_scve_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.samsung.hardware.radio.configsvc@1.0-service u:object_r:hal_radio_config_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service\.samsung u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.automotive.audiocontrol@1.0-service u:object_r:hal_audiocontrol_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti u:object_r:hal_keymaster_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.samsung.hardware.digitaltv.fullseg@1.0-service u:object_r:digital_tv_fullseg_exec:s0
