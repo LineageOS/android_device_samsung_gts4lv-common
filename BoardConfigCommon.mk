@@ -145,8 +145,7 @@ BOARD_ROOT_EXTRA_FOLDERS := omr
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist \
     /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware \
-    /vendor/bt_firmware:/bt_firmware
+    /vendor/firmware_mnt:/firmware
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2018-08-05
