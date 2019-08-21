@@ -1024,10 +1024,6 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.1-service.wahoo
-vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
-
 # WiFi
 vendor/bin/hw/macloader
 vendor/bin/cnss-daemon
