@@ -345,23 +345,18 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # Fingerprint
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/hw/fingerprint.default.so
 vendor/lib/libbauthserver.so
 vendor/lib/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
 vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@2.1.so
 
 # Firmware
 vendor/firmware/Data.msc
