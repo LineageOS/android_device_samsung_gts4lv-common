@@ -30,6 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.ras.enabled=false \
     persist.vendor.audio.spv3.enable=true \
     ro.af.client_heap_size_kbyte=7168 \
+    ro.audio.monitorRotation=true \
     ro.vendor.audio.sdk.fluencetype=none \
     ro.vendor.audio.sdk.ssr=false \
     vendor.audio.apptype.multirec.enabled=false \
