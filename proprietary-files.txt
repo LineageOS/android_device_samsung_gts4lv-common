@@ -16,7 +16,6 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
-vendor/bin/audioflacapp
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -107,8 +106,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/vendor.samsung.hardware.bluetooth@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
 
 # Bluetooth - APT-X
@@ -178,6 +175,7 @@ vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libchiss3alogdebug.so
 vendor/lib/libDLInterface.camera.samsung.so
 vendor/lib/libdualcam_optical_zoom_control.so
 vendor/lib/libhigh_dynamic_range.so
@@ -253,10 +251,6 @@ vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so
 # Camera - Firmware
 vendor/firmware/CAMERA_ICP.elf
 
-# CNSS
-vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-
 # Device Health
 vendor/bin/hw/android.hardware.health@2.0-service.samsung
 vendor/bin/seemp_healthd
@@ -264,15 +258,6 @@ vendor/etc/init/android.hardware.health@2.0-service.samsung.rc
 vendor/lib/libsystem_health_mon.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/vendor.samsung.hardware.exthealth@1.0.so
-
-# Diagnostics
-vendor/bin/diag_callback_sample
-vendor/bin/diag_dci_sample
-vendor/bin/diag_klog
-vendor/bin/diag_mdlog
-vendor/bin/diag_socket_log
-vendor/bin/diag_uart_log
-vendor/bin/test_diag
 
 # DRM
 vendor/lib/mediadrm/libwvdrmengine.so
@@ -646,35 +631,6 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_proprietary.so
 
-# Misc
-vendor/lib/libadpcmdec.so
-vendor/lib/libbase64.so
-vendor/lib/libchiss3alogdebug.so
-vendor/lib/libc++_shared.so
-vendor/lib/libdrc.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libgdtap.so
-vendor/lib/libmdf.so
-vendor/lib/libmulawdec.so
-vendor/lib/liboemaids_vendor.so
-vendor/lib/libqdp.so
-vendor/lib/libsi.so
-vendor/lib/libspiris.so
-vendor/lib/libstreamparser.so
-vendor/lib/libvideoutils.so
-vendor/lib64/libbase64.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libmdf.so
-vendor/lib64/libmulawdec.so
-vendor/lib64/liboemaids_vendor.so
-vendor/lib64/libqdp.so
-vendor/lib64/libsi.so
-vendor/lib64/libspiris.so
-vendor/lib64/libucsengine.so
-vendor/lib64/vndk/libcrypto.so
-vendor/lib64/vndk/libssl.so
-
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc
@@ -682,9 +638,10 @@ vendor/lib64/libhexagon_nn_stub.so
 
 # OMX
 vendor/etc/somxreg.conf
-vendor/lib/libarac.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
+vendor/lib/libarac.so
+vendor/lib/libdsd2pcm.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxAacDec.so
@@ -728,9 +685,9 @@ vendor/lib/libsomxwmv7d.so
 vendor/lib/libsomxwmv8d.so
 vendor/lib/libswvdec.so
 vendor/lib/libsxqk.so
-vendor/lib64/libarac.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
+vendor/lib64/libarac.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libOmxAacDec.so
@@ -787,10 +744,6 @@ vendor/lib64/libspcom.so
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
 vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc
 vendor/etc/powerhint.xml
-vendor/lib/libsymphony-cpu.so
-vendor/lib/libsymphonypower.so
-vendor/lib64/libsymphony-cpu.so
-vendor/lib64/libsymphonypower.so
 vendor/lib64/vendor.samsung.hardware.miscpower@1.0.so
 
 # Power - Perf
@@ -860,15 +813,7 @@ vendor/lib64/libqmi.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
-# Samsung
-vendor/bin/factory.ssc
-vendor/bin/hw/macloader
-vendor/bin/hw/mfgloader
-vendor/lib64/libnanopb.so
-
 # Samsung - Misc
-vendor/bin/e_loop
-vendor/bin/icd
 vendor/bin/vendor.samsung.security.drk@1.0-service
 vendor/bin/vendor.samsung.security.sem@1.0-service
 vendor/bin/vendor.samsung.security.skpm@1.0-service
@@ -949,6 +894,7 @@ vendor/etc/selinux/vendor_sepolicy.cil
 vendor/etc/selinux/vndservice_contexts
 
 # Sensors
+vendor/bin/factory.ssc
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/sensors/config/ak991x_dri_0.json
@@ -983,6 +929,7 @@ vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
+vendor/lib64/libnanopb.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
@@ -1019,7 +966,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
-vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libgcs-calwrapper.so
@@ -1027,18 +973,22 @@ vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
-vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # SPNE
-vendor/lib/libsnpe_dsp_domains_v2.so
+vendor/lib/libc++_shared.so
 vendor/lib/libSNPE.so
+vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libsnpe_wrapper.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libsymphonypower.so
+vendor/lib64/libc++_shared.so
 vendor/lib64/libSNPE.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpe_wrapper.so
+vendor/lib64/libsymphony-cpu.so
+vendor/lib64/libsymphonypower.so
 
 # SSR
-vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
@@ -1076,12 +1026,9 @@ vendor/lib64/libtime_genoff.so
 
 # TrustZone
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
-vendor/bin/secure_ui_sample_client
 vendor/bin/ssgtzd
 vendor/bin/StoreKeybox
 vendor/bin/qseecomd
-vendor/bin/qseecom_sample_client
-vendor/bin/SoterProvisioningTool
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib/libGPMTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
@@ -1098,7 +1045,6 @@ vendor/lib/libsecureui.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libssd.so
 vendor/lib/libStDrvInt.so
-vendor/lib/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -1114,7 +1060,6 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
@@ -1127,22 +1072,8 @@ vendor/bin/hw/android.hardware.usb@1.1-service.wahoo
 vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
 
 # WiFi
-vendor/bin/athdiag
-vendor/bin/ftmdaemon
-vendor/bin/hal_proxy_daemon
-vendor/bin/icm
-vendor/bin/myftm
-vendor/bin/pktlogconf
-vendor/bin/PktRspTest
-vendor/bin/sigma_dut
-vendor/bin/spectraltool
-vendor/bin/vendor_cmd_tool
-vendor/lib/libwpa_drv_oem.so
-vendor/lib64/libwpa_drv_oem.so
-vendor/lib64/vendor.samsung.frameworks.ucm.wifi@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@1.0.so
+vendor/bin/hw/macloader
+vendor/bin/cnss-daemon
 
 # WiFi Display - from OnePlus 6
 bin/wfdservice|cea9798c408369dcd576359d231fe81a49993787
@@ -1191,7 +1122,3 @@ vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/bdwlan.bin_FEM
 vendor/firmware/wlan/qca_cld/grippower.info
-
-# WiGig
-vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
