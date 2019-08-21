@@ -60,14 +60,12 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm710:32 \
     audio.r_submix.default \
     audio.usb.default \
-    AudioRotationMonitor \
     cplay \
     libaudioroute \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    set-audio-rotation \
+    libvolumelistener
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/configs/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \

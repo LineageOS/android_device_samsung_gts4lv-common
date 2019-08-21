@@ -30,6 +30,7 @@ cc_library_shared {
         "libhidlbase",
         "libhidltransport",
         "liblog",
+        "libtinyalsa",
         "libutils",
         "android.hardware.audio@4.0",
         "android.hardware.audio.common@4.0",
