@@ -98,7 +98,6 @@
 /(vendor|system/vendor)/bin/hw/vendor.qti.hardware.soter@1.0-service u:object_r:hal_soter_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.qti.hardware.alarm@1.0-service u:object_r:hal_alarm_qti_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.qti.secure_element@1.0-service u:object_r:hal_secure_element_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android.hardware.usb@1.1-service.wahoo u:object_r:hal_usb_default_exec:s0
 /(vendor|system/vendor)/bin/vendor.samsung.security.proca@1.0-service u:object_r:hal_proca_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.bluetooth@1.0-service u:object_r:hal_bluetooth_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.dumpstate@1.0-service u:object_r:hal_dumpstate_default_exec:s0
