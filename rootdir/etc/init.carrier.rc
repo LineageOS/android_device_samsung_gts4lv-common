@@ -52,15 +52,6 @@ on boot
     chmod 0664 /dev/cpuset/olaf/tasks
     chmod 0664 /dev/cpuset/olaf/cpus
 
-on fs
-    wait /dev/block/bootdevice/by-name/efs
-    mount ext4 /dev/block/bootdevice/by-name/efs /mnt/vendor/efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-    restorecon -R /mnt/vendor/efs
-
-    wait /dev/block/bootdevice/by-name/sec_efs
-    mount ext4 /dev/block/bootdevice/by-name/sec_efs /efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-    restorecon -R /efs
-
 # faced
 service faced /system/bin/faced
     class late_start
