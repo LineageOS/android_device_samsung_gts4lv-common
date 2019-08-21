@@ -21,12 +21,52 @@
 #include <common/all-versions/IncludeGuard.h>
 #include <core/all-versions/default/Conversions.h>
 #include <system/audio.h>
+#include <tinyalsa/asoundlib.h>
 
 namespace android {
 namespace hardware {
 namespace audio {
 namespace AUDIO_HAL_VERSION {
 namespace implementation {
+
+constexpr int SLOT_POSITIONS_0[] = { 1, 0, 1, 2, 0, 1, 0, 1 };
+constexpr int SLOT_POSITIONS_1[] = { 1, 0, 1, 2, 0, 1, 0, 1 };
+constexpr int SLOT_POSITIONS_2[] = { 0, 1, 0, 1, 1, 0, 1, 2 };
+constexpr int SLOT_POSITIONS_3[] = { 0, 1, 0, 1, 1, 0, 1, 2 };
+
+void setMixerValueByName(mixer *mixer, const char *name, int value) {
+    const auto ctl = mixer_get_ctl_by_name(mixer, name);
+
+    if (ctl == nullptr) {
+        ALOGE("Failed to find mixer ctl for %s", name);
+        return;
+    }
+
+    if (mixer_ctl_set_value(ctl, 0, value) < 0) {
+        ALOGE("Failed to set ctl value %d for %s", value, name);
+        return;
+    }
+}
+
+void setSlotPositions(const int *values) {
+    const auto mixer = mixer_open(0);
+
+    if (mixer == nullptr) {
+        ALOGE("Failed to open mixer");
+        return;
+    }
+
+    setMixerValueByName(mixer, "FL ASPRX1 Slot Position", values[0]);
+    setMixerValueByName(mixer, "FL ASPRX2 Slot Position", values[1]);
+    setMixerValueByName(mixer, "FR ASPRX1 Slot Position", values[2]);
+    setMixerValueByName(mixer, "FR ASPRX2 Slot Position", values[3]);
+    setMixerValueByName(mixer, "RL ASPRX1 Slot Position", values[4]);
+    setMixerValueByName(mixer, "RL ASPRX2 Slot Position", values[5]);
+    setMixerValueByName(mixer, "RR ASPRX1 Slot Position", values[6]);
+    setMixerValueByName(mixer, "RR ASPRX2 Slot Position", values[7]);
+
+    mixer_close(mixer);
+};
 
 /** Converts a status_t in Result according to the rules of AudioParameter::get*
  * Note: Static method and not private method to avoid leaking status_t dependency
@@ -119,6 +159,17 @@ std::unique_ptr<AudioParameter> ParametersUtil::getParams(const AudioParameter& 
 Result ParametersUtil::setParam(const char* name, const char* value) {
     AudioParameter param;
     param.add(String8(name), String8(value));
+    if (strcmp(name, "rotation") == 0) {
+        if (strcmp(value, "0") == 0) {
+            setSlotPositions(SLOT_POSITIONS_0);
+        } else if (strcmp(value, "1") == 0) {
+            setSlotPositions(SLOT_POSITIONS_1);
+        } else if (strcmp(value, "2") == 0) {
+            setSlotPositions(SLOT_POSITIONS_2);
+        } else if (strcmp(value, "3") == 0) {
+            setSlotPositions(SLOT_POSITIONS_3);
+        }
+    }
     return setParams(param);
 }
 
@@ -131,12 +182,34 @@ Result ParametersUtil::setParam(const char* name, bool value) {
 Result ParametersUtil::setParam(const char* name, int value) {
     AudioParameter param;
     param.addInt(String8(name), value);
+    if (strcmp(name, "rotation") == 0) {
+        if (value == 0) {
+            setSlotPositions(SLOT_POSITIONS_0);
+        } else if (value == 1) {
+            setSlotPositions(SLOT_POSITIONS_1);
+        } else if (value == 2) {
+            setSlotPositions(SLOT_POSITIONS_2);
+        } else if (value == 3) {
+            setSlotPositions(SLOT_POSITIONS_3);
+        }
+    }
     return setParams(param);
 }
 
 Result ParametersUtil::setParam(const char* name, float value) {
     AudioParameter param;
     param.addFloat(String8(name), value);
+    if (strcmp(name, "rotation") == 0) {
+        if (value == 0) {
+            setSlotPositions(SLOT_POSITIONS_0);
+        } else if (value == 1) {
+            setSlotPositions(SLOT_POSITIONS_1);
+        } else if (value == 2) {
+            setSlotPositions(SLOT_POSITIONS_2);
+        } else if (value == 3) {
+            setSlotPositions(SLOT_POSITIONS_3);
+        }
+    }
     return setParams(param);
 }
 
