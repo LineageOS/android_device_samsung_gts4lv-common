@@ -88,27 +88,11 @@ on fs
     mount_all /vendor/etc/fstab.qcom
     setprop ro.crypto.fde_algorithm AES-256-XTS
     mkdir /mnt/vendor/persist 0771 root system
-    mkdir /mnt/vendor/efs 0771 system radio
-
-    wait /dev/block/bootdevice/by-name/cache
-    mount ext4 /dev/block/bootdevice/by-name/cache /cache nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-
-    wait /dev/block/bootdevice/by-name/persist
-    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
     mkdir /mnt/vendor/persist/data 0700 system system
+    mkdir /mnt/vendor/efs 0771 system radio
     restorecon_recursive /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/efs
     mkdir /mnt/vendor/persist/rfs 0700 system system
-
-    wait /dev/block/bootdevice/by-name/dsp
-    mount ext4 /dev/block/bootdevice/by-name/dsp /vendor/dsp ro nosuid nodev barrier=1
-
-# mount /efs command move to init.carrier.rc
-
-    wait /dev/block/bootdevice/by-name/apnhlos
-    mount vfat /dev/block/bootdevice/by-name/apnhlos /vendor/firmware_mnt ro context=u:object_r:firmware_file:s0,shortname=lower,uid=0,gid=1000,dmask=227,fmask=337
-
-    wait /dev/block/bootdevice/by-name/modem
-    mount vfat /dev/block/bootdevice/by-name/modem /vendor/firmware-modem ro context=u:object_r:firmware_file:s0,shortname=lower,uid=0,gid=1000,dmask=227,fmask=337
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
