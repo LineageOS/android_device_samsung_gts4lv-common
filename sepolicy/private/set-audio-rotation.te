@@ -1,8 +1,0 @@
-type set-audio-rotation, domain, coredomain;
-type set-audio-rotation_exec, exec_type, file_type;
-
-init_daemon_domain(set-audio-rotation)
-
-# Allow set-audio-rotation to read and write to audio_device
-allow set-audio-rotation audio_device:dir r_dir_perms;
-allow set-audio-rotation audio_device:chr_file rw_file_perms;
