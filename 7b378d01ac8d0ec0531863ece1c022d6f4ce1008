@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af9fe868_737c0652",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:21:17Z",
+      "side": 0,
+      "message": "Is it me or dropping fingerprint.default.so renders the rest of the blobs useless? Looks like we can remove them all.",
+      "revId": "7b378d01ac8d0ec0531863ece1c022d6f4ce1008",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
