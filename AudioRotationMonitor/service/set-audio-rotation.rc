@@ -1,2 +1,0 @@
-on property:sys.audio.rotation=*
-    exec - root audio -- /system/bin/set-audio-rotation ${sys.audio.rotation}
