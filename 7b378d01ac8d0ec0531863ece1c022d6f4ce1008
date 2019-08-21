@@ -16,6 +16,24 @@
       "revId": "7b378d01ac8d0ec0531863ece1c022d6f4ce1008",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "494d88bc_69ee99a0",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:24:18Z",
+      "side": 0,
+      "message": "Nevermind. Binzerized HAL dlopens libbauthserver.",
+      "parentUuid": "af9fe868_737c0652",
+      "revId": "7b378d01ac8d0ec0531863ece1c022d6f4ce1008",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
