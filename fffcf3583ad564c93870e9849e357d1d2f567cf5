@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "753ef4bd_e6155f56",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can be removed if ftmdaemon is also removed.",
+      "range": {
+        "startLine": 110,
+        "startChar": 0,
+        "endLine": 110,
+        "endChar": 32
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92be1bbc_11a6214e",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1014,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can be removed.",
+      "range": {
+        "startLine": 1014,
+        "startChar": 0,
+        "endLine": 1014,
+        "endChar": 19
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ae7173dd_d1ddccf5",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1052,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can go too.",
+      "range": {
+        "startLine": 1052,
+        "startChar": 0,
+        "endLine": 1052,
+        "endChar": 34
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8267bd4d_db42b46a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1056,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can go too.",
+      "range": {
+        "startLine": 1056,
+        "startChar": 0,
+        "endLine": 1056,
+        "endChar": 32
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8567f686_5168e5aa",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1057,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can go too.",
+      "range": {
+        "startLine": 1057,
+        "startChar": 0,
+        "endLine": 1057,
+        "endChar": 32
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7ad4f7a7_79020a2a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1074,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can go too. Soter HAL service is missing.",
+      "range": {
+        "startLine": 1074,
+        "startChar": 0,
+        "endLine": 1074,
+        "endChar": 43
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17478fdd_84fa1dc5",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 1090,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-08-21T13:32:45Z",
+      "side": 1,
+      "message": "Can go too. Soter HAL service is missing.",
+      "range": {
+        "startLine": 1090,
+        "startChar": 0,
+        "endLine": 1090,
+        "endChar": 45
+      },
+      "revId": "fffcf3583ad564c93870e9849e357d1d2f567cf5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
