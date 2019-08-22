@@ -138,10 +138,6 @@ vendor/lib/hw/com.samsung.chi.override.so
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib/android.hardware.camera.provider@2.5-legacy.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
 vendor/lib/com.qti.node.eisv2.so
 vendor/lib/com.qti.node.eisv3.so
 vendor/lib/libcamera_nn_stub.so
