@@ -23,7 +23,6 @@ vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
-vendor/lib/libHMT.so
 vendor/lib/libqtigef.so
 vendor/lib/librecordalive.so
 vendor/lib/libSamsungPostProcessConvertor.so
@@ -32,6 +31,8 @@ vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libtinycompress_vendor.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -66,31 +67,17 @@ vendor/etc/audconf/OPEN/Headset_cal.acdb
 vendor/etc/audconf/OPEN/Speaker_cal.acdb
 vendor/etc/audconf/OPEN/workspaceFile.qwsp
 
-# Audio - Dolby
-vendor/etc/dolby/dax-default.xml
-
 # Audio - Effects
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libaudiosaplus_sec.so
-vendor/lib/soundfx/libgearvr.so
-vendor/lib/soundfx/libmysound.so
-vendor/lib/soundfx/libmyspace.so
-vendor/lib/soundfx/libplaybackrecorder.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libsamsungSoundbooster_plus.so
-vendor/lib/soundfx/libsamsungSoundbooster_tdm.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
 
 # Audio - HALs
 vendor/lib/hw/audio.primary.sdm710.so
@@ -943,18 +930,6 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
 
-# SoundAlive
-vendor/lib/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
-vendor/lib/lib_SoundAlive_play_plus_ver400.so
-vendor/lib/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
-
-# SoundBooster
-vendor/etc/SoundBoosterParam.txt
-vendor/lib/lib_SoundBooster_ver900.so
-vendor/lib/lib_SoundBooster_ver_Quad_1000.so
-
 # Soundtrigger
 vendor/etc/graphite_ipc_platform_info.xml
 vendor/lib/hw/sound_trigger.primary.sdm710.so
@@ -997,11 +972,8 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 
 # Stagefright
-vendor/lib/libprofileparamstorage.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/vndk/libstagefright_foundation.so
 vendor/lib/vndk/libstagefright_omx_utils.so
@@ -1009,7 +981,6 @@ vendor/lib/vndk/libstagefright_soft_g711dec.so
 vendor/lib/vndk/libstagefright_soft_rawdec.so
 vendor/lib/vndk/libstagefright_soft_vorbisdec.so
 vendor/lib/vndk/libstagefright_xmlparser.so
-vendor/lib64/libprofileparamstorage.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
 # Thermal
