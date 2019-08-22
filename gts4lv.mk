@@ -274,7 +274,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.sdm710
 
-# Wi-Fi
+# WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -284,16 +284,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     wpa_supplicant \
     wpa_supplicant.conf
 
 # WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
-
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
