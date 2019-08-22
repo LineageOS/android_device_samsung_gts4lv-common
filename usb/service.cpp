@@ -48,7 +48,7 @@ int main() {
         return 1;
     }
 
-    if (GetBoolProperty("ro.vendor.usb.use_gadget_hal", false)) {
+    if (GetBoolProperty("ro.vendor.usb.use_gadget_hal", true)) {
         status = service2->registerAsService();
 
         if (status != OK) {
