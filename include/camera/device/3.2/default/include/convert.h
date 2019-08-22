@@ -35,6 +35,7 @@ namespace implementation {
 // The camera3_stream_t sent to conventional HAL. Added mId fields to enable stream ID lookup
 // fromt a downcasted camera3_stream
 struct Camera3Stream : public camera3_stream {
+    char pad[0x28];
     int mId;
 };
 
