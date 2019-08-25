@@ -22,8 +22,8 @@
 # and fails if it does not find it.
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
 
-/product/lost+found                                     /product/app       none    bind                                                 wait
-/product/lost+found                                     /product/priv-app  none    bind                                                 wait
+/product/lost+found                                     /product/app       none    bind                                                 nofail
+/product/lost+found                                     /product/priv-app  none    bind                                                 nofail
 
 # VOLD :: fstab_non_AB_variant.qcom
 /devices/platform/soc/8804000.sdhci/mmc_host*           auto    vfat    defaults    voldmanaged=sdcard:auto
