@@ -1,0 +1,6 @@
+type hal_sem_default, domain;
+hal_server_domain(hal_sem_default, hal_sem)
+
+type hal_sem_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_sem_default)
+
