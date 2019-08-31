@@ -1,0 +1,6 @@
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_secure_storage_daemon_client, hal_secure_storage_daemon_server)
+binder_call(hal_secure_storage_daemon_server, hal_secure_storage_daemon_client)
+
+add_hwservice(hal_secure_storage_daemon_server, hal_secure_storage_daemon_hwservice)
+allow hal_secure_storage_daemon_client hal_secure_storage_daemon_hwservice:hwservice_manager find;
