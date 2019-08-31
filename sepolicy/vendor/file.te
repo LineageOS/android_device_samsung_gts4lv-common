@@ -1,0 +1,54 @@
+# configfs
+type usb_configfs, fs_type;
+
+# data
+type vendor_convergence_data_file, data_file_type, file_type;
+
+# debugfs
+type debugfs_trustzone, fs_type, debugfs_type;
+type sec_debugfs, fs_type, debugfs_type;
+
+# proc
+type proc_avc_msg, fs_type, proc_type;
+type proc_boot_stat, fs_type, proc_type;
+type proc_cap_last_cap, fs_type, proc_type;
+type proc_consoles, fs_type, proc_type;
+type proc_default_smp_affinity, fs_type, proc_type;
+type proc_dplog, fs_type, proc_type;
+type proc_fb, fs_type, proc_type;
+type proc_fslog, fs_type, proc_type;
+type proc_iodevs, fs_type, proc_type;
+type proc_iostats, fs_type, proc_type;
+type proc_ngroups_max, fs_type, proc_type;
+type proc_reset_klog, fs_type, proc_type;
+type proc_reset_reason, fs_type, proc_type;
+type proc_reset_summary, fs_type, proc_type;
+type proc_reset_tzlog, fs_type, proc_type;
+type proc_store_lastkmsg, fs_type, proc_type;
+type proc_swappiness, fs_type, proc_type;
+type proc_tsp, fs_type, proc_type;
+type proc_uh_log, fs_type, proc_type;
+type proc_usblog, fs_type, proc_type;
+type proc_user_fault, fs_type, proc_type;
+
+# rootfs
+type sec_poc_file, file_type, mlstrustedobject;
+type wifi_efs_file, file_type, mlstrustedobject;
+
+# sysfs
+type sysfs_app_writable, fs_type, sysfs_type;
+type sysfs_audio_writable, fs_type, sysfs_type;
+type sysfs_camera_writable, fs_type, sysfs_type;
+type sysfs_gpu, fs_type, sysfs_type;
+type sysfs_input_booster, fs_type, sysfs_type;
+type sysfs_lcd_writable, fs_type, sysfs_type;
+type sysfs_mdnie_writable, fs_type, sysfs_type;
+type sysfs_sec, fs_type, sysfs_type;
+type sysfs_secdebug_writable, fs_type, sysfs_type;
+type sysfs_sensor_writable, fs_type, sysfs_type;
+type sysfs_ss_writable, fs_type, sysfs_type;
+type sysfs_svc, fs_type, sysfs_type;
+type sysfs_time_in_state, fs_type, sysfs_type;
+type sysfs_virtual_data_on, fs_type, sysfs_type;
+type sysfs_virtyal_relay_on, fs_type, sysfs_type;
+type sysfs_wifi, fs_type, sysfs_type;
