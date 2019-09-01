@@ -8,7 +8,6 @@ type vendor_log_file, data_file_type, file_type;
 
 # debugfs
 type debugfs_trustzone, fs_type, debugfs_type;
-type sec_debugfs, fs_type, debugfs_type;
 
 # efs
 type app_efs_file, file_type, mlstrustedobject;

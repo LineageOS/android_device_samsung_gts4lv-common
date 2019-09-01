@@ -1,0 +1,16 @@
+type bssl_post_prop, property_type;
+type compact_dump_prop, property_type;
+type csc_prop, property_type;
+type dolby_prop, property_type;
+type ina_status_prop, property_type;
+type receiver_error_prop, property_type;
+type sec_camera_prop, property_type;
+type sec_cnss_diag_prop, property_type;
+type tzdaemon_prop, property_type;
+type vendor_bssl_post_prop, property_type;
+type vendor_factory_prop, property_type;
+type vendor_members_prop, property_type;
+type vendor_qseecomd_prop, property_type;
+type vendor_tzdaemon_prop, property_type;
+type vendor_tztsdaemon_prop, property_type;
+type vendor_wlbtd_prop, property_type;
