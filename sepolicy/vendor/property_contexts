@@ -1,0 +1,4 @@
+cnss_diag.service        u:object_r:sec_cnss_diag_prop:s0
+fips.bssl.post           u:object_r:bssl_post_prop:s0
+vendor.fips.bssl.post    u:object_r:vendor_bssl_post_prop:s0
+vendor.wlbtd.            u:object_r:vendor_wlbtd_prop:s0
