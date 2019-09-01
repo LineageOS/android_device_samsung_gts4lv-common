@@ -1,0 +1,41 @@
+allow qti_init_shell gpu_device:chr_file r_file_perms;
+allow qti_init_shell kgsl_device:chr_file r_file_perms;
+allow qti_init_shell kmsg_device:chr_file w_file_perms;
+
+allow qti_init_shell device:dir rw_dir_perms;
+
+allow qti_init_shell proc:file rw_file_perms;
+allow qti_init_shell proc_default_smp_affinity:file rw_file_perms;
+allow qti_init_shell proc_page_cluster:file rw_file_perms;
+allow qti_init_shell proc_sched:file rw_file_perms;
+allow qti_init_shell proc_swappiness:file rw_file_perms;
+
+allow qti_init_shell sysfs:file rw_file_perms;
+allow qti_init_shell sysfs_android_usb:file rw_file_perms;
+allow qti_init_shell sysfs_devfreq:file create_file_perms;
+allow qti_init_shell sysfs_devices_system_cpu:file create_file_perms;
+allow qti_init_shell sysfs_kgsl:dir search;
+allow qti_init_shell sysfs_kgsl:file create_file_perms;
+allow qti_init_shell sysfs_lowmemorykiller:file create_file_perms;
+allow qti_init_shell sysfs_msm_power:dir r_dir_perms;
+allow qti_init_shell sysfs_msm_power:file create_file_perms;
+allow qti_init_shell sysfs_qdss_dev:file create_file_perms;
+allow qti_init_shell sysfs_scsi_host:file create_file_perms;
+allow qti_init_shell sysfs_socinfo:file w_file_perms;
+allow qti_init_shell sysfs_ss_writable: file setattr;
+
+allow qti_init_shell mnt_vendor_file:dir create_dir_perms;
+
+allow qti_init_shell efs_file:dir search;
+
+allow qti_init_shell app_efs_file:dir { setattr search };
+allow qti_init_shell sec_poc_file:dir search;
+
+allow qti_init_shell vendor_data_file:dir rw_dir_perms;
+allow qti_init_shell vendor_data_file:file create_file_perms;
+
+allow qti_init_shell sensors_persist_file:dir create_dir_perms;
+
+set_prop(qti_init_shell, ctl_default_prop)
+
+r_dir_file(qti_init_shell, bluetooth_efs_file)
