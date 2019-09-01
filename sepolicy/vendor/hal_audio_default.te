@@ -1,0 +1,28 @@
+binder_call(hal_audio_default, system_app)
+
+allow hal_audio_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+allow hal_audio_default hal_bluetooth_a2dp_hwservice:hwservice_manager { add find };
+
+allow hal_audio_default i2c_device:chr_file rw_file_perms;
+
+allow hal_audio_default sysfs:file r_file_perms;
+
+allow hal_audio_default sysfs_audio_writable:file r_file_perms;
+
+allow hal_audio_default sysfs_ss_writable:dir r_dir_perms;
+allow hal_audio_default sysfs_ss_writable:file r_file_perms;
+allow hal_audio_default sysfs_ss_writable:lnk_file r_file_perms;
+
+allow hal_audio_default sec_efs_file:dir create_dir_perms;
+allow hal_audio_default sec_efs_file:file create_file_perms;
+
+allow hal_audio_default vendor_audio_data_file:dir create_dir_perms;
+
+allow hal_audio_default vendor_audiopcm_data_file:dir create_dir_perms;
+allow hal_audio_default vendor_audiopcm_data_file:file create_file_perms;
+
+allow hal_audio_default vendor_log_file:dir r_dir_perms;
+
+r_dir_file(hal_audio_default, imei_efs_file)
+r_dir_file(hal_audio_default, omr_file)
