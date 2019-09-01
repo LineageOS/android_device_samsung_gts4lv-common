@@ -1,0 +1,6 @@
+permissive factory_ssc;
+permissive healthd;
+permissive init;
+permissive kernel;
+permissive qti_init_shell;
+permissive vendor_init;
