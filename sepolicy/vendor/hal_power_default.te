@@ -1,0 +1,19 @@
+add_hwservice(hal_power_default, hal_miscpower_hwservice)
+
+allow hal_power_default sysfs:file rw_file_perms;
+
+allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
+
+allow hal_power_default sysfs_sec:dir r_dir_perms;
+allow hal_power_default sysfs_sec:file rw_file_perms;
+allow hal_power_default sysfs_sec:lnk_file r_file_perms;
+
+allow hal_power_default sysfs_type:dir r_dir_perms;
+allow hal_power_default sysfs_type:file r_file_perms;
+allow hal_power_default sysfs_type:lnk_file r_file_perms;
+
+allow hal_power_default sysfs_batteryinfo:dir r_dir_perms;
+allow hal_power_default sysfs_batteryinfo:file rw_file_perms;
+
+allow hal_power_default sysfs_ss_writable:dir r_dir_perms;
+allow hal_power_default sysfs_ss_writable:file rw_file_perms;
