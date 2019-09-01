@@ -1,0 +1,6 @@
+allow kernel block_device:dir search;
+
+allow kernel debug_block_device:blk_file rw_file_perms;
+
+allow kernel sysfs_ss_writable:file r_file_perms;
+allow kernel sysfs_ss_writable:lnk_file r_file_perms;
