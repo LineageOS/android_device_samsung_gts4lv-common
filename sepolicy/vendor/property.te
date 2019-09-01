@@ -1,0 +1,2 @@
+type sec_cnss_diag_prop, property_type;
+type vendor_wlbtd_prop, property_type;

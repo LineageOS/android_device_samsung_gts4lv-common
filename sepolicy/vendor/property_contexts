@@ -1,0 +1,2 @@
+cnss_diag.service    u:object_r:sec_cnss_diag_prop:s0
+vendor.wlbtd.        u:object_r:vendor_wlbtd_prop:s0
