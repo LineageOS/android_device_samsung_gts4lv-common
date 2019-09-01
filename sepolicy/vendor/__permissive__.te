@@ -1,0 +1,10 @@
+permissive factory_ssc;
+permissive hal_gnss_qti;
+permissive hal_light_default;
+permissive hal_usb_default;
+permissive hal_wifi_default;
+permissive healthd;
+permissive init;
+permissive kernel;
+permissive qti_init_shell;
+permissive vendor_init;
