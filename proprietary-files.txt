@@ -883,7 +883,6 @@ vendor/etc/selinux/vendor_sepolicy.cil
 vendor/etc/selinux/vndservice_contexts
 
 # Sensors
-vendor/bin/factory.ssc
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/sensors/config/ak991x_dri_0.json

@@ -721,12 +721,6 @@ service vendor.sensors.qti /vendor/bin/sensors.qti
     group system
     disabled
 
-service factory_ssc /vendor/bin/factory.ssc
-    class core
-    user system
-    group system radio inet diag net_admin net_raw sdcard_rw sdcard_r media_rw
-    disabled
-
 on property:sys.boot_completed=1
     setprop ro.factory.sensor.delay.init 1
 
