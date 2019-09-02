@@ -36,7 +36,6 @@ start_sensors()
     mkdir -p /mnt/vendor/persist/sensors/registry/registry
     chown -h -R system.system /mnt/vendor/persist/sensors
     start vendor.sensors.qti
-    start factory_ssc
 
     # Only for SLPI
     if [ -c /dev/msm_dsps -o -c /dev/sensors ]; then
