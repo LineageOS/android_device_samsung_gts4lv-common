@@ -61,7 +61,6 @@ type sysfs_camera_writable, fs_type, sysfs_type;
 type sysfs_gpu, fs_type, sysfs_type;
 type sysfs_input_booster, fs_type, sysfs_type;
 type sysfs_lcd_writable, fs_type, sysfs_type;
-type sysfs_mdnie_writable, fs_type, sysfs_type;
 type sysfs_sec, fs_type, sysfs_type;
 type sysfs_secdebug_writable, fs_type, sysfs_type;
 type sysfs_ss_writable, fs_type, sysfs_type;

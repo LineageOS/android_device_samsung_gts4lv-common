@@ -1,0 +1,11 @@
+type advanced_display_app, domain;
+
+app_domain(advanced_display_app)
+
+allow advanced_display_app app_api_service:service_manager find;
+
+allow advanced_display_app system_app_data_file:dir create_dir_perms;
+allow advanced_display_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+allow advanced_display_app sysfs_mdnie_writable:dir search;
+allow advanced_display_app sysfs_mdnie_writable:file rw_file_perms;
