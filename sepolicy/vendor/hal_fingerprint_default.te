@@ -10,13 +10,9 @@ allow hal_fingerprint_default sec_poc_file:file r_file_perms;
 allow hal_fingerprint_default sec_efs_file:dir create_dir_perms;
 allow hal_fingerprint_default sec_efs_file:file create_file_perms;
 
-allow hal_fingerprint_default sysfs_batteryinfo:dir r_dir_perms;
-allow hal_fingerprint_default sysfs_batteryinfo:file r_file_perms;
-allow hal_fingerprint_default sysfs_batteryinfo:lnk_file r_file_perms;
-
-allow hal_fingerprint_default sysfs_ss_writable:dir r_dir_perms;
-allow hal_fingerprint_default sysfs_ss_writable:file r_file_perms;
-allow hal_fingerprint_default sysfs_ss_writable:lnk_file r_file_perms;
+allow hal_fingerprint_default sysfs_fpc:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_fpc:file r_file_perms;
+allow hal_fingerprint_default sysfs_fpc:lnk_file r_file_perms;
 
 allow hal_fingerprint_default biometrics_vendor_data_file:dir create_dir_perms;
 allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
