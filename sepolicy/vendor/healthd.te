@@ -7,7 +7,5 @@ allow healthd battery_efs_file:file create_file_perms;
 allow healthd sysfs_battery_supply:file w_file_perms;
 allow healthd sysfs_batteryinfo:file w_file_perms;
 
-allow healthd sysfs_ss_writable:file rw_file_perms;
-
 r_dir_file(healthd, efs_file)
 r_dir_file(healthd, sec_poc_file)
