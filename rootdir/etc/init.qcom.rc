@@ -67,6 +67,10 @@ on init
     chown system system /sys/class/mdnie/mdnie/hmt_color_temperature
     chmod 0660 /sys/class/mdnie/mdnie/hmt_color_temperature
 
+    # Scenario
+    chown system system /sys/class/mdnie/mdnie/scenario
+    chmod 0660 /sys/class/mdnie/mdnie/scenario
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
