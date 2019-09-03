@@ -1,5 +1,1 @@
-allow hal_usb_default sysfs_ss_writable:dir r_dir_perms;
-allow hal_usb_default sysfs_ss_writable:file r_file_perms;
-allow hal_usb_default sysfs_ss_writable:lnk_file r_file_perms;
-
 allow hal_usb_default sysfs_usb:file rw_file_perms;
