@@ -59,17 +59,20 @@ on init
     chmod 0660 /sys/class/backlight/panel0-backlight/brightness
     chmod 0660 /sys/class/backlight/panel0-backlight/max_brightness
 
-    # HMT
+    # LCD
     chown system system /sys/class/lcd/panel/hmt_on
     chmod 0660 /sys/class/lcd/panel/hmt_on
     chown system system /sys/class/lcd/panel/hmt_bright
     chmod 0660 /sys/class/lcd/panel/hmt_bright
-    chown system system /sys/class/mdnie/mdnie/hmt_color_temperature
-    chmod 0660 /sys/class/mdnie/mdnie/hmt_color_temperature
+    chown system system /sys/class/lcd/panel/power_reduce
+    chmod 0660 /sys/class/lcd/panel/power_reduce
 
-    # Scenario
+    # mDNIe
+    chown system system /sys/class/mdnie/mdnie/accessibility
+    chown system system /sys/class/mdnie/mdnie/mode
+    chown system system /sys/class/mdnie/mdnie/mode_max
+    chown system system /sys/class/mdnie/mdnie/outdoor
     chown system system /sys/class/mdnie/mdnie/scenario
-    chmod 0660 /sys/class/mdnie/mdnie/scenario
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
