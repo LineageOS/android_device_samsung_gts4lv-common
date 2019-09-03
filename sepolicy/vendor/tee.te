@@ -22,8 +22,6 @@ allow tee proc_stat:file r_file_perms;
 
 allow tee proc_sysrq:file w_file_perms;
 
-allow tee sysfs_ss_writable:file rw_file_perms;
-
 allow tee rootfs:dir r_dir_perms;
 allow tee rootfs:file r_file_perms;
 allow tee rootfs:lnk_file r_file_perms;

@@ -22,7 +22,6 @@ allow qti_init_shell sysfs_msm_power:file create_file_perms;
 allow qti_init_shell sysfs_qdss_dev:file create_file_perms;
 allow qti_init_shell sysfs_scsi_host:file create_file_perms;
 allow qti_init_shell sysfs_socinfo:file w_file_perms;
-allow qti_init_shell sysfs_ss_writable: file setattr;
 
 allow qti_init_shell mnt_vendor_file:dir create_dir_perms;
 

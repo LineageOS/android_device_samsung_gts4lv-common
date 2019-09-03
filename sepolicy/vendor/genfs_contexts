@@ -38,11 +38,9 @@ genfscon proc /usblog u:object_r:proc_usblog:s0
 genfscon proc /user_fault u:object_r:proc_user_fault:s0
 
 genfscon sysfs /class/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
-genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/net/wlan0/address u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys1/name u:object_r:sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/soc:i2c@24/i2c-3/3-0071/power_supply/sm5705-fuelgauge u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:i2c@26/i2c-5/5-0049/sm5705-charger u:object_r:sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:i2c@28/i2c-6/6-0033/typec/port0/power_role u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/svc u:object_r:sysfs_svc:s0
 genfscon sysfs /devices/virtual/lcd/panel u:object_r:sysfs_lcd_writable:s0
 genfscon sysfs /devices/virtual/sensors/ssc_core/ssc_hw_rev u:object_r:sysfs_sensors:s0
