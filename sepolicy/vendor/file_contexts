@@ -137,10 +137,6 @@
 /sys/class/power_supply/battery/lcd                                                   u:object_r:sysfs_ss_writable:s0
 /sys/class/rfkill/rfkill[0-9]+/state                                              --  u:object_r:sysfs_bluetooth_writable:s0
 /sys/class/rfkill/rfkill[0-9]+/type                                               --  u:object_r:sysfs_bluetooth_writable:s0
-/sys/class/sec(/.*)?                                                              --  u:object_r:sysfs_sec:s0
-/sys/class/sec/sec_hw_param(/.*)?                                                     u:object_r:sysfs_ss_writable:s0
-/sys/class/sec/sec_key(/.*)?                                                          u:object_r:sysfs_ss_writable:s0
-/sys/class/sec/tsp/input/enabled                                                      u:object_r:sysfs_ss_writable:s0
 /sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card0/sde-crtc-0/vsync_event    u:object_r:sysfs_graphics:s0
 /sys/devices/platform/soc/soc:battery/power_supply(/.*)?                          --  u:object_r:sysfs_batteryinfo:s0
 /sys/devices/system/chip-id(/.*)?                                                     u:object_r:sysfs_ss_writable:s0
@@ -152,6 +148,7 @@
 /sys/devices/virtual/mdnie(/.*)?                                                  --  u:object_r:sysfs_mdnie_writable:s0
 /sys/devices/virtual/net(/.*)?                                                        u:object_r:sysfs_net:s0
 /sys/devices/virtual/relay_on                                                         u:object_r:sysfs_virtyal_relay_on:s0
+/sys/devices/virtual/sec/tsp(/.*)?                                                    u:object_r:sysfs_tsp:s0
 /sys/devices/virtual/xt_hardidletimer/timers(/.*)?                                    u:object_r:sysfs_data:s0
 /sys/devices/virtual/xt_idletimer/timers(/.*)?                                        u:object_r:sysfs_data:s0
 /sys/kernel/mm/vmscan(/.*)?                                                           u:object_r:sysfs_ss_writable:s0
@@ -160,5 +157,4 @@
 /sys/module/qpnp_power_on/parameters(/.*)?                                            u:object_r:sysfs_ss_writable:s0
 /sys/module/qpnp_power_on/parameters/reset_enabled                                    u:object_r:sysfs_ss_writable:s0
 /sys/module/qpnp_power_on/parameters/wake_enabled                                     u:object_r:sysfs_ss_writable:s0
-/sys/module/sec_debug/parameters(/.*)?                                                u:object_r:sysfs_secdebug_writable:s0
 /sys/power/volkey_wakeup                                                              u:object_r:sysfs_ss_writable:s0
