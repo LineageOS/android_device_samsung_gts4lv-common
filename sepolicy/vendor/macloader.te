@@ -27,9 +27,6 @@ allow macloader vendor_shell_exec:file rx_file_perms;
 
 allow macloader sysfs:file { read write open };
 allow macloader sysfs_net:dir r_dir_perms;
-allow macloader sysfs_ss_writable:file rw_file_perms;
 allow macloader sysfs_wlan_fwpath:file w_file_perms;
-
-r_dir_file(macloader, sysfs_wifi)
 
 get_prop(macloader, sec_cnss_diag_prop)

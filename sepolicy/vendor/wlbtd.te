@@ -21,9 +21,6 @@ allow wlbtd vendor_toolbox_exec:file rx_file_perms;
 
 allow wlbtd proc:file r_file_perms;
 
-allow wlbtd sysfs_wifi:dir r_dir_perms;
-allow wlbtd sysfs_wifi:file rw_file_perms;
-
 allow wlbtd sdcardfs:dir create_dir_perms;
 allow wlbtd sdcardfs:file create_file_perms;
 
