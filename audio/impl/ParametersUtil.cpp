@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,17 @@
  * limitations under the License.
  */
 
-#include "core/4.0/default/ParametersUtil.h"
-#include "core/4.0/default/Util.h"
+#include "core/default/ParametersUtil.h"
+#include "core/default/Conversions.h"
+#include "core/default/Util.h"
 
-#define AUDIO_HAL_VERSION V4_0
-#include <common/all-versions/IncludeGuard.h>
-#include <core/all-versions/default/Conversions.h>
 #include <system/audio.h>
 #include <tinyalsa/asoundlib.h>
 
 namespace android {
 namespace hardware {
 namespace audio {
-namespace AUDIO_HAL_VERSION {
+namespace CPP_VERSION {
 namespace implementation {
 
 constexpr int SLOT_POSITIONS_0[] = { 0, 1, 0, 1 };
@@ -211,8 +209,7 @@ Result ParametersUtil::setParams(const AudioParameter& param) {
 }
 
 }  // namespace implementation
-}  // namespace AUDIO_HAL_VERSION
+}  // namespace CPP_VERSION
 }  // namespace audio
 }  // namespace hardware
 }  // namespace android
-#undef AUDIO_HAL_VERSION
