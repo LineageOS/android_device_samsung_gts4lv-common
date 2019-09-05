@@ -120,7 +120,9 @@
 /(vendor|system/vendor)/bin/vendor\.samsung\.security\.wvkprov_server@1\.0-service                 u:object_r:hal_wvkprov_default_exec:s0
 
 # Rootfs
-/omr(/.*)?    u:object_r:omr_file:s0
+/firmware(/.*)?                               u:object_r:firmware_file:s0
+/omr(/.*)?                                    u:object_r:omr_file:s0
+/persist(/.*)?                                u:object_r:persist_file:s0
 
 # Sys
 /sys/class/camera(/.*)?                                     --  u:object_r:sysfs_camera_writable:s0
