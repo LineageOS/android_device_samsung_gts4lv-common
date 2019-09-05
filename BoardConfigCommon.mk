@@ -155,10 +155,6 @@ VENDOR_SECURITY_PATCH := 2018-08-05
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
-# Soong Namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)
-
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
