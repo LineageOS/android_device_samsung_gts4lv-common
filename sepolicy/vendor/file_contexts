@@ -138,3 +138,6 @@
 /sys/devices/virtual/lcd/panel(/.*)?                            u:object_r:sysfs_lcd_writable:s0
 /sys/devices/virtual/mdnie(/.*)?                            --  u:object_r:sysfs_mdnie_writable:s0
 /sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0
+
+# Vendor files
+/vendor/usr/keylayout(/.*)?    u:object_r:keylayout_file:s0
