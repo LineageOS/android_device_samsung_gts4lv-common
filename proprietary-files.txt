@@ -95,8 +95,9 @@ vendor/lib/vendor.samsung.hardware.bluetooth@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
 
-# Bluetooth - APT-X
-lib64/libaptX_encoder.so
+# Bluetooth (aptX) - from crosshatch - QP1A.190711.020
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Bluetooth - Audio
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
