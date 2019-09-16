@@ -96,7 +96,7 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
 
 # Bluetooth - APT-X
-lib64/libaptX_encoder.so
+#lib64/libaptX_encoder.so
 
 # Bluetooth - Audio
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -1026,10 +1026,10 @@ vendor/bin/cnss-daemon
 
 # WiFi Display - from OnePlus 6
 bin/wfdservice|cea9798c408369dcd576359d231fe81a49993787
-etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
+#etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 etc/wfdconfig.xml|1bda65eb38632e437455041a384c2f8d7d391fd3
 etc/wfdconfigsink.xml|f180a45f69fa2ff01dbaf98c905cff1e9eba903e
--framework/WfdCommon.jar|3c5e4f7f2cea0ef56a53d44e978aecf9f1b4ba35
+#-framework/WfdCommon.jar|3c5e4f7f2cea0ef56a53d44e978aecf9f1b4ba35
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|63ef5c712abfbb6c88315bd911c6656d5a81ef65
 lib/libOmxMux.so|ed5b55c311cbc247c8b32dd49886299756ba68c0
 lib/libmmparser_lite.so|2945b88495982ef4cf325a1cdcf48d608bcafd15
