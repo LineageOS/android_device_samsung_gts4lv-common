@@ -96,7 +96,7 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
 
 # Bluetooth - APT-X
-lib64/libaptX_encoder.so
+#lib64/libaptX_encoder.so
 
 # Bluetooth - Audio
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
@@ -109,7 +109,7 @@ vendor/firmware/crnv21.bin
 
 # Camera
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service
-vendor/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc
+#vendor/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc
 vendor/lib/camera/arcsoft_calibration.bin
 vendor/lib/camera/components/com.qti.eisv2.so
 vendor/lib/camera/components/com.qti.eisv3.so
@@ -352,7 +352,7 @@ vendor/bin/hw/vendor.qti.gnss@1.2-service
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
-vendor/etc/init/vendor.qti.gnss@1.2-service.rc
+#vendor/etc/init/vendor.qti.gnss@1.2-service.rc
 vendor/etc/cacert_location.pem
 vendor/etc/flp.conf
 vendor/etc/gps.conf
@@ -1031,10 +1031,10 @@ vendor/bin/cnss-daemon
 
 # WiFi Display - from OnePlus 6
 bin/wfdservice|cea9798c408369dcd576359d231fe81a49993787
-etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
+#etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 etc/wfdconfig.xml|1bda65eb38632e437455041a384c2f8d7d391fd3
 etc/wfdconfigsink.xml|f180a45f69fa2ff01dbaf98c905cff1e9eba903e
--framework/WfdCommon.jar|3c5e4f7f2cea0ef56a53d44e978aecf9f1b4ba35
+#-framework/WfdCommon.jar|3c5e4f7f2cea0ef56a53d44e978aecf9f1b4ba35
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|63ef5c712abfbb6c88315bd911c6656d5a81ef65
 lib/libOmxMux.so|ed5b55c311cbc247c8b32dd49886299756ba68c0
 lib/libmmparser_lite.so|2945b88495982ef4cf325a1cdcf48d608bcafd15
@@ -1078,47 +1078,47 @@ vendor/firmware/wlan/qca_cld/bdwlan.bin_FEM
 vendor/firmware/wlan/qca_cld/grippower.info
 
 # Product
-product/HWRDB/data/hwr_az_AZ.dat
-product/HWRDB/data/hwr_be_BY.dat
-product/HWRDB/data/hwr_bg_BG.dat
-product/HWRDB/data/hwr_cs_CZ.dat
-product/HWRDB/data/hwr_da_DK.dat
-product/HWRDB/data/hwr_de_DE.dat
-product/HWRDB/data/hwr_el_GR.dat
-product/HWRDB/data/hwr_en_AU.dat
-product/HWRDB/data/hwr_en_GB.dat
-product/HWRDB/data/hwr_en_US.dat
-product/HWRDB/data/hwr_es_ES.dat
-product/HWRDB/data/hwr_es_US.dat
-product/HWRDB/data/hwr_et_EE.dat
-product/HWRDB/data/hwr_fi_FI.dat
-product/HWRDB/data/hwr_fr_FR.dat
-product/HWRDB/data/hwr_hr_HR.dat
-product/HWRDB/data/hwr_hu_HU.dat
-product/HWRDB/data/hwr_hy_AM.dat
-product/HWRDB/data/hwr_is_IS.dat
-product/HWRDB/data/hwr_it_IT.dat
-product/HWRDB/data/hwr_ka_GE.dat
-product/HWRDB/data/hwr_kk_KZ.dat
-product/HWRDB/data/hwr_ko_KR.dat
-product/HWRDB/data/hwr_lt_LT.dat
-product/HWRDB/data/hwr_lv_LV.dat
-product/HWRDB/data/hwr_mk_MK.dat
-product/HWRDB/data/hwr_mn_MN.dat
-product/HWRDB/data/hwr_nb_NO.dat
-product/HWRDB/data/hwr_nl_NL.dat
-product/HWRDB/data/hwr_pl_PL.dat
-product/HWRDB/data/hwr_pt_BR.dat
-product/HWRDB/data/hwr_pt_PT.dat
-product/HWRDB/data/hwr_ro_RO.dat
-product/HWRDB/data/hwr_ru_RU.dat
-product/HWRDB/data/hwr_sk_SK.dat
-product/HWRDB/data/hwr_sl_SI.dat
-product/HWRDB/data/hwr_sr_Latn_RS.dat
-product/HWRDB/data/hwr_sv_SE.dat
-product/HWRDB/data/hwr_tr_TR.dat
-product/HWRDB/data/hwr_uk_UA.dat
-product/HWRDB/viresources.txt
+#product/HWRDB/data/hwr_az_AZ.dat
+#product/HWRDB/data/hwr_be_BY.dat
+#product/HWRDB/data/hwr_bg_BG.dat
+#product/HWRDB/data/hwr_cs_CZ.dat
+#product/HWRDB/data/hwr_da_DK.dat
+#product/HWRDB/data/hwr_de_DE.dat
+#product/HWRDB/data/hwr_el_GR.dat
+#product/HWRDB/data/hwr_en_AU.dat
+#product/HWRDB/data/hwr_en_GB.dat
+#product/HWRDB/data/hwr_en_US.dat
+#product/HWRDB/data/hwr_es_ES.dat
+#product/HWRDB/data/hwr_es_US.dat
+#product/HWRDB/data/hwr_et_EE.dat
+#product/HWRDB/data/hwr_fi_FI.dat
+#product/HWRDB/data/hwr_fr_FR.dat
+#product/HWRDB/data/hwr_hr_HR.dat
+#product/HWRDB/data/hwr_hu_HU.dat
+#product/HWRDB/data/hwr_hy_AM.dat
+#product/HWRDB/data/hwr_is_IS.dat
+#product/HWRDB/data/hwr_it_IT.dat
+#product/HWRDB/data/hwr_ka_GE.dat
+#product/HWRDB/data/hwr_kk_KZ.dat
+#product/HWRDB/data/hwr_ko_KR.dat
+#product/HWRDB/data/hwr_lt_LT.dat
+#product/HWRDB/data/hwr_lv_LV.dat
+#product/HWRDB/data/hwr_mk_MK.dat
+#product/HWRDB/data/hwr_mn_MN.dat
+#product/HWRDB/data/hwr_nb_NO.dat
+#product/HWRDB/data/hwr_nl_NL.dat
+#product/HWRDB/data/hwr_pl_PL.dat
+#product/HWRDB/data/hwr_pt_BR.dat
+#product/HWRDB/data/hwr_pt_PT.dat
+#product/HWRDB/data/hwr_ro_RO.dat
+#product/HWRDB/data/hwr_ru_RU.dat
+#product/HWRDB/data/hwr_sk_SK.dat
+#product/HWRDB/data/hwr_sl_SI.dat
+#product/HWRDB/data/hwr_sr_Latn_RS.dat
+#product/HWRDB/data/hwr_sv_SE.dat
+#product/HWRDB/data/hwr_tr_TR.dat
+#product/HWRDB/data/hwr_uk_UA.dat
+#product/HWRDB/viresources.txt
 product/build.prop
 product/etc/init/init.rc
 #product/omc/ATO/conf/cscfeature.xml
