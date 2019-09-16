@@ -35,7 +35,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" override="true">
+    <!--hal format="hidl" override="true">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <version>2.4</version>
@@ -43,7 +43,7 @@
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
-    </hal>
+    </hal-->
     <hal format="hidl">
         <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
@@ -79,7 +79,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>android.hardware.gnss</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -88,7 +88,7 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IGnss/gnss_vendor</fqname>
-    </hal>
+    </hal-->
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
         <transport>hwbinder</transport>
@@ -213,7 +213,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -221,7 +221,7 @@
             <name>IThermal</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal-->
     <hal format="hidl">
         <name>android.hardware.usb</name>
         <transport>hwbinder</transport>
@@ -329,7 +329,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>vendor.qti.gnss</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
@@ -337,7 +337,7 @@
             <name>ILocHidlGnss</name>
             <instance>gnss_vendor</instance>
         </interface>
-    </hal>
+    </hal-->
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
@@ -411,7 +411,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>vendor.samsung.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <version>2.4</version>
@@ -419,7 +419,7 @@
             <name>ISecCameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
-    </hal>
+    </hal-->
     <hal format="hidl">
         <name>vendor.samsung.hardware.exthealth</name>
         <transport>hwbinder</transport>
@@ -429,7 +429,7 @@
             <instance>exthealth</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -437,7 +437,7 @@
             <name>ISecGnss</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal-->
     <hal format="hidl">
         <name>vendor.samsung.hardware.miscpower</name>
         <transport>hwbinder</transport>
