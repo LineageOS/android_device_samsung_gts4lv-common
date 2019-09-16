@@ -125,6 +125,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.qti.hardware.display.allocator@1.0-service
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.primary_display_orientation=ORIENTATION_270
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
