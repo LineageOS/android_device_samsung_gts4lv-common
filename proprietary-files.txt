@@ -246,6 +246,44 @@ vendor/lib/libsystem_health_mon.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/vendor.samsung.hardware.exthealth@1.0.so
 
+# Display (SDM)
+vendor/lib/libqseed3.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
+
+# Display postprocessing
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libdisp-aba.so
+vendor/lib/libdisplayqos.so
+vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.color@1.1.so
+vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.postproc@1.0.so
+
+# Display utils
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+
 # DRM
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libcpion.so
@@ -427,11 +465,7 @@ vendor/lib64/vendor.qti.gnss@2.0.so
 vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.samsung.hardware.gnss@1.0.so
 
-# Graphics
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+# Graphics (Adreno)
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -439,7 +473,6 @@ vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/egl/libQTapGLES.so
-vendor/lib/hw/vulkan.sdm710.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
@@ -452,15 +485,9 @@ vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
-vendor/lib/libqseed3.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libRSDriver_adreno.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -468,7 +495,6 @@ vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/hw/vulkan.sdm710.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libbccQTI.so
 vendor/lib64/libC2D2.so
@@ -481,65 +507,17 @@ vendor/lib64/libhdr_tm.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libOpenCL.so
-vendor/lib64/libqseed3.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Graphics - GPU Firmware
+# Graphics (Adreno firmware)
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 
-# Graphics - Post Processing
-vendor/bin/vppservice
-vendor/lib/libdisp-aba.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvpptestutils.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/libvpptestutils.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-
-# Graphics - SDM
-vendor/bin/qdcmss
-vendor/lib/libdisplayqos.so
-vendor/lib/libsdedrm.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib/libtinyxml2_1.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
-
-# Graphics - Snap
-vendor/etc/snap_gpu_kernel_32.bin
-vendor/etc/snap_gpu_kernel_64.bin
-vendor/lib/libsnap_caffe.so
-vendor/lib/libsnap_caffe_wrapper.so
-vendor/lib/libsnap_compute.so
-vendor/lib/libsnap_compute_wrapper.so
-vendor/lib/libsnap_vndk.so
-vendor/lib64/libsnap_caffe.so
-vendor/lib64/libsnap_caffe_wrapper.so
-vendor/lib64/libsnap_compute.so
-vendor/lib64/libsnap_compute_wrapper.so
-vendor/lib64/libsnap_vndk.so
+# Graphics (Vulkan)
+vendor/lib/hw/vulkan.sdm710.so
+vendor/lib64/hw/vulkan.sdm710.so
 
 # Hotword Enrollment
 -priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk;PRESIGNED
@@ -609,16 +587,33 @@ lib/libmmrtpencoder.so
 lib64/libmmosal.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
+vendor/bin/vppservice
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/etc/system_properties.xml
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmosal_proprietary.so
-vendor/lib/libvqzip.so
+-vendor/lib/libplatformconfig.so
+vendor/lib/libvppclient.so
+vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
+vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_proprietary.so
+-vendor/lib64/libplatformconfig.so
+vendor/lib64/libvppclient.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/libvpptestutils.so
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
