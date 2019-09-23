@@ -957,12 +957,6 @@ vendor/lib64/libSubSystemShutdown.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/vndk/libstagefright_foundation.so
-vendor/lib/vndk/libstagefright_omx_utils.so
-vendor/lib/vndk/libstagefright_soft_g711dec.so
-vendor/lib/vndk/libstagefright_soft_rawdec.so
-vendor/lib/vndk/libstagefright_soft_vorbisdec.so
-vendor/lib/vndk/libstagefright_xmlparser.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
 # Thermal
