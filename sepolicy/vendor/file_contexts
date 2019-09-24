@@ -40,7 +40,6 @@
 /dev/ncm_dev                   u:object_r:ncm_device:s0
 /dev/network_latency           u:object_r:radio_device:s0
 /dev/network_throughput        u:object_r:radio_device:s0
-/dev/power_on_alarm            u:object_r:alarm_device:s0
 /dev/sdp_mm                    u:object_r:knox_dar_device:s0
 /dev/secdp_aux                 u:object_r:secdp_aux_device:s0
 /dev/tzic                      u:object_r:tz_device:s0
