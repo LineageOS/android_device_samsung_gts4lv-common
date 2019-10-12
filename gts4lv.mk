@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
     gralloc.sdm710 \
     hwcomposer.sdm710 \
     libdisplayconfig \
+    libqdMetaData \
     memtrack.sdm710 \
     vendor.display.config@1.0 \
     vendor.qti.hardware.display.allocator@1.0-service
@@ -292,7 +293,9 @@ PRODUCT_PACKAGES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl
+    libdisplayconfig.vendor \
+    libnl \
+    libqdMetaData.system
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
