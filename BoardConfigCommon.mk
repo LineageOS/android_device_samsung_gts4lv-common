@@ -166,10 +166,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-08-01
