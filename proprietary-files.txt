@@ -1020,7 +1020,6 @@ bin/wfdservice|5250dbf3b66a1116f03516a3bbe1f1eabbfcc173
 etc/init/wfdservice.rc|117d11af28ceda7ecf6009d7dc10ffc6bda25fa5
 vendor/etc/wfdconfig.xml|60a210d323f3f65dd1424cfd517295c522824b7b
 etc/wfdconfigsink.xml|75c1e192ccc6248a860958026950c6bc4f052ef7
-framework/arm64/boot-WfdCommon.oat|ecf910511ba49356518d80e11c3fe406dfb0585a
 -framework/WfdCommon.jar|00e8b3cd1303785928d3146f4ddbfa7dc84e16dc
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|7387190f13baf148543c307480df99a076618c84
 lib/libmmparser_lite.so|6c7ca134db30b5be84a1f38eea06d8d1e9267bce
