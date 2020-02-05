@@ -16,6 +16,24 @@
       "revId": "5779da2d02c75d0d1d7d39c3a8f472f5f0780165",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f62022c_5c022abf",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 836,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-02-05T01:36:28Z",
+      "side": 1,
+      "message": "huh, so then I must be missing how to not just enable the features availability, but also enable it.",
+      "parentUuid": "7b6d29ee_748724fe",
+      "revId": "5779da2d02c75d0d1d7d39c3a8f472f5f0780165",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
