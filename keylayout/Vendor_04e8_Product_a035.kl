@@ -409,6 +409,8 @@ key 523   POUND
 key 580   APP_SWITCH
 key 582   VOICE_ASSIST
 
+key 706   APP_SWITCH
+
 # Keys defined by HID usages
 key usage 0x0c006F BRIGHTNESS_UP
 key usage 0x0c0070 BRIGHTNESS_DOWN
