@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b6d29ee_748724fe",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 836,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-02-05T01:35:00Z",
+      "side": 1,
+      "message": "already enabled in vendor/lineage.",
+      "revId": "5779da2d02c75d0d1d7d39c3a8f472f5f0780165",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
