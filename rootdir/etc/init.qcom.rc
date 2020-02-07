@@ -398,9 +398,6 @@ on post-fs-data
     mkdir /data/vendor/biometrics 0770 system system
     mkdir /data/vendor/fpSnrTest 0770 system system
 
-    #Start move time data to /data/vendor once post-fs-data done
-    start vendor.move_time_data
-
     #argos
     chown system system /dev/network_throughput
 
@@ -917,13 +914,6 @@ on property:vendor.rild.libpath=*
 
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
-
-service vendor.move_time_data /system/bin/move_time_data.sh
-    class main
-    user system
-    group system
-    disabled
-    oneshot
 
 service vendor.hbtp /vendor/bin/hbtp_daemon
      class main
