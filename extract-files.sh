@@ -35,8 +35,14 @@ function blob_fixup() {
     vendor/lib/hw/audio.primary.sdm710.so)
         patchelf --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
         ;;
+    vendor/lib/hw/vulkan.sdm710.so)
+        sed -i "s/vulkan.sdm845.so/vulkan.sdm710.so/g" "${2}"
+        ;;
     vendor/lib/libgps.utils.so)
         patchelf --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
+    vendor/lib64/hw/vulkan.sdm710.so)
+        sed -i "s/vulkan.sdm845.so/vulkan.sdm710.so/g" "${2}"
         ;;
     vendor/lib64/libgps.utils.so)
         patchelf --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"

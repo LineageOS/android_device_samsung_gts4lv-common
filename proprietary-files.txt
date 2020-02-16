@@ -511,9 +511,9 @@ vendor/lib64/librs_adreno_sha1.so|2059ab280b53841061c48240875547d17c284aad
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.sdm710.so
-vendor/lib64/hw/vulkan.sdm710.so
+# Graphics (Vulkan) - from Z01R - QKQ1.190723.002
+vendor/lib/hw/vulkan.sdm845.so:vendor/lib/hw/vulkan.sdm710.so|66465cd7fa5290664dd63fff895e923c553c8793|bf53d0578df03854b8be628b24eed2d51b68e0bb
+vendor/lib64/hw/vulkan.sdm845.so:vendor/lib64/hw/vulkan.sdm710.so|dd836ee9ecbd23e3a61161251fa9e7ceb2117ca4|d1482a4a04618d18863efd0e5e454baece4c76a0
 
 # Hotword Enrollment
 -priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk;PRESIGNED
