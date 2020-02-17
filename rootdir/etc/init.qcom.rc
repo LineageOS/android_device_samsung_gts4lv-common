@@ -90,6 +90,7 @@ on early-boot
     write /sys/kernel/boot_slpi/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
+    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
     chown system system /mnt/vendor/persist/sensors
     chown system system /mnt/vendor/persist/sensors/sns.reg
@@ -793,9 +794,6 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     class core
     user system
     group nfc
-
-on property:vendor.display.lcd_density=*
-    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
 # Set vendor-ril lib path based on Meta version
 on property:vendor.rild.libpath=*
