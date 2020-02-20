@@ -13,10 +13,6 @@
 
 # Binaries
 /(vendor|system/vendor)/bin/hw/macloader       u:object_r:macloader_exec:s0
-/(vendor|system/vendor)/bin/hdcp1prov          u:object_r:hdcp_exec:s0
-/(vendor|system/vendor)/bin/hdcp2p2prov        u:object_r:hdcp_exec:s0
-/(vendor|system/vendor)/bin/pm_proxy_helper    u:object_r:per_proxy_helper_exec:s0
-/(vendor|system/vendor)/bin/wlbtd              u:object_r:wlbtd_exec:s0
 /(vendor|system/vendor)/bin/wvkprov            u:object_r:wvkprov_exec:s0
 
 # Data files
@@ -25,23 +21,13 @@
 /data/vendor/gps(/.*)?               u:object_r:vendor_gps_file:s0
 /data/vendor/log(/.*)?               u:object_r:vendor_log_file:s0
 /data/vendor/log/audiopcm(/.*)?      u:object_r:vendor_audiopcm_data_file:s0
-/data/vendor/secure_storage(/.*)?    u:object_r:secure_storage_vendor_data_file:s0
 
 # Devices
-/dev/\.pa(/.*)?                u:object_r:pa_daemon_device:s0
-/dev/\.secure_storage(/.*)?    u:object_r:secure_storage_device:s0
-/dev/ccic_misc                 u:object_r:ccic_device:s0
 /dev/dbmdx-[0-9]+              u:object_r:audio_device:s0
-/dev/dek_evt                   u:object_r:knox_dar_device:s0
-/dev/dek_log                   u:object_r:knox_dar_device:s0
-/dev/dek_req                   u:object_r:knox_dar_shared_device:s0
 /dev/dun                       u:object_r:dun_device:s0
 /dev/esfp[0-9]+                u:object_r:fp_sensor_device:s0
-/dev/ncm_dev                   u:object_r:ncm_device:s0
 /dev/network_latency           u:object_r:radio_device:s0
 /dev/network_throughput        u:object_r:radio_device:s0
-/dev/sdp_mm                    u:object_r:knox_dar_device:s0
-/dev/secdp_aux                 u:object_r:secdp_aux_device:s0
 /dev/tzic                      u:object_r:tz_device:s0
 
 # EFS files
@@ -111,12 +97,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-qcom             u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@2\.[0-9]-service        u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@1\.0-service                   u:object_r:hal_power_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.qchdcpkprov_server@1\.0-service          u:object_r:hal_qchdcpkprov_default_exec:s0
-/(vendor|system/vendor)/bin/secure_storage_daemon                                                  u:object_r:hal_secure_storage_daemon_default_exec:s0
-/(vendor|system/vendor)/bin/vendor\.samsung\.security\.drk@1\.0-service                            u:object_r:hal_drk_default_exec:s0
-/(vendor|system/vendor)/bin/vendor\.samsung\.security\.proca@1\.0-service                          u:object_r:hal_proca_default_exec:s0
-/(vendor|system/vendor)/bin/vendor\.samsung\.security\.sem@1\.0-service                            u:object_r:hal_sem_default_exec:s0
-/(vendor|system/vendor)/bin/vendor\.samsung\.security\.skpm@1\.0-service                           u:object_r:hal_skpm_default_exec:s0
 /(vendor|system/vendor)/bin/vendor\.samsung\.security\.wvkprov_server@1\.0-service                 u:object_r:hal_wvkprov_default_exec:s0
 
 # Rootfs

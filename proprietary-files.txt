@@ -286,31 +286,10 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|1e807bd0839e1326fc63ed395d8
 
 # DRM
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libcpion.so
-vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libtzdrmgenprov.so
-vendor/lib64/libcpion.so
-vendor/lib64/libcppf.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libtzdrmgenprov.so
-
-# DRM - HDCP key provisioning
-vendor/bin/hw/vendor.samsung.hardware.qchdcpkprov_server@1.0-service
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/etc/init/vendor.samsung.hardware.qchdcpkprov_server@1.0-service.rc
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdcpsrm.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/vendor.samsung.hardware.qchdcpkprov_server@1.0.so
 
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
@@ -519,9 +498,6 @@ vendor/lib64/hw/vulkan.sdm845.so:vendor/lib64/hw/vulkan.sdm710.so|dd836ee9ecbd23
 -priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk;PRESIGNED
 -priv-app/HotwordEnrollmentXGoogleExTL3210/HotwordEnrollmentXGoogleExTL3210.apk;PRESIGNED
 
-# HVDCP
-vendor/bin/hvdcp_opti
-
 # Image Understanding
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn_light.caffemodel
@@ -714,7 +690,6 @@ vendor/lib64/libsxqk.so
 
 # Peripheral Manager
 vendor/bin/pm-proxy
-vendor/bin/pm_proxy_helper
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib/libspcom.so
@@ -794,42 +769,9 @@ vendor/lib64/libqmi.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
-# Samsung - Misc
-vendor/bin/vendor.samsung.security.drk@1.0-service
-vendor/bin/vendor.samsung.security.sem@1.0-service
-vendor/bin/vendor.samsung.security.skpm@1.0-service
-vendor/etc/init/vendor.samsung.security.drk@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.sem@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.skpm@1.0-service.rc
+# SEC
 vendor/lib/libsecnativefeature.so
-vendor/lib/vendor.samsung.security.drk@1.0_vendor.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib64/vendor.samsung.security.drk@1.0_vendor.so
-vendor/lib64/vendor.samsung.security.sem@1.0.so
-vendor/lib64/vendor.samsung.security.skpm@1.0.so
-
-# Samsung - Process Authenticator
-vendor/bin/vendor.samsung.security.proca@1.0-service
-vendor/etc/init/pa_daemon_qsee.rc
-vendor/etc/process_authenticator/pa_config
-vendor/lib/libpadm.so
-vendor/lib/libpa.so
-vendor/lib/vendor.samsung.security.proca@1.0.so
-vendor/lib64/libpadm.so
-vendor/lib64/libpa.so
-vendor/lib64/vendor.samsung.security.proca@1.0.so
-
-# Samsung - Secure Storage
-vendor/bin/secure_storage_daemon
-vendor/etc/init/secure_storage_daemon_qsee.rc
-vendor/lib/libsecure_storage.so
-vendor/lib/vendor.samsung.external.secure_storage@2.0.so
-vendor/lib64/libsecure_storage.so
-vendor/lib64/vendor.samsung.external.secure_storage@2.0.so
-
-# Samsung - VaultKeeper
-vendor/lib64/libsec_vaultkeeper_serverHal.so
-vendor/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so
 
 # SCVE
 vendor/etc/scve/facereco/gModel.dat
@@ -950,12 +892,6 @@ vendor/lib/libSubSystemShutdown.so
 vendor/lib64/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 
-# Stagefright
-vendor/lib/libstagefright_bufferqueue_helper_vendor.so
-vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
@@ -969,9 +905,7 @@ vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # TrustZone
--vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgtzd
-vendor/bin/StoreKeybox
 vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib/libGPMTEEC_vendor.so
