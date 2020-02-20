@@ -794,43 +794,6 @@ vendor/lib64/libqmi.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
-# Samsung - Misc
-vendor/bin/vendor.samsung.security.drk@1.0-service
-vendor/bin/vendor.samsung.security.sem@1.0-service
-vendor/bin/vendor.samsung.security.skpm@1.0-service
-vendor/etc/init/vendor.samsung.security.drk@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.sem@1.0-service.rc
-vendor/etc/init/vendor.samsung.security.skpm@1.0-service.rc
-vendor/lib/libsecnativefeature.so
-vendor/lib/vendor.samsung.security.drk@1.0_vendor.so
-vendor/lib64/libsecnativefeature.so
-vendor/lib64/vendor.samsung.security.drk@1.0_vendor.so
-vendor/lib64/vendor.samsung.security.sem@1.0.so
-vendor/lib64/vendor.samsung.security.skpm@1.0.so
-
-# Samsung - Process Authenticator
-vendor/bin/vendor.samsung.security.proca@1.0-service
-vendor/etc/init/pa_daemon_qsee.rc
-vendor/etc/process_authenticator/pa_config
-vendor/lib/libpadm.so
-vendor/lib/libpa.so
-vendor/lib/vendor.samsung.security.proca@1.0.so
-vendor/lib64/libpadm.so
-vendor/lib64/libpa.so
-vendor/lib64/vendor.samsung.security.proca@1.0.so
-
-# Samsung - Secure Storage
-vendor/bin/secure_storage_daemon
-vendor/etc/init/secure_storage_daemon_qsee.rc
-vendor/lib/libsecure_storage.so
-vendor/lib/vendor.samsung.external.secure_storage@2.0.so
-vendor/lib64/libsecure_storage.so
-vendor/lib64/vendor.samsung.external.secure_storage@2.0.so
-
-# Samsung - VaultKeeper
-vendor/lib64/libsec_vaultkeeper_serverHal.so
-vendor/lib64/vendor.samsung.security.vaultkeeper_server@1.0.so
-
 # SCVE
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/libscveBlobDescriptor.so
