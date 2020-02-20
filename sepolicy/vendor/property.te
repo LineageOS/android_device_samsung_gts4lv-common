@@ -13,4 +13,3 @@ type vendor_members_prop, property_type;
 type vendor_qseecomd_prop, property_type;
 type vendor_tzdaemon_prop, property_type;
 type vendor_tztsdaemon_prop, property_type;
-type vendor_wlbtd_prop, property_type;

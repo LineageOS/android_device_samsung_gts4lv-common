@@ -22,4 +22,3 @@ vendor.npu.usr_drv.log_mask            u:object_r:sec_camera_prop:s0
 vendor.sys.qseecomd.                   u:object_r:vendor_qseecomd_prop:s0
 vendor.tzdaemon                        u:object_r:vendor_tzdaemon_prop:s0
 vendor.tzts_daemon                     u:object_r:vendor_tztsdaemon_prop:s0
-vendor.wlbtd.                          u:object_r:vendor_wlbtd_prop:s0
