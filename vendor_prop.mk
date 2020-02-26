@@ -77,6 +77,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=360 \
     ro.vendor.display.cabl=2
 
+# fastbootd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fastbootd.available=true
+
 # Gatekeeper
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gatekeeper=mdfpp
