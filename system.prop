@@ -1,0 +1,28 @@
+# Audio
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+ro.af.client_heap_size_kbyte=7168
+ro.config.media_vol_steps=25
+
+# Dalvik
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.75
+
+# fastbootd
+ro.fastbootd.available=true
+
+# Graphics
+debug.gralloc.gfx_ubwc_disable=0
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+persist.demo.hdmirotationlock=false
+
+# OEM unlock reporting
+ro.oem_unlock_supported=1
+
+
