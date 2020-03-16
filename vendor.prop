@@ -142,6 +142,7 @@ sys.vendor.shutdown.waittime=500
 
 # USB
 vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
 
 # WiFi Display
 persist.debug.wfd.enable=1
