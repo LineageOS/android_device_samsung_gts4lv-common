@@ -237,25 +237,25 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #   user root
 #   group root
 
-service adsprpcd /vendor/bin/adsprpcd rootpd
-   class main
-   user system
-   group system
+#service adsprpcd /vendor/bin/adsprpcd rootpd
+#   class main
+#   user system
+#   group system
 
-service adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
-   class main
-   user media
-   group media
+#service adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
+#   class main
+#   user media
+#   group media
 
-service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
-   class core
-   user system
-   group system
+#service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
+#   class core
+#   user system
+#   group system
 
-service cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
+#service cdsprpcd /vendor/bin/cdsprpcd
+#   class main
+#   user system
+#   group system
 
 #service audiod /vendor/bin/audiod
 #   class late_start
