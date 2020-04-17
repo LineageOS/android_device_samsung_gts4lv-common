@@ -1,3 +1,5 @@
+# Common proprietary files - from Samsung package version T720XXS1ATC5, unless pinned
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
