@@ -126,6 +126,12 @@ case "$usb_config" in
   ;; #USB persist config exists, do nothing
 esac
 
+# This check is needed for GKI 1.0 targets where QDSS is not available
+if [ "$(getprop persist.vendor.usb.config)" == "diag,serial_cdev,rmnet,dpl,qdss,adb" -a \
+     ! -d /config/usb_gadget/g1/functions/qdss.qdss ]; then
+      setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,adb
+fi
+
 # Start peripheral mode on primary USB controllers for Automotive platforms
 case "$soc_machine" in
     "SA")
