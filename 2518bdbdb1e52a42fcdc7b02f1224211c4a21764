@@ -22,6 +22,30 @@
       "revId": "2518bdbdb1e52a42fcdc7b02f1224211c4a21764",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "03a3f67a_ba5efa28",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-06-04T18:03:18Z",
+      "side": 1,
+      "message": "Yes, it is still Android 9 after all...",
+      "parentUuid": "a655c51a_fbe4dffa",
+      "range": {
+        "startLine": 158,
+        "startChar": 25,
+        "endLine": 158,
+        "endChar": 35
+      },
+      "revId": "2518bdbdb1e52a42fcdc7b02f1224211c4a21764",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
