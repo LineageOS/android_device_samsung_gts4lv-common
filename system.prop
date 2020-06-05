@@ -1,2 +1,7 @@
 # Audio
 ro.vendor.qti.va_aosp.support=1
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.disabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.bluetooth.library_name=libbluetooth_qti.so
