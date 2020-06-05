@@ -839,6 +839,123 @@
         <path name="audio-ull-playback speaker-and-headphones" />
     </path>
 
+    <path name="bt-a2dp">
+        <ctl name="SLIM7_RX ADM Channels" value="Two" />
+    </path>
+
+    <path name="speaker-and-bt-a2dp">
+        <path name="speaker" />
+        <path name="bt-a2dp" />
+    </path>
+
+    <path name="deep-buffer-playback bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="low-latency-playback bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="compress-offload-playback bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback2 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia7" value="1" />
+    </path>
+
+    <path name="compress-offload-playback3 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="compress-offload-playback4 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia11" value="1" />
+    </path>
+
+    <path name="compress-offload-playback5 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia12" value="1" />
+    </path>
+
+    <path name="compress-offload-playback6 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia13" value="1" />
+    </path>
+
+    <path name="compress-offload-playback7 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia14" value="1" />
+    </path>
+
+    <path name="compress-offload-playback8 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia15" value="1" />
+    </path>
+
+    <path name="compress-offload-playback9 bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia16" value="1" />
+    </path>
+
+    <path name="audio-ull-playback bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia8" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-bt-a2dp">
+        <path name="deep-buffer-playback bt-a2dp" />
+        <path name="deep-buffer-playback" />
+    </path>
+
+    <path name="compress-offload-playback speaker-and-bt-a2dp">
+        <path name="compress-offload-playback bt-a2dp" />
+        <path name="compress-offload-playback" />
+    </path>
+
+    <path name="low-latency-playback speaker-and-bt-a2dp">
+        <path name="low-latency-playback bt-a2dp" />
+        <path name="low-latency-playback" />
+    </path>
+
+    <path name="compress-offload-playback2 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback2 bt-a2dp" />
+        <path name="compress-offload-playback2" />
+    </path>
+
+    <path name="compress-offload-playback3 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback3 bt-a2dp" />
+        <path name="compress-offload-playback3" />
+    </path>
+
+    <path name="compress-offload-playback4 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback4 bt-a2dp" />
+        <path name="compress-offload-playback4" />
+    </path>
+
+    <path name="compress-offload-playback5 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback5 bt-a2dp" />
+        <path name="compress-offload-playback5" />
+    </path>
+
+    <path name="compress-offload-playback6 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback6 bt-a2dp" />
+        <path name="compress-offload-playback6" />
+    </path>
+
+    <path name="compress-offload-playback7 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback7 bt-a2dp" />
+        <path name="compress-offload-playback7" />
+    </path>
+
+    <path name="compress-offload-playback8 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback8 bt-a2dp" />
+        <path name="compress-offload-playback8" />
+    </path>
+
+    <path name="compress-offload-playback9 speaker-and-bt-a2dp">
+        <path name="compress-offload-playback9 bt-a2dp" />
+        <path name="compress-offload-playback9" />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-bt-a2dp">
+        <path name="audio-ull-playback bt-a2dp" />
+        <path name="audio-ull-playback" />
+    </path>
+
     <path name="mmap-playback">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
@@ -1732,6 +1849,11 @@
     <path name="compress-voip-call">
         <ctl name="INT0_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer INT3_MI2S_TX_Voip" value="1" />
+    </path>
+
+    <path name="compress-voip-call bt-a2dp">
+        <ctl name="SLIM_7_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
 
     <path name="compress-voip-call headphones">
