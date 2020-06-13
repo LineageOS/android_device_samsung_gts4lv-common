@@ -26,15 +26,7 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libqtigef.so
-vendor/lib/librecordalive.so
-vendor/lib/libSamsungPostProcessConvertor.so
-vendor/lib/lib_SamsungRec_07001.so
-vendor/lib/libsamsungVoipResampler.so
-vendor/lib/libsecaudioinfo.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/libtinycompress_vendor.so
-vendor/lib/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -80,9 +72,6 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
-
-# Audio - HALs
-vendor/lib/hw/audio.primary.sdm710.so
 
 # Audio - Speaker Firmware
 vendor/firmware/cs35l41-dsp1-spk-prot.bin
