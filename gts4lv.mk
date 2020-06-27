@@ -89,18 +89,22 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
-    camera.device@3.4-impl
+    camera.device@3.4-impl \
+    camera.device@3.5-impl
 
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.carrier.rc \
-    init.class_late.sh \
     init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
@@ -111,7 +115,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.qti.qseecomd.sh \
+    init.samsung.rc \
+    init.samsung.bsp.rc \
     init.target.rc \
     ueventd.qcom.rc \
     wifi_qcom.rc \
@@ -119,8 +124,8 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.3-impl \
+    android.hardware.graphics.composer@2.3-service \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
@@ -252,6 +257,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson \
     libtinyxml
+
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
 
 # Recovery
 PRODUCT_COPY_FILES += \

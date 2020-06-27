@@ -27,85 +27,37 @@
 #
 #
 
-import /vendor/etc/init/hw/init.carrier.rc
+import /vendor/etc/init/hw/init.samsung.rc
+import /vendor/etc/init/hw/init.${ro.product.vendor.device}.rc
+import /vendor/etc/init/hw/init.${ro.product.vendor.name}.rc
 
 on early-init
 #exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_apr audio_wglink audio_adsp_loader audio_q6_pdr audio_q6_notifier audio_q6 audio_usf audio_native audio_pinctrl_wcd audio_pinctrl_lpi audio_swr audio_platform audio_hdmi audio_wcd_spi audio_stub audio_digital_cdc audio_analog_cdc audio_msm_sdw audio_wcd_cpe audio_cpe_lsm audio_wcd9335 audio_machine_sdm710
     symlink /data/tombstones /tombstones
 
-on init
-    # CONFIG_SEC_DEBUG ++
-    # reset_reason
-    chown system system /proc/reset_reason
-    chmod 0600 /proc/reset_reason
-    chown system system /proc/reset_summary
-    chmod 0600 /proc/reset_summary
-    chown system system /proc/reset_klog
-    chmod 0600 /proc/reset_klog
-    chown system system /proc/reset_tzlog
-    chmod 0600 /proc/reset_tzlog
-    chown system system /proc/store_lastkmsg
-    chmod 0600 /proc/store_lastkmsg
-
-    # hw param ap info
-    chown system system /sys/class/sec/sec_hw_param/ap_info
-    chmod 0600 /sys/class/sec/sec_hw_param/ap_info
-    # hw param ddr info
-    chown system system /sys/class/sec/sec_hw_param/ddr_info
-    chmod 0600 /sys/class/sec/sec_hw_param/ddr_info
-    # hw param eye read info
-    chown system system /sys/class/sec/sec_hw_param/eye_rd_info
-    chmod 0600 /sys/class/sec/sec_hw_param/eye_rd_info
-    # hw param eye write1 info
-    chown system system /sys/class/sec/sec_hw_param/eye_wr1_info
-    chmod 0600 /sys/class/sec/sec_hw_param/eye_wr1_info
-    # hw param eye write2 info
-    chown system system /sys/class/sec/sec_hw_param/eye_wr2_info
-    chmod 0600 /sys/class/sec/sec_hw_param/eye_wr2_info
-    # hw param eye dcc info
-    chown system system /sys/class/sec/sec_hw_param/eye_dcc_info
-    chmod 0600 /sys/class/sec/sec_hw_param/eye_dcc_info
-    # hw param ap health
-    chown system system /sys/class/sec/sec_hw_param/ap_health
-    chmod 0600 /sys/class/sec/sec_hw_param/ap_health
-    # hw param last dcvs
-    chown system system /sys/class/sec/sec_hw_param/last_dcvs
-    chmod 0600 /sys/class/sec/sec_hw_param/last_dcvs
-    # hw param extra info
-    chown system system /sys/class/sec/sec_hw_param/extra_info
-    chmod 0600 /sys/class/sec/sec_hw_param/extra_info
-    # hw param extrb info
-    chown system system /sys/class/sec/sec_hw_param/extrb_info
-    chmod 0600 /sys/class/sec/sec_hw_param/extrb_info
-    # hw param extrc info
-    chown system system /sys/class/sec/sec_hw_param/extrc_info
-    chmod 0600 /sys/class/sec/sec_hw_param/extrc_info
-    # CONFIG_SEC_DEBUG --
-
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    mount_all /vendor/etc/fstab.qcom
+    mount_all /vendor/etc/fstab.qcom --early
     setprop ro.crypto.fde_algorithm AES-256-XTS
-    mkdir /mnt/vendor/efs 0771 system radio
-    mkdir /mnt/vendor/persist 0771 root system
-    mkdir /mnt/vendor/persist/data 0700 system system
-    mkdir /mnt/vendor/persist/rfs 0700 system system
-    restorecon_recursive /mnt/vendor/efs
+    chown root system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
+    mkdir /mnt/vendor/persist/data 0700 system system
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
-    start vendor.qseecomd
-    exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
 
 service sec_nvm /vendor/bin/sec_nvm
     class core
     user system
     group system
+
+on late-fs
+    mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs-data
     mkdir /data/tombstones 0771 system system
@@ -193,21 +145,6 @@ on post-fs-data
     chown audioserver system /data/firmware
     chown system audio /sys/class/voicep/dbmdx/va_mic_mode
 
-
-# for WIFI MAC address (P-OS start model)
-    mkdir /mnt/vendor/efs/wifi 0775 wifi root
-    chown wifi root /mnt/vendor/efs/wifi/.mac.info
-    chmod 0664 /mnt/vendor/efs/wifi/.mac.info
-    chown wifi root /mnt/vendor/efs/wifi/.mac.cob
-    chmod 0664 /mnt/vendor/efs/wifi/.mac.cob
-
-# for WIFI MAC address (Upgrade model from O)
-    mkdir /efs/wifi 0775 wifi root
-    chown wifi root /efs/wifi/.mac.info
-    chmod 0664 /efs/wifi/.mac.info
-    chown wifi root /efs/wifi/.mac.cob
-    chmod 0664 /efs/wifi/.mac.cob
-
 on boot
     # chown system system /sys/kernel/hbtp/display_pwr
     start rmt_storage
@@ -216,11 +153,26 @@ on boot
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
+# for WIFI MAC address
+    mkdir /mnt/vendor/efs/wifi 0755 wifi wifi
+    chown wifi wifi /mnt/vendor/efs/wifi/.mac.info
+    chmod 0644 /mnt/vendor/efs/wifi/.mac.info
+    chown wifi wifi /mnt/vendor/efs/wifi/.mac.cob
+    chmod 0644 /mnt/vendor/efs/wifi/.mac.cob
+
+# for WIFI MAC address (Upgrade model from O)
+    mkdir /efs/wifi 0755 wifi wifi
+    chown wifi wifi /efs/wifi/.mac.info
+    chmod 0644 /efs/wifi/.mac.info
+    chown wifi wifi /efs/wifi/.mac.cob
+    chmod 0644 /efs/wifi/.mac.cob
+
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
+    setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
 #start camera server as daemon
@@ -252,7 +204,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-    stop vendor.ims_rtp_daemon
 
 on boot
     chown system system /sys/class/leds/red/blink
@@ -273,10 +224,6 @@ service spdaemon /vendor/bin/spdaemon
     user system
     group system
 
-#service mpdecision /system/vendor/bin/mpdecision --avg_comp
-#   user root
-#   disabled
-#
 #service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
 #   user system
 #   group system
@@ -484,20 +431,20 @@ service cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
 #on property:vendor.ims.DATA_DAEMON_STATUS=1
 #    restart vendor.ims_rtp_daemon
 
-#service ppd /vendor/bin/mm-pp-dpps
-#    class late_start
-#    user system
-#    group system graphics
-#    socket pps stream 0660 system system
-#    disabled
+service ppd /vendor/bin/mm-pp-dpps
+    class late_start
+    user system
+    group system graphics
+    socket pps stream 0660 system system
+    disabled
 
-on property:init.svc.vendor.hwcomposer-2-1=stopped
+on property:init.svc.vendor.hwcomposer-2-3=stopped
     stop ppd
 
-on property:init.svc.vendor.hwcomposer-2-1=running
+on property:init.svc.vendor.hwcomposer-2-3=running
     start ppd
 
-on property:init.svc.vendor.hwcomposer-2-1=restarting
+on property:init.svc.vendor.hwcomposer-2-3=restarting
     stop ppd
 
 #service nqs /system/bin/nqs
