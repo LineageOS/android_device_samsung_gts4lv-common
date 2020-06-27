@@ -74,7 +74,7 @@ vendor.audio.offload.pstimeout.secs=3
 vendor.audio.offload.track.enable=true
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.record.multiple.enabled=false
-vendor.audio.safx.pbe.enabled=true
+vendor.audio.safx.pbe.enabled=false
 vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
@@ -109,8 +109,8 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
 debug.egl.hw=0
+debug.sf.enable_gl_backpressure=1
 debug.sf.hw=0
-debug.sf.latch_unsignaled=1
 persist.demo.hdmirotationlock=false
 ro.opengles.version=196610
 vendor.display.disable_ext_anim=1
@@ -119,28 +119,23 @@ vendor.display.enable_default_color_mode=1
 # Keystore
 ro.hardware.keystore=mdfpp
 
+# Media
+debug.stagefright.omx_default_rank=0
+debug.stagefright.omx_default_rank.sw-audio=1
+
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
 # Perf
-debug.vendor.qti.enable.lm=1
-persist.vendor.qti.games.gt.prof=1
-ro.vendor.at_library=libqti-at.so
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.iocgrp.config=1
-ro.vendor.qti.config.zram=true
 ro.vendor.qti.sys.fw.bg_apps_limit=60
-vendor.perf.iop_v3.enable=true
 
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
 # Radio
-persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=false
-persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.rat_on=combine
-persist.vendor.radio.sib16_support=1
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
