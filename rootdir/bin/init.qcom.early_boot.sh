@@ -1,6 +1,6 @@
 #! /vendor/bin/sh
 
-# Copyright (c) 2012-2013,2016,2018 The Linux Foundation. All rights reserved.
+# Copyright (c) 2012-2013,2016,2018,2019 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -89,7 +89,7 @@ function set_density_by_fb() {
 
 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc1/sku_version` 2> /dev/null
 if [ $sku_ver -eq 1 ]; then
-    setprop vendor.media.sdm710.version 1
+    setprop vendor.media.target.version 1
 fi
 
 baseband=`getprop ro.baseband`
@@ -119,7 +119,6 @@ function set_perms() {
 }
 
 # check for the type of driver FB or DRM
-set_perms /sys/devices/virtual/hdcp/msm_hdcp/min_level_change system.graphics 0660
 fb_driver=/sys/class/graphics/fb0
 if [ -e "$fb_driver" ]
 then
@@ -136,7 +135,13 @@ then
                 esac
         done
     fi
+else
+    set_perms /sys/devices/virtual/hdcp/msm_hdcp/min_level_change system.graphics 0660
 fi
+
+# allow system_graphics group to access pmic secure_mode node
+set_perms /sys/class/lcd_bias/secure_mode system.graphics 0660
+set_perms /sys/class/leds/wled/secure_mode system.graphics 0660
 
 boot_reason=`cat /proc/sys/kernel/boot_reason`
 reboot_reason=`getprop ro.boot.alarmboot`
