@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3b8f851_9cb59273",
+        "filename": "manifest.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-06-27T20:24:23Z",
+      "side": 1,
+      "message": "Runtime info \u003c\u003d\u003d\u003e Framework Compatibility Matrix?        INCOMPATIBLE, Framework is incompatible with kernel version 4.9.112, compatible kernel versions are 4.9.165 4.9.165 4.9.165 4.9.165 4.9.165 4.9.165 4.9.165 4.9.165 4.9.165 4.9.165 4.14.105 4.14.105 4.14.105 4.14.105 4.14.105 4.14.105 4.14.105 4.14.105 4.14.105 4.19.42 4.19.42 4.19.42 4.19.42 4.19.42 4.19.42 4.19.42 4.19.42 4.19.42",
+      "range": {
+        "startLine": 1,
+        "startChar": 52,
+        "endLine": 1,
+        "endChar": 53
+      },
+      "revId": "dbfd6bf1fbe8a1ca18e74b675d1a1d7e9a78c273",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
