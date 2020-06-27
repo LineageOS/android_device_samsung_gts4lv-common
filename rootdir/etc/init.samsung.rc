@@ -1,5 +1,5 @@
-#!/vendor/bin/sh
-# Copyright (c) 2017, The Linux Foundation. All rights reserved.
+
+# Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -28,8 +28,37 @@
 #
 #
 
-while [ "$registered" != "true" ]
-do
-    sleep 0.1
-    registered="`getprop vendor.sys.listeners.registered`"
-done
+import /vendor/etc/init/hw/init.samsung.bsp.rc
+
+on early-init
+    mkdir /mnt/vendor/efs 0771 radio system
+    mkdir /mnt/vendor/persist 0771 root system
+
+on init
+    symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
+    symlink /dev/block/bootdevice/by-name/steady  /dev/block/steady
+
+on fs
+    mount_all /vendor/etc/fstab.samsung --early
+    mount none /mnt/vendor/dqmdbg /dqmdbg bind
+
+# Create carrier folder for HiddenMenu
+on post-fs
+    mkdir /efs/carrier 0755 system system
+    restorecon_recursive /efs
+
+    restorecon_recursive /mnt/vendor/efs
+    chown radio system /mnt/vendor/efs
+    chmod 0771 /mnt/vendor/efs
+
+on late-fs
+    mount_all /vendor/etc/fstab.samsung --late
+
+on boot
+# Permission for nfc, eSE driver
+    chmod 0660 /dev/pn547
+    chmod 0660 /dev/p61
+    chown nfc nfc /dev/pn547
+    chown system system /dev/p61
+    chmod 0660 /dev/sec-nfc
+    chown nfc nfc /dev/sec-nfc
