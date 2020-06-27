@@ -1,4 +1,4 @@
-<manifest version="1.0" type="device" target-level="3">
+<manifest version="1.0" type="device" target-level="4">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -47,7 +47,7 @@
     <hal format="hidl" override="true">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
-        <version>2.4</version>
+        <version>2.5</version>
         <interface>
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
@@ -110,7 +110,7 @@
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>2.3</version>
         <interface>
             <name>IComposer</name>
             <instance>default</instance>
@@ -132,7 +132,7 @@
         <interface>
             <name>IHealth</name>
             <instance>default</instance>
-            <instance>exthealth</instance>
+            <instance>sehhealth</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -150,6 +150,15 @@
         <version>2.0</version>
         <interface>
             <name>ILight</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -178,10 +187,12 @@
     <hal format="hidl">
         <name>android.hardware.neuralnetworks</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.2</version>
         <interface>
             <name>IDevice</name>
-            <instance>default</instance>
+            <instance>qti-default</instance>
+            <instance>qti-dsp</instance>
+            <instance>qti-gpu</instance>
         </interface>
     </hal>
     <hal format="hidl" override="true">
@@ -191,7 +202,6 @@
         <interface>
             <name>IPower</name>
             <instance>default</instance>
-            <instance>miscpower</instance>
         </interface>
         <fqname>@1.2::IPower/default</fqname>
     </hal>
@@ -334,6 +344,15 @@
             <instance>gnss_vendor</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.gnss</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ILocHidlGnss</name>
+            <instance>gnss_vendor</instance>
+        </interface>
+    </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
@@ -369,9 +388,23 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.sensorscalibrate</name>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qseecom</name>
         <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQSEECom</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.soter</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISoter</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
@@ -382,9 +415,14 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" override="true">
+    <hal format="hidl">
         <name>vendor.qti.hardware.vpp</name>
         <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IHidlVppService</name>
+            <instance>vppService</instance>
+        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.wifi.hostapd</name>
@@ -420,147 +458,164 @@
         <transport>hwbinder</transport>
     </hal>
     <hal format="hidl">
-        <name>vendor.samsung.external.secure_storage</name>
+        <name>vendor.samsung.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>3.0</version>
         <interface>
-            <name>ISecureStorage</name>
+            <name>ISehBiometricsFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
-            <name>IBTVendor</name>
+            <name>ISehBluetooth</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.camera.provider</name>
         <transport>hwbinder</transport>
-        <version>2.4</version>
+        <version>3.0</version>
         <interface>
-            <name>ISecCameraProvider</name>
+            <name>ISehCameraProvider</name>
             <instance>legacy/0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.exthealth</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IExtHealth</name>
-            <instance>exthealth</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
         <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.health</name>
+        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ISecGnss</name>
+            <name>ISehHealth</name>
+            <instance>sehhealth</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.media.converter</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehColorConverterStore</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.miscpower</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
-            <name>ISecMiscPower</name>
-            <instance>miscpower</instance>
+            <name>ISehMiscPower</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.samsung.hardware.qchdcpkprov_server</name>
+        <name>vendor.samsung.hardware.security.drk</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehDrk</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.hdcp.keyprovisioning</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>Iqchdcpkprov_server</name>
+            <name>ISehHdcpKeyProvisioning</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.proca</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehProca</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.securestorage</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>ISehSecureStorage</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.vaultkeeper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehVaultKeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.widevine.keyprovisioning</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehWidevineKeyProvisioning</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.snap</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ISehSnap</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.tlc.ucm</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehUcm</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
-            <name>IWifiExt</name>
+            <name>ISehWifi</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi.hostapd</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
-            <name>ISemHostapd</name>
+            <name>ISehHostapd</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi.supplicant</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
-            <name>ISupplicantExt</name>
+            <name>ISehSupplicant</name>
             <instance>default</instance>
         </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.security.drk</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDrkService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.security.proca</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IProcaDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.security.sem</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISem</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.security.skpm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISkpm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.security.vaultkeeper_server</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>Ivaultkeeper_server</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.security.wvkprov_server</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>Iwvkprov_server</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-</manifest>
+    </hal></manifest>
