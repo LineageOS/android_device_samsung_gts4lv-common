@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "595e43f3_27b058b3",
+        "filename": "rootdir/etc/init.gts4lvwifi.rc",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-06-28T20:33:10Z",
+      "side": 0,
+      "message": "Gotta move this file to gts4lvwifi device tree.",
+      "revId": "1418746a0e39e67ba10968e1a1976c709a4113bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
