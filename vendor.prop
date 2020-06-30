@@ -64,6 +64,7 @@ vendor.audio.feature.usb_offload_sidetone_volume.enable=false
 vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hw.aac.encoder=true
 vendor.audio.noisy.broadcast.delay=600
 vendor.audio.offload.buffer.size.kb=64
