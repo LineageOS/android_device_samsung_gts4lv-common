@@ -2499,21 +2499,21 @@
     </path>
 
     <path name="handset-mic">
-        <path name="call-speaker-mic" />
-        <ctl name="ADC1 Volume" value="6" />
-        <ctl name="ADC3 Volume" value="6" />
+        <path name="rec-sub-mic" />
+        <ctl name="DEC1 Volume" value="92" />
+        <ctl name="DEC2 Volume" value="92" />
     </path>
 
     <path name="voice-speaker-mic">
         <path name="rec-sub-mic" />
-        <ctl name="ADC1 Volume" value="6" />
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="DEC1 Volume" value="92" />
+        <ctl name="DEC2 Volume" value="92" />
     </path>
 
     <path name="speaker-mic">
         <path name="rec-sub-mic" />
-        <ctl name="ADC1 Volume" value="6" />
-        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="DEC1 Volume" value="92" />
+        <ctl name="DEC2 Volume" value="92" />
     </path>
 
     <path name="call-headphone-mic">
