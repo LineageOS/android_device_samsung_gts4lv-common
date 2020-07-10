@@ -15,6 +15,7 @@
 
 import common
 import os
+import re
 
 # The joined list of user image partitions of source and target builds.
 # - Items should be added to the list if new dynamic partitions are added.
@@ -54,6 +55,12 @@ def FullOTA_InstallEnd(info):
 def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
 
+def FullOTA_Assertions(info):
+  AddTrustZoneAssertion(info, info.input_zip)
+
+def IncrementalOTA_Assertions(info):
+  AddTrustZoneAssertion(info, info.target_zip)
+
 def AddImage(info, basename, dest):
   path = "IMAGES/" + basename
   if path not in info.input_zip.namelist():
@@ -63,6 +70,15 @@ def AddImage(info, basename, dest):
   common.ZipWriteStr(info.output_zip, basename, data)
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
+
+def AddTrustZoneAssertion(info, input_zip):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
+  if m:
+    versions = m.group(1).split('|')
+    if len(versions) and '*' not in versions:
+      cmd = 'assert(samsung.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 10 based stock ROM build. Please upgrade firmware and retry!"););'
+      info.script.AppendExtra(cmd)
 
 def OTA_InstallEnd(info):
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
