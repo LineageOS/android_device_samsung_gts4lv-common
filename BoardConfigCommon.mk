@@ -17,7 +17,6 @@
 COMMON_PATH := device/samsung/gts4lv-common
 
 # Platform
-BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno615
 
