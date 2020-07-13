@@ -473,3 +473,11 @@ service energy-awareness /system/vendor/bin/energy-awareness
     user system
     group system
     oneshot
+
+service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0-service
+    override
+    class hal
+    interface android.hardware.contexthub@1.0::IContexthub default
+    user system
+    group system
+    disabled
