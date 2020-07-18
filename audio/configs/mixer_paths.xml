@@ -2297,6 +2297,11 @@
         <ctl name="ADC3 Volume" value="2" />
     </path>
 
+    <path name="voice-rec-mic">
+        <path name="rec-sub-mic" />
+        <ctl name="DEC1 Volume" value="92" />
+    </path>
+
     <path name="camcorder-mic">
         <path name="camcorder-stereo-mic" />
     </path>
