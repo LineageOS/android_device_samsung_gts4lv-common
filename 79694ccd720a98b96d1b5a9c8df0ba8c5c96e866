@@ -34,6 +34,23 @@
       "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf00fea2_3d8bef11",
+        "filename": "bluetooth/bdroid_buildcfg.h",
+        "patchSetId": 25
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 17257
+      },
+      "writtenOn": "2020-07-18T10:16:52Z",
+      "side": 1,
+      "message": "May I ask where this header is on CAF?",
+      "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
