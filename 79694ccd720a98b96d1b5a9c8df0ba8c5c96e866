@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b818bb7e_d0fad99d",
+        "filename": "audio/configs/audio_policy_configuration_a2dp_offload_disabled_qti.xml",
+        "patchSetId": 25
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 17257
+      },
+      "writtenOn": "2020-07-18T10:10:07Z",
+      "side": 1,
+      "message": "AudioPolicyManager won\u0027t load this file when persist.bluetooth.a2dp_offload.disabled\u003dtrue.",
+      "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
