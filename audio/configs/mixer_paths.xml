@@ -2297,6 +2297,10 @@
         <ctl name="ADC3 Volume" value="2" />
     </path>
 
+    <path name="voice-rec-mic">
+        <path name="handset-mic" />
+    </path>
+
     <path name="camcorder-mic">
         <path name="camcorder-stereo-mic" />
     </path>
