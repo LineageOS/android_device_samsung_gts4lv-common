@@ -16,6 +16,24 @@
       "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20b4f57a_59b767e9",
+        "filename": "audio/configs/audio_policy_configuration_a2dp_offload_disabled_qti.xml",
+        "patchSetId": 25
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-07-18T10:13:01Z",
+      "side": 1,
+      "message": "It will in the final build:\n\nPRODUCT_COPY_FILES +\u003d \\\n    ...\n $(LOCAL_PATH)/audio/configs/audio_policy_configuration_a2dp_offload_disabled_qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml",
+      "parentUuid": "b818bb7e_d0fad99d",
+      "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
