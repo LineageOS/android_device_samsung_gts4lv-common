@@ -2956,7 +2956,7 @@
     </path>
 
     <path name="audio-playback-voip">
-        <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="SEC_TDM_RX_0 Audio Mixer MultiMedia10" value="1" />
     </path>
 
     <path name="audio-playback-voip headphones">
@@ -2999,6 +2999,14 @@
 
     <path name="audio-playback-voip speaker-safe-and-display-port">
         <path name="audio-playback-voip display-port" />
+        <path name="audio-playback-voip" />
+    </path>
+
+    <path name="audio-playback-voip voice-speaker">
+        <path name="audio-playback-voip" />
+    </path>
+
+    <path name="audio-playback-voip voice-speaker-2">
         <path name="audio-playback-voip" />
     </path>
 
