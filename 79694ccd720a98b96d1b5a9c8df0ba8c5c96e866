@@ -51,6 +51,23 @@
       "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9879c41_137d380b",
+        "filename": "overlay/vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/res/values/config.xml",
+        "patchSetId": 25
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 17257
+      },
+      "writtenOn": "2020-07-18T10:22:23Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this one also be in overlay-system?",
+      "revId": "79694ccd720a98b96d1b5a9c8df0ba8c5c96e866",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
