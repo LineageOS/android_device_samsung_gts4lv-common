@@ -2956,7 +2956,7 @@
     </path>
 
     <path name="audio-playback-voip">
-        <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
     <path name="audio-playback-voip headphones">
