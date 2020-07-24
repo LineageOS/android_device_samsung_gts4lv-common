@@ -141,7 +141,6 @@ ro.hardware.keystore=mdfpp
 
 # Media
 debug.stagefright.omx_default_rank=0
-debug.stagefright.omx_default_rank.sw-audio=1
 
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
