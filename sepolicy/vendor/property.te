@@ -1,11 +1,11 @@
-type compact_dump_prop, property_type;
-type csc_prop, property_type;
-type ina_status_prop, property_type;
-type receiver_error_prop, property_type;
-type sec_camera_prop, property_type;
-type sec_cnss_diag_prop, property_type;
-type sec_fastcharge_prop, property_type;
-type vendor_factory_prop, property_type;
-type vendor_members_prop, property_type;
-type vendor_qseecomd_prop, property_type;
-type vendor_tztsdaemon_prop, property_type;
+vendor_internal_prop(compact_dump_prop)
+vendor_internal_prop(csc_prop)
+vendor_internal_prop(ina_status_prop)
+vendor_internal_prop(receiver_error_prop)
+vendor_internal_prop(sec_camera_prop)
+vendor_internal_prop(sec_cnss_diag_prop)
+vendor_internal_prop(sec_fastcharge_prop)
+vendor_internal_prop(vendor_factory_prop)
+vendor_internal_prop(vendor_members_prop)
+vendor_internal_prop(vendor_qseecomd_prop)
+vendor_internal_prop(vendor_tztsdaemon_prop)
