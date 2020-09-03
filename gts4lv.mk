@@ -315,7 +315,9 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors-service.samsung-multihal
+    android.hardware.sensors-service.samsung-multihal \
+    libsensorndkbridge \
+    libshim_sensorndkbridge
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
