@@ -101,7 +101,8 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
     camera.device@3.4-impl \
-    camera.device@3.5-impl
+    camera.device@3.5-impl \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -318,9 +319,6 @@ PRODUCT_PACKAGES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml
