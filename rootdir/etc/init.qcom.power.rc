@@ -107,7 +107,6 @@ on boot
     write /dev/cpuset/system-background/cpus 0-7
 
 on charger
-    load_system_props
     trigger enable-low-power
 
     setprop sys.usb.configfs 1
