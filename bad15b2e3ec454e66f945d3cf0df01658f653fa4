@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c3b4320e_0c55da4f",
+        "filename": "gts4lv.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2020-09-18T21:54:23Z",
+      "side": 1,
+      "message": "you can just build these like google does here\nhttps://github.com/LineageOS/android_build/blob/9d2242d67e673ed357812999705a7b91be3a1f58/target/product/mainline_system.mk#L94",
+      "range": {
+        "startLine": 178,
+        "startChar": 115,
+        "endLine": 178,
+        "endChar": 131
+      },
+      "revId": "bad15b2e3ec454e66f945d3cf0df01658f653fa4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97632316_504362cb",
+        "filename": "gts4lv.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2020-09-18T21:54:23Z",
+      "side": 1,
+      "message": "as for these https://github.com/wight554/device_xiaomi_sm6250-common/commit/4baf4cdaa0652c3154337806d355d2a2793e2c64 seems to be a better approach\nor according to this commit you can probably try replacing dependencies with new versioned protobuf",
+      "range": {
+        "startLine": 272,
+        "startChar": 119,
+        "endLine": 272,
+        "endChar": 134
+      },
+      "revId": "bad15b2e3ec454e66f945d3cf0df01658f653fa4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
