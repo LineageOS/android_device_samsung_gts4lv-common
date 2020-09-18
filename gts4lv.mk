@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     wifi_qcom.rc \
-    wifi.rc
+    wifi_sec.rc
 
 # Display
 PRODUCT_PACKAGES += \
