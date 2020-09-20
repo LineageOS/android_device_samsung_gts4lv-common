@@ -9,3 +9,4 @@ type vendor_factory_prop, property_type;
 type vendor_members_prop, property_type;
 type vendor_qseecomd_prop, property_type;
 type vendor_tztsdaemon_prop, property_type;
+type vendor_wifi_version, property_type;
