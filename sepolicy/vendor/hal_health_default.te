@@ -1,0 +1,2 @@
+r_dir_file(hal_health_default, app_efs_file)
+r_dir_file(hal_health_default, battery_efs_file)
