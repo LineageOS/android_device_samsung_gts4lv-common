@@ -141,8 +141,6 @@ on post-fs-data
 # DBMDx
     chmod 0660 /dev/dbmdx-1
     chown system audio /dev/dbmdx-1
-    mkdir /data/firmware 0770 audioserver system
-    chown audioserver system /data/firmware
     chown system audio /sys/class/voicep/dbmdx/va_mic_mode
 
 on boot
