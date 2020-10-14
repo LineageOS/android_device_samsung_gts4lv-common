@@ -16,5 +16,5 @@
 <resources>
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">10</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">11</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">11</integer>
 </resources>
