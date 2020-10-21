@@ -1774,6 +1774,10 @@
         <ctl name="Voip_Tx Mixer INT3_MI2S_TX_Voip" value="1" />
     </path>
 
+    <path name="voip-call hearing-aid">
+        <ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer INT3_MI2S_TX_Voip" value="1" />
+    </path>
     <path name="voip-call headphones">
         <ctl name="INT0_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer INT3_MI2S_TX_Voip" value="1" />
@@ -1806,6 +1810,10 @@
 
     <path name="voicemmode1-call">
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
+    </path>
+    <path name="voicemmode1-call hearing-aid">
+        <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
     </path>
 
@@ -1846,6 +1854,10 @@
 
     <path name="voicemmode2-call">
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
+    </path>
+    <path name="voicemmode2-call hearing-aid">
+        <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
     </path>
 
@@ -2397,9 +2409,9 @@
     <path name="bargein-aec-speaker-mic">
         <path name="sub-main-mic" />
         <ctl name="ADC1 Volume" value="6" />
-        <ctl name="DEC2 Volume" value="93" />
+        <ctl name="DEC2 Volume" value="97" />
         <ctl name="ADC3 Volume" value="6" />
-        <ctl name="DEC1 Volume" value="87" />
+        <ctl name="DEC1 Volume" value="89" />
     </path>
 
     <path name="bargein-aec-dual-speaker-mic">
@@ -2489,6 +2501,11 @@
     </path>
 
     <!-- TX part -->
+    <path name="hearing-aid-mic">
+        <path name="sub-main-mic" />
+        <ctl name="ADC1 Volume" value="2" />
+        <ctl name="ADC3 Volume" value="2" />
+    </path>
     <path name="call-handset-mic">
         <path name="sub-main-mic" />
         <ctl name="ADC1 Volume" value="2" />
