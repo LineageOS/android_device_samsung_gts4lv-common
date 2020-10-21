@@ -223,7 +223,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-06-01
+VENDOR_SECURITY_PATCH := 2020-08-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
