@@ -134,7 +134,6 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
-TARGET_USES_ALIGNED_YCBCR_HEIGHT := true
 TARGET_USES_YCRCB_CAMERA_PREVIEW := true
 
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
@@ -217,7 +216,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-06-01
+VENDOR_SECURITY_PATCH := 2020-08-01
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk

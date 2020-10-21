@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version T720XXU1BTF7, unless pinned
+# Common proprietary files - from Samsung package version T720XXU1CTI1, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -256,7 +256,6 @@ vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
@@ -434,8 +433,8 @@ vendor/lib/hw/vulkan.sdm710.so
 vendor/lib64/hw/vulkan.sdm710.so
 
 # Hotword Enrollment
--priv-app/HotwordEnrollmentOKGoogleExTL3210/HotwordEnrollmentOKGoogleExTL3210.apk;PRESIGNED
--priv-app/HotwordEnrollmentXGoogleExTL3210/HotwordEnrollmentXGoogleExTL3210.apk;PRESIGNED
+-priv-app/HotwordEnrollmentOKGoogleEx2TL3210/HotwordEnrollmentOKGoogleEx2TL3210.apk;PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleEx2TL3210/HotwordEnrollmentXGoogleEx2TL3210.apk;PRESIGNED
 
 # Image Understanding
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn_light.caffemodel
@@ -446,8 +445,8 @@ vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn_light.caffe
 vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.prototxt
 vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn_light.caffemodel
 vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.prototxt
-vendor/saiv/image_understanding/db/QC_DSP_1.33.2_BV3.5CLS/6.5.1/slens_classifier_cnn.dlc
-vendor/saiv/image_understanding/db/QC_DSP_1.33.2_BV3.5OD/6.5.1/slens_detector_cnn.dlc
+vendor/saiv/image_understanding/db/QC_DSP_1.39.0_BV3.5CLS/6.5.1/slens_classifier_cnn.dlc
+vendor/saiv/image_understanding/db/QC_DSP_1.39.0_BV3.5OD/6.5.1/slens_detector_cnn.dlc
 
 # I/O Prefetcher
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
