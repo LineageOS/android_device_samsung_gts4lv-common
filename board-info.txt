@@ -1,1 +1,1 @@
-require version-trustzone=XF.5.0.2-00155
+require version-trustzone=XF.5.0.2-00155|TZ.XF.5.0.2-315709-9
