@@ -144,3 +144,6 @@ vendor.usb.use_ffs_mtp=0
 # WiFi Display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Zygote
+zygote.critical_window.minute=10
