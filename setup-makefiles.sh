@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Copyright headers and guards
-write_headers "gts4lvwifi"
+write_headers "gts4lv gts4lvwifi"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
