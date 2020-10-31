@@ -16,6 +16,7 @@
 
 # Binaries
 /(vendor|system/vendor)/bin/hw/macloader       u:object_r:macloader_exec:s0
+/(vendor|system/vendor)/bin/secril_config_svc  u:object_r:secril_config_svc_exec:s0
 
 # Data files
 /data/vendor/biometrics(/.*)?        u:object_r:biometrics_vendor_data_file:s0
@@ -23,13 +24,21 @@
 /data/vendor/gps(/.*)?               u:object_r:vendor_gps_file:s0
 /data/vendor/log(/.*)?               u:object_r:vendor_log_file:s0
 /data/vendor/log/audiopcm(/.*)?      u:object_r:vendor_audiopcm_data_file:s0
+/data/vendor/secradio(/.*)?          u:object_r:vendor_radio_data_file:s0
 
 # Devices
+/dev/android_rndis_qc          u:object_r:radio_device:s0
+/dev/cdma_.*                   u:object_r:radio_device:s0
 /dev/dbmdx-[0-9]+              u:object_r:audio_device:s0
 /dev/dun                       u:object_r:dun_device:s0
 /dev/esfp[0-9]+                u:object_r:fp_sensor_device:s0
+/dev/gsm_.*                    u:object_r:radio_device:s0
+/dev/link_pm                   u:object_r:radio_device:s0
+/dev/mdm                       u:object_r:radio_device:s0
 /dev/network_latency           u:object_r:radio_device:s0
 /dev/network_throughput        u:object_r:radio_device:s0
+/dev/nmea                      u:object_r:radio_device:s0
+/dev/qmi[0-9]*                 u:object_r:radio_device:s0
 /dev/tzic                      u:object_r:tz_device:s0
 
 # EFS files
