@@ -14,6 +14,7 @@ ro.error.receiver.default              u:object_r:receiver_error_prop:s0
 ro.factory.factory_binary              u:object_r:vendor_factory_prop:s0
 ro.fastbootd.available                 u:object_r:exported_default_prop:s0
 ro.netflix.channel                     u:object_r:csc_prop:s0
+ro.vendor.multisim.                    u:object_r:vendor_radio_prop:s0
 vendor.bluetooth_fw_ver                u:object_r:vendor_bluetooth_prop:s0
 vendor.npu.usr_drv.log_mask            u:object_r:sec_camera_prop:s0
 vendor.sys.qseecomd.                   u:object_r:vendor_qseecomd_prop:s0
