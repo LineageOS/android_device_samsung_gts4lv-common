@@ -1,6 +1,7 @@
 genfscon proc /irq/default_smp_affinity u:object_r:proc_default_smp_affinity:s0
 genfscon proc /memsize u:object_r:proc_meminfo:s0
 genfscon proc /schedstat u:object_r:proc_sched:s0
+genfscon proc /simslot_count u:object_r:proc_simslot_count:s0
 genfscon proc /sys/kernel/sched_boost u:object_r:proc_sched:s0
 genfscon proc /sys/kernel/sched_cstate_aware u:object_r:proc_sched:s0
 genfscon proc /sys/kernel/sched_group_downmigrate u:object_r:proc_sched:s0
