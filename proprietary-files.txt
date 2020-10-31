@@ -35,32 +35,6 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libqtigef.so
 
-# Audio - Configuration
-vendor/etc/audconf/ODM/Bluetooth_cal.acdb
-vendor/etc/audconf/ODM/General_cal.acdb
-vendor/etc/audconf/ODM/Global_cal.acdb
-vendor/etc/audconf/ODM/Handset_cal.acdb
-vendor/etc/audconf/ODM/Hdmi_cal.acdb
-vendor/etc/audconf/ODM/Headset_cal.acdb
-vendor/etc/audconf/ODM/Speaker_cal.acdb
-vendor/etc/audconf/ODM/workspaceFile.qwsp
-vendor/etc/audconf/OLM/Bluetooth_cal.acdb
-vendor/etc/audconf/OLM/General_cal.acdb
-vendor/etc/audconf/OLM/Global_cal.acdb
-vendor/etc/audconf/OLM/Handset_cal.acdb
-vendor/etc/audconf/OLM/Hdmi_cal.acdb
-vendor/etc/audconf/OLM/Headset_cal.acdb
-vendor/etc/audconf/OLM/Speaker_cal.acdb
-vendor/etc/audconf/OLM/workspaceFile.qwsp
-vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
-vendor/etc/audconf/OPEN/General_cal.acdb
-vendor/etc/audconf/OPEN/Global_cal.acdb
-vendor/etc/audconf/OPEN/Handset_cal.acdb
-vendor/etc/audconf/OPEN/Hdmi_cal.acdb
-vendor/etc/audconf/OPEN/Headset_cal.acdb
-vendor/etc/audconf/OPEN/Speaker_cal.acdb
-vendor/etc/audconf/OPEN/workspaceFile.qwsp
-
 # Audio - Effects
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -936,10 +910,3 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so|d3f241e48edd361171a83fb82023826
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|f0b80994d884834db18a429f085462958b390b7f
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|833c07149c2fb81c8417ddecfacdef6fba55d216
 vendor/lib64/libwfdhdcpcp.so|6578f75a0149f9164db5c1e7beda3eea4ed4d7bd
-
-# WiFi firmware
-vendor/firmware/wlanmdsp.mbn
-vendor/firmware/wlan/qca_cld/bdwlan.bin
-vendor/firmware/wlan/qca_cld/bdwlan.bin_FEM
-vendor/firmware/wlan/qca_cld/grippower.info
-vendor/firmware/wlan/qca_cld/regdb.bin
