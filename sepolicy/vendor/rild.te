@@ -1,0 +1,8 @@
+allow rild self:tun_socket create;
+
+allow rild tun_device:chr_file rw_file_perms;
+allowxperm rild tun_device:chr_file ioctl { TUNSETIFF TUNSETPERSIST };
+
+allow rild proc_net:file write;
+
+get_prop(rild, csc_prop)
