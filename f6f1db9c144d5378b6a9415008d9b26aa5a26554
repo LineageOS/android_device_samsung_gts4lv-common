@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "698b77c0_b24696cb",
+        "filename": "sepolicy/vendor/secril_config_svc.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-10-31T19:13:29Z",
+      "side": 1,
+      "message": "DNM",
+      "revId": "f6f1db9c144d5378b6a9415008d9b26aa5a26554",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
