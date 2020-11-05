@@ -208,9 +208,8 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_samsung
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Root
-BOARD_ROOT_EXTRA_FOLDERS := omr
+BOARD_ROOT_EXTRA_FOLDERS := efs omr
 BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/efs:/efs \
     /mnt/vendor/persist:/persist \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
