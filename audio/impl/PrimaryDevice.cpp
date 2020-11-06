@@ -172,6 +172,9 @@ Return<Result> PrimaryDevice::setVoiceVolume(float volume) {
 }
 
 Return<Result> PrimaryDevice::setMode(AudioMode mode) {
+    mDevice->halSetParameters(mode == AudioMode::IN_CALL ?
+           "call_state=2;vsid=297816064" : "call_state=1;vsid=297816064");
+
     // INVALID, CURRENT, CNT, MAX are reserved for internal use.
     // TODO: remove the values from the HIDL interface
     switch (mode) {
