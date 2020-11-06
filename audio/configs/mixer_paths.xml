@@ -1852,6 +1852,14 @@
         <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
     </path>
 
+    <path name="voicemmode1-call voice-speaker">
+        <path name="voicemmode1-call speaker" />
+    </path>
+
+    <path name="voicemmode1-call voice-speaker-2">
+        <path name="voicemmode1-call speaker" />
+    </path>
+
     <path name="voicemmode2-call">
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
@@ -1894,6 +1902,14 @@
     <path name="voicemmode2-call speaker">
         <ctl name="SEC_TDM_RX_0_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
+    </path>
+
+    <path name="voicemmode2-call voice-speaker">
+        <path name="voicemmode2-call speaker" />
+    </path>
+
+    <path name="voicemmode2-call voice-speaker-2">
+        <path name="voicemmode2-call speaker" />
     </path>
 
     <path name="voice-wakeup">
