@@ -242,6 +242,9 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libcpion.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
 
 # DSP
