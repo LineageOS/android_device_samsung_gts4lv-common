@@ -179,7 +179,6 @@
 # Rootfs
 /firmware(/.*)?    u:object_r:firmware_file:s0
 /omr(/.*)?         u:object_r:omr_file:s0
-/persist(/.*)?     u:object_r:persist_file:s0
 
 # Sys
 /sys/class/camera(/.*)?                                     --  u:object_r:sysfs_camera_writable:s0
