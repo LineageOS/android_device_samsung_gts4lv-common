@@ -176,9 +176,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@3\.0-service            u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service                   u:object_r:hal_power_default_exec:s0
 
-# Rootfs
-/omr(/.*)?         u:object_r:omr_file:s0
-
 # Sys
 /sys/class/camera(/.*)?                                     --  u:object_r:sysfs_camera_writable:s0
 /sys/class/cirrus/cirrus_bd(/.*)?                               u:object_r:sysfs_audio:s0
