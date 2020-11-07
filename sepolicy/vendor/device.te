@@ -6,7 +6,6 @@ type efsblk_device, dev_type;
 type fp_sensor_device, dev_type;
 type hiddenblk_device, dev_type;
 type kgsl_device, dev_type;
-type omr_block_device, dev_type;
 type paramblk_device, dev_type;
 type sec_efsblk_device, dev_type;
 type steady_block_device, dev_type;

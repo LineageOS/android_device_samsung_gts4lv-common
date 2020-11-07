@@ -40,9 +40,6 @@ type proc_default_smp_affinity, fs_type, proc_type;
 type proc_simslot_count, fs_type, proc_type;
 type proc_swappiness, fs_type, proc_type;
 
-# rootfs
-type omr_file, file_type, mlstrustedobject;
-
 # sysfs
 type sysfs_audio_writable, fs_type, sysfs_type;
 type sysfs_camera_writable, fs_type, sysfs_type;

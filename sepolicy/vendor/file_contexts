@@ -6,7 +6,6 @@
 /dev/block/platform/soc/7c4000\.sdhci/by-name/dtbo          u:object_r:boot_block_device:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/efs           u:object_r:efsblk_device:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/hidden        u:object_r:hiddenblk_device:s0
-/dev/block/platform/soc/7c4000\.sdhci/by-name/omr           u:object_r:omr_block_device:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/param         u:object_r:paramblk_device:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/persistent    u:object_r:frp_block_device:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/sec_efs       u:object_r:sec_efsblk_device:s0
@@ -175,9 +174,6 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-qcom             u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider@3\.0-service            u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service                   u:object_r:hal_power_default_exec:s0
-
-# Rootfs
-/omr(/.*)?         u:object_r:omr_file:s0
 
 # Sys
 /sys/class/camera(/.*)?                                     --  u:object_r:sysfs_camera_writable:s0
