@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08670c67_d4bd0f68",
+        "filename": "gts4lv.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-12-10T14:45:26Z",
+      "side": 1,
+      "message": "Are you sure about this?",
+      "range": {
+        "startLine": 128,
+        "startChar": 4,
+        "endLine": 128,
+        "endChar": 53
+      },
+      "revId": "c5511fd510055f86f28f6302e4040188a70a0cd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
