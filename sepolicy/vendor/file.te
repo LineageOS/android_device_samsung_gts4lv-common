@@ -37,6 +37,7 @@ type wifi_efs_file, file_type, mlstrustedobject;
 
 # proc
 type proc_default_smp_affinity, fs_type, proc_type;
+type proc_last_kmsg, fs_type, proc_type;
 type proc_simslot_count, fs_type, proc_type;
 type proc_swappiness, fs_type, proc_type;
 
