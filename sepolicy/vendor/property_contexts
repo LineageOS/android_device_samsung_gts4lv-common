@@ -7,6 +7,7 @@ persist.sys.bt.driver.version          u:object_r:vendor_bluetooth_prop:s0
 persist.sys.ina.status                 u:object_r:ina_status_prop:s0
 persist.vendor.camera.                 u:object_r:sec_camera_prop:s0
 persist.vendor.camera.debug.logfile    u:object_r:sec_camera_prop:s0
+persist.vendor.sec.fastchg_enabled     u:object_r:sec_fastcharge_prop:s0
 persist.vendor.members.                u:object_r:vendor_members_prop:s0
 ro.csc.                                u:object_r:csc_prop:s0
 ro.error.receiver.default              u:object_r:receiver_error_prop:s0
