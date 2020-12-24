@@ -38,6 +38,8 @@ on init
     symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
     symlink /dev/block/bootdevice/by-name/steady  /dev/block/steady
 
+    chown system radio /sys/class/sec/switch/afc_disable
+
 on fs
     mount_all /vendor/etc/fstab.samsung --early
     mount none /mnt/vendor/dqmdbg /dqmdbg bind
