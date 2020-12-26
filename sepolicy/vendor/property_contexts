@@ -19,5 +19,3 @@ vendor.bluetooth_fw_ver                u:object_r:vendor_bluetooth_prop:s0
 vendor.npu.usr_drv.log_mask            u:object_r:sec_camera_prop:s0
 vendor.sys.qseecomd.                   u:object_r:vendor_qseecomd_prop:s0
 vendor.tzts_daemon                     u:object_r:vendor_tztsdaemon_prop:s0
-vendor.wlan.driver.version             u:object_r:vendor_wifi_version:s0
-vendor.wlan.firmware.version           u:object_r:vendor_wifi_version:s0
