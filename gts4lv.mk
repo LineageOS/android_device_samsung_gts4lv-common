@@ -131,12 +131,12 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.sdm710 \
     hwcomposer.sdm710 \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.system \
     memtrack.sdm710 \
-    vendor.display.config@1.0 \
+    vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator@1.0-service
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
