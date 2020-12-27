@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a56318c8_7d7ce929",
+        "filename": "gts4lv.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 24834
+      },
+      "writtenOn": "2020-12-27T18:47:02Z",
+      "side": 1,
+      "message": "name: \"libdisplayconfig.qti\",\n    vendor_available: true,\n    system_ext_specific: true,",
+      "revId": "c6bfbaedc1b38d7239d939012d0eb202657bb062",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
