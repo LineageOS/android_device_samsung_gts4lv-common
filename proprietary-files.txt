@@ -192,19 +192,19 @@ vendor/lib/libdisplayqos.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
 vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.color@1.3.so
+vendor/lib/vendor.display.color@1.4.so
+vendor/lib/vendor.display.color@1.5.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.color@1.3.so
+vendor/lib64/vendor.display.color@1.4.so
+vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
-
-# Display utils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
@@ -360,48 +360,46 @@ vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
+vendor/lib/libVkLayer_q3dtools.so
 vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
 vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
+vendor/lib/libpvr.so
 vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
-vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
 vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
+vendor/lib64/libpvr.so
 vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 
 # Graphics (Vulkan)
-vendor/lib/hw/vulkan.sdm710.so
-vendor/lib64/hw/vulkan.sdm710.so
+vendor/lib64/hw/vulkan.adreno.so
+vendor/lib/hw/vulkan.adreno.so
 
 # Hotword Enrollment
 -priv-app/HotwordEnrollmentOKGoogleEx2TL3210/HotwordEnrollmentOKGoogleEx2TL3210.apk;PRESIGNED
