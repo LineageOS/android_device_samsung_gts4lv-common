@@ -1,4 +1,5 @@
 allow init efs_file:dir mounton;
+allow init vendor_firmware_file:file mounton;
 
 allow init proc_last_kmsg:file { r_file_perms setattr };
 
