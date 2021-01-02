@@ -71,8 +71,6 @@ vendor/firmware/crbtfw21.tlv
 vendor/firmware/crnv21.bin
 
 # Camera
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@3.0-service
-vendor/etc/init/vendor.samsung.hardware.camera.provider@3.0-service.rc
 vendor/lib/camera/arcsoft_calibration.bin
 vendor/lib/camera/components/com.qti.eisv2.so
 vendor/lib/camera/components/com.qti.eisv3.so
@@ -109,7 +107,6 @@ vendor/lib/camera/systemdefault.bin
 vendor/lib/camera/titan17x_usecases.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.samsung.chi.override.so
-vendor/lib/hw/vendor.samsung.hardware.camera.provider@3.0-impl.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -141,11 +138,6 @@ vendor/lib/libuniplugin.so
 vendor/lib/libvdis_core.so
 vendor/lib/libvdis_interface.so
 vendor/lib/libxcv.camera.samsung.so
-vendor/lib/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib/vendor.samsung.camera.device@4.0-impl.so
-vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
-vendor/lib/vendor.samsung.hardware.camera.device@4.0.so
-vendor/lib/vendor.samsung.hardware.camera.provider@3.0.so
 
 # Camera - Firmware
 vendor/firmware/CAMERA_ICP.elf
