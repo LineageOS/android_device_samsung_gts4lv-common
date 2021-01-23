@@ -1,0 +1,29 @@
+binder_use(charger)
+
+# Reacting to Home/Power button presses
+allow charger input_device:chr_file { ioctl open read write };
+
+# Rebooting or powering off the device on either plug out or power button long press
+set_prop(charger, powerctl_prop)
+
+allow charger ashmem_device:chr_file execute;
+
+# For iterating all inputs, FB, power_supply, and light emitting devices
+allow charger sysfs:dir { open read search };
+allow charger sysfs_usb_supply:dir search;
+allow charger sysfs_graphics:dir search;
+
+# Access to power regulator and charger
+allow charger sysfs_usb_supply:file { open read write };
+
+# Persistent battery parameters (charge cycles and max charge)
+# Accesses /efs/ partition
+# NOTE: From the logs, it could be safe to omit battery_efs_file permissions
+#       since lpm does not have any access to it (running as 'system' user)
+#       and the init scripts manages that file already hence the root:root-600 permission
+allow charger efs_file:dir search;
+allow charger efs_file:file { open read write };
+allow charger app_efs_file:dir search;
+allow charger app_efs_file:file { open read write };
+allow charger battery_efs_file:dir search;
+allow charger battery_efs_file:file { open read write };
