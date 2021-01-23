@@ -1,0 +1,55 @@
+# Policy based on system/sepolicy/public/charger.te
+type lpm, domain;
+type lpm_exec, system_file_type, exec_type, file_type;
+
+permissive lpm;
+
+wakelock_use(lpm)
+binder_use(lpm)
+
+# uevent access? Battery events are emitted using uevents.
+allow lpm self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# Reacting to Home/Power button presses
+allow lpm input_device:chr_file { ioctl open read write };
+
+# Rebooting or powering off the device on either plug out or power button long press
+allow lpm powerctl_prop:property_service set;
+allow lpm property_socket:sock_file write;
+allow lpm init:unix_stream_socket connectto;
+
+allow lpm ashmem_device:chr_file execute;
+
+# Framebuffer access
+allow lpm graphics_device:chr_file { ioctl open read write };
+
+# For iterating all inputs, FB, power_supply, and light emitting devices
+allow lpm input_device:dir { open read search };
+allow lpm graphics_device:dir search;
+allow lpm sysfs:dir { open read search };
+allow lpm sysfs_usb_supply:dir search;
+allow lpm sysfs_graphics:dir search;
+
+# Access to power regulator and charger
+allow lpm sysfs_usb_supply:file { open read write };
+
+# Puts system to suspend (from libsuspend)
+allow lpm sysfs_power:file { getattr open read write };
+
+# Persistent battery parameters (charge cycles and max charge)
+# Accesses /efs/ partition
+# NOTE: From the logs, it could be safe to omit battery_efs_file permissions
+#       since lpm does not have any access to it (running as 'system' user)
+#       and the init scripts manages that file already hence the root:root-600 permission
+allow lpm efs_file:dir search;
+allow lpm efs_file:file { open read write };
+allow lpm app_efs_file:dir search;
+allow lpm app_efs_file:file { open read write };
+allow lpm battery_efs_file:dir search;
+allow lpm battery_efs_file:file { open read write };
+
+
+# Non critical rules. lpm will still work even if these are denied.
+# NOTE: This may trip the neverallow rules in platform.
+# allow lpm self:capability { net_admin sys_resource dac_override };
+# allow lpm mediaserver_exec:file { getattr read };
