@@ -86,9 +86,6 @@ vendor.voice.path.for.pcm.voip=true
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 vendor.qcom.bluetooth.soc=cherokee
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Dalvik
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapmaxfree=8m
