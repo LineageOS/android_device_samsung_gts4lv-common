@@ -1,6 +1,7 @@
 genfscon proc /irq/default_smp_affinity u:object_r:proc_default_smp_affinity:s0
 genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
 genfscon proc /memsize u:object_r:proc_meminfo:s0
+genfscon proc /reset_reason u:object_r:proc_reset_reason:s0
 genfscon proc /schedstat u:object_r:proc_sched:s0
 genfscon proc /simslot_count u:object_r:proc_simslot_count:s0
 genfscon proc /sys/kernel/sched_boost u:object_r:proc_sched:s0
@@ -14,6 +15,7 @@ genfscon proc /sys/kernel/sched_upmigrate u:object_r:proc_sched:s0
 genfscon proc /sys/kernel/sched_walt_rotate_big_tasks u:object_r:proc_sched:s0
 genfscon proc /sys/vm/swappiness u:object_r:proc_swappiness:s0
 
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0/alarm_boot u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/soc/soc:i2c@24/i2c-3/3-0071/power_supply/sm5705-fuelgauge u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:i2c@26/i2c-5/5-0049/sm5705-charger u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/virtual/lcd/panel u:object_r:sysfs_lcd_writable:s0

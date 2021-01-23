@@ -15,6 +15,7 @@
 /dev/block/platform/soc/7c4000\.sdhci/by-name/vendor        u:object_r:system_block_device:s0
 
 # Binaries
+/system/bin/lpm                                u:object_r:charger_exec:s0
 /(vendor|system/vendor)/bin/hw/macloader       u:object_r:macloader_exec:s0
 /(vendor|system/vendor)/bin/secril_config_svc  u:object_r:secril_config_svc_exec:s0
 
@@ -192,5 +193,6 @@
 /sys/devices/virtual/fingerprint/fingerprint(/.*)?              u:object_r:sysfs_fpc:s0
 /sys/devices/virtual/lcd/panel(/.*)?                            u:object_r:sysfs_lcd_writable:s0
 /sys/devices/virtual/mdnie(/.*)?                            --  u:object_r:sysfs_mdnie_writable:s0
+/sys/devices/virtual/sec/sec_keypad(/.*)?                       u:object_r:sysfs_sec_keypad:s0
 /sys/devices/virtual/sec/switch(/.*)?                           u:object_r:sysfs_sec_switch:s0
 /sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0
