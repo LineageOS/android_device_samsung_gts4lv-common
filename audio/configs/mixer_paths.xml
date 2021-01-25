@@ -2315,8 +2315,8 @@
 
     <path name="camcorder-stereo-mic">
         <path name="sub-main-mic" />
-        <ctl name="ADC1 Volume" value="2" />
-        <ctl name="ADC3 Volume" value="2" />
+        <ctl name="DEC1 Volume" value="92" />
+        <ctl name="DEC2 Volume" value="92" />
     </path>
 
     <path name="rec-interview-mic">
