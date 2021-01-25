@@ -528,11 +528,10 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
-# Power-off charging
-system/bin/lpm
+# Power-off charging - from gts7lwifi - RP1A.200720.012
+system/bin/lpm|ba60e7e4338c86c1efdc35e7d9fb3715fbbd3073
 system/lib64/libmaet.so
 system/lib64/libsxqk_skia.so
-system/lib64/libpixelflinger.so
 system/media/battery_error.spi
 system/media/battery_low.spi
 system/media/battery_temperature_error.spi
