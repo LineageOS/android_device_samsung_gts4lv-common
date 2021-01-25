@@ -23,9 +23,6 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
-        system/lib64/libpixelflinger.so)
-            "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
-            ;;
         vendor/lib64/libsec-ril.so)
             sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
             ;;
