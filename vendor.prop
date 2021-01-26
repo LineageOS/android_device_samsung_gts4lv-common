@@ -160,6 +160,7 @@ sys.vendor.shutdown.waittime=500
 
 # USB
 vendor.usb.diag.func.name=diag
+vendor.usb.controller=a600000.dwc3
 vendor.usb.use_ffs_mtp=0
 
 # WiFi Display
