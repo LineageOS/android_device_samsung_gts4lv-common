@@ -1,2 +1,1 @@
 type hal_bluetooth_a2dp_hwservice, hwservice_manager_type;
-type hal_miscpower_hwservice, hwservice_manager_type;
