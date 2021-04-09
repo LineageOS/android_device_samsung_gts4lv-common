@@ -44,23 +44,59 @@ on fs
     mount_all /vendor/etc/fstab.samsung --early
     mount none /mnt/vendor/dqmdbg /dqmdbg bind
 
-# Create carrier folder for HiddenMenu
-on post-fs
-    mkdir /efs/carrier 0755 system system
-    restorecon_recursive /efs
-
-    restorecon_recursive /mnt/vendor/efs
-    chown radio system /mnt/vendor/efs
-    chmod 0771 /mnt/vendor/efs
-
 on late-fs
     mount_all /vendor/etc/fstab.samsung --late
 
+on post-fs-data
+    # carrier partition
+    chown system system /carrier
+    chmod 0771 /carrier
+    restorecon /carrier
+
 on boot
+#Permission for SystemPerformance
+    chown root system /sys/power/cpufreq_max_limit
+    chown root system /sys/power/cpufreq_min_limit
+    chown root system /sys/power/cpufreq_table
+    chmod 664 /sys/power/cpufreq_max_limit
+    chmod 664 /sys/power/cpufreq_min_limit
+    chmod 664 /sys/power/cpufreq_table
+    chown root system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chown root system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chown root system /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+    chown root system /sys/class/devfreq/soc:qcom,cpubw/available_frequencies
+    chown root system /sys/class/devfreq/soc:qcom,cpubw/min_freq
+    chown root system /sys/class/devfreq/soc:qcom,cpubw/max_freq
+    chmod 664 /sys/class/devfreq/soc:qcom,cpubw/available_frequencies
+    chmod 664 /sys/class/devfreq/soc:qcom,cpubw/min_freq
+    chmod 664 /sys/class/devfreq/soc:qcom,cpubw/max_freq
+    chmod 0664 /sys/class/devfreq/soc:qcom,mincpubw/available_frequencies
+    chmod 0664 /sys/class/devfreq/soc:qcom,mincpubw/min_freq
+    chown system system /sys/class/input_booster/level
+    chown system system /sys/class/input_booster/head
+    chown system system /sys/class/input_booster/tail
+    chown system system /sys/class/input_booster/touchkey/level
+    chown system system /sys/class/input_booster/touchkey/freq
+    chown system system /sys/class/input_booster/touchkey/time
+    chmod 0664 /sys/class/input_booster/level
+    chmod 0664 /sys/class/input_booster/head
+    chmod 0664 /sys/class/input_booster/tail
+    chmod 0664 /sys/class/input_booster/touchkey/level
+    chmod 0664 /sys/class/input_booster/touchkey/freq
+    chmod 0664 /sys/class/input_booster/touchkey/time
+
+    # Meta event
+    chown system radio /sys/class/sensors/sensor_dev/flush
+
 # Permission for nfc, eSE driver
+    chmod 0660 /dev/sec-nfc
+    chmod 0660 /dev/p3
+    chown nfc nfc /dev/sec-nfc
+    chown system system /dev/p3
     chmod 0660 /dev/pn547
     chmod 0660 /dev/p61
     chown nfc nfc /dev/pn547
     chown system system /dev/p61
-    chmod 0660 /dev/sec-nfc
-    chown nfc nfc /dev/sec-nfc

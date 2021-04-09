@@ -147,6 +147,7 @@
 
     <ctl name="SEC_TDM_RX_0 Format" value="S24_LE" />
     <ctl name="SEC_TDM_TX_0 Format" value="S24_LE" />
+    <ctl name="SEC_TDM SlotNumber" value="Four" />
 
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
     <ctl name="Voice Rx Device Mute" id="1" value="-1" />
