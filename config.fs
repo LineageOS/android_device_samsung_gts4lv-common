@@ -16,6 +16,15 @@ value:2905
 [AID_VENDOR_QRTR]
 value:2906
 
+[AID_VENDOR_THERMAL]
+value:2907
+
+[AID_VENDOR_FASTRPC]
+value:2908
+
+[AID_VENDOR_QTR]
+value:2909
+
 [AID_VENDOR_SEND_HELP_MSG]
 value:5003
 
@@ -75,6 +84,9 @@ value:5386
 
 [AID_VENDOR_AUDIT]
 value:5555
+
+[AID_VENDOR_SYSTEM_RESERVED_STORAGE]
+value:5678
 
 [bt_firmware/]
 mode: 0771
@@ -213,6 +225,12 @@ mode: 0755
 user: AID_RADIO
 group: AID_RADIO
 caps: NET_BIND_SERVICE
+
+[vendor/bin/imsdaemon]
+mode: 0755
+user: AID_RADIO
+group: AID_RADIO
+caps: NET_BIND_SERVICE WAKE_ALARM BLOCK_SUSPEND
 
 [vendor/bin/imsdatadaemon]
 mode: 0755
