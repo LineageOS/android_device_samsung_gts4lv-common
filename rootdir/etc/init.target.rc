@@ -38,7 +38,6 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom --early
-    setprop ro.crypto.fde_algorithm AES-256-XTS
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
@@ -136,6 +135,9 @@ on post-fs-data
     chown system audio /dev/dbmdx-1
     chown system audio /sys/class/voicep/dbmdx/va_mic_mode
 
+on early-boot
+    start irsc_util
+
 on boot
     # chown system system /sys/kernel/hbtp/display_pwr
     start rmt_storage
@@ -143,20 +145,6 @@ on boot
 
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
-
-# for WIFI MAC address
-    mkdir /mnt/vendor/efs/wifi 0755 wifi wifi
-    chown wifi wifi /mnt/vendor/efs/wifi/.mac.info
-    chmod 0644 /mnt/vendor/efs/wifi/.mac.info
-    chown wifi wifi /mnt/vendor/efs/wifi/.mac.cob
-    chmod 0644 /mnt/vendor/efs/wifi/.mac.cob
-
-# for WIFI MAC address (Upgrade model from O)
-    mkdir /efs/wifi 0755 wifi wifi
-    chown wifi wifi /efs/wifi/.mac.info
-    chmod 0644 /efs/wifi/.mac.info
-    chown wifi wifi /efs/wifi/.mac.cob
-    chmod 0644 /efs/wifi/.mac.cob
 
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
