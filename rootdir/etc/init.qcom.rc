@@ -46,6 +46,10 @@ on early-init
   # Change ownership of sysfs power control node
     chown system graphics /sys/class/drm/card0/device/power/control
 
+    # Change ownership of sw_sync node
+    chown system graphics /sys/kernel/debug/sync/sw_sync
+    chmod 0666 /sys/kernel/debug/sync/sw_sync
+
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
     # Load WIGIG platform driver
@@ -91,18 +95,6 @@ on early-boot
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     setprop ro.sf.lcd_density ${vendor.display.lcd_density}
-
-    chown system system /mnt/vendor/persist/sensors
-    chown system system /mnt/vendor/persist/sensors/sns.reg
-    chown system system /mnt/vendor/persist/sensors/sensors_list.txt
-    chown system system /mnt/vendor/persist/sensors/registry
-    chown system system /mnt/vendor/persist/sensors/registry/registry
-    chown system system /mnt/vendor/persist/sensors/registry/registry/sensors_registry
-    chown system system /mnt/vendor/persist/sensors/sensors_settings
-    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_config
-    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_version
-    chown system system /mnt/vendor/persist/sensors/registry/config
-    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
@@ -172,10 +164,8 @@ on boot
     # Fingerprint sensor
     chmod 0660 /dev/esfp0
     chmod 0660 /dev/vfsspi
-    chmod 0660 /dev/goodix_fp
     chown system system /dev/esfp0
     chown system system /dev/vfsspi
-    chown system system /dev/goodix_fp
     chown system radio /sys/class/fingerprint/fingerprint/type_check
     chown system radio /sys/class/fingerprint/fingerprint/name
     chown system radio /sys/class/fingerprint/fingerprint/vendor
@@ -257,12 +247,12 @@ on boot
     # limit discard size to 128MB in order to avoid long IO latency
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
-    # Sensors log dir
-    mkdir /data/vendor/sensors
-    chown system system /data/vendor/sensors
-
 # msm specific files that need to be created on /data
 on post-fs-data
+    #FINGERPRINT
+    mkdir /data/vendor/biometrics 0770 system system
+    mkdir /data/vendor/fpSnrTest 0770 system
+
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used for dump collection
@@ -398,13 +388,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-    # FINGERPRINT
-    mkdir /data/vendor/biometrics 0770 system system
-    mkdir /data/vendor/fpSnrTest 0770 system system
-
-    #argos
-    chown system system /dev/network_throughput
-
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
@@ -531,16 +514,7 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
-
-service vendor.rmt_storage /vendor/bin/rmt_storage
-    class core
-    user root
-    shutdown critical
-    ioprio rt 0
-
-service vendor.tftp_server /vendor/bin/tftp_server
-   class core
-   user root
+    disabled
 
 service qmiproxy /system/bin/qmiproxy
     class main
@@ -652,11 +626,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
     group root system radio
-    oneshot
-
-service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
-    user root
     oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
@@ -802,12 +771,12 @@ on property:vendor.rild.libpath=*
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
-service vendor.hbtp /vendor/bin/hbtp_daemon
-     class main
-     user system
-     group system
-     capabilities SYS_NICE
-     disabled
+#service vendor.hbtp /vendor/bin/hbtp_daemon
+#     class main
+#     user system
+#     group system
+#     capabilities SYS_NICE
+#     disabled
 
 #service chre /vendor/bin/chre
 #    class late_start
@@ -815,16 +784,6 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
 #    group system
 #    socket chre seqpacket 0660 root system
 #    shutdown critical
-
-# ARGOSD
-service argos-daemon /vendor/bin/argosd
-    class main
-    user system
-    group system radio
-    disabled
-
-on property:sys.boot_completed=1
-    start argos-daemon
 
 #Set GPU Opengles version
 on property:vendor.opengles.version=*
