@@ -77,7 +77,7 @@ def AddTrustZoneAssertion(info, input_zip):
   if m:
     versions = m.group(1).split('|')
     if len(versions) and '*' not in versions:
-      cmd = 'assert(samsung.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 10 based stock ROM build. Please upgrade firmware and retry!"););'
+      cmd = 'assert(samsung.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 11 based stock ROM build. Please upgrade firmware and retry!"););'
       info.script.AppendExtra(cmd)
 
 def OTA_InstallEnd(info):
