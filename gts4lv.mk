@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
     memtrack.sdm710 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
-    vendor.qti.hardware.display.allocator@1.0-service
+    vendor.qti.hardware.display.allocator@1.0-service \
+    vendor.qti.hardware.display.mapper@3.0.vendor
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
@@ -179,7 +180,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung
+    android.hardware.keymaster@4.0-service.samsung \
+    libkeymaster4_1support.vendor:64
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -197,6 +199,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
+    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libgui_vendor \
     libOmxAacEnc \
@@ -245,7 +248,9 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.0.vendor
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
 
 # QCOM
 PRODUCT_PACKAGES += \
@@ -270,8 +275,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@2.0-service.multihal
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
