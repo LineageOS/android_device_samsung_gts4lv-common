@@ -117,15 +117,6 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a "$(getprop ro.build.type)" 
       fi
 fi
 
-usb_config=`getprop persist.sys.usb.config`
-case "$usb_config" in
-    "" | "adb") #USB persist config not set, select default configuration
-    setprop persist.sys.usb.config diag,adb
-    ;;
-  * )
-  ;; #USB persist config exists, do nothing
-esac
-
 # This check is needed for GKI 1.0 targets where QDSS is not available
 if [ "$(getprop persist.vendor.usb.config)" == "diag,serial_cdev,rmnet,dpl,qdss,adb" -a \
      ! -d /config/usb_gadget/g1/functions/qdss.qdss ]; then
@@ -160,6 +151,7 @@ if [ -d /config/usb_gadget ]; then
 		serialno=1234567
 		echo $serialno > /config/usb_gadget/g1/strings/0x409/serialnumber
 	fi
+	setprop vendor.usb.configfs 1
 
 	persist_comp=`getprop persist.sys.usb.config`
 	comp=`getprop sys.usb.config`
