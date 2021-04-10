@@ -4,5 +4,3 @@ libcdsprpc.so
 libfastcvopt.so
 libqti-perfd-client.so
 libsdsprpc.so
-libprotobuf-cpp-full.so
-libprotobuf-cpp-lite.so
