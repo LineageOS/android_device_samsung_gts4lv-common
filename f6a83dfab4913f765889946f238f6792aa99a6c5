@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c7e4399_dbee8bee",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 18
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-04-10T17:14:43Z",
+      "side": 1,
+      "message": "I\u0027m think this moved to system_ext",
+      "revId": "f6a83dfab4913f765889946f238f6792aa99a6c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
