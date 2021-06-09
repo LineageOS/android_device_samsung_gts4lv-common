@@ -5,4 +5,6 @@ allowxperm rild tun_device:chr_file ioctl { TUNSETIFF TUNSETPERSIST };
 
 allow rild proc_net:file write;
 
+r_dir_file(rild, imei_efs_file)
+
 get_prop(rild, csc_prop)
