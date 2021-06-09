@@ -1,0 +1,2 @@
+allow hal_thermal_default sysfs_batteryinfo:file r_file_perms;
+allow hal_thermal_default sysfs_sec_thermal:file r_file_perms;
