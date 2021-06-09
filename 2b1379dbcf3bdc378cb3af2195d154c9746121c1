@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7991d6db_68f102d3",
+        "filename": "sepolicy/vendor/hal_health_default.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2021-06-09T21:59:44Z",
+      "side": 1,
+      "message": "maybe newline here?",
+      "revId": "2b1379dbcf3bdc378cb3af2195d154c9746121c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
