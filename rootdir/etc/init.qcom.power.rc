@@ -102,7 +102,6 @@ on boot
     # Silver only configuration cannot work with 0-7
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
@@ -287,9 +286,12 @@ on enable-low-power
     write /sys/module/lpm_levels/L3/cpu6/ret/idle_enabled "N"
     write /sys/module/lpm_levels/L3/cpu7/ret/idle_enabled "N"
 
-    # Set cpuset parameters
-    write /dev/cpuset/background/cpus 0-5
-    write /dev/cpuset/system-background/cpus 0-5
+    # Set final cpuset parameters
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-5,7
+    write /dev/cpuset/background/cpus 4-5
+    write /dev/cpuset/system-background/cpus 2-5
+    write /dev/cpuset/restricted/cpus 2-5
 
     # Enable idle state listener
     write /sys/class/drm/card0/device/idle_encoder_mask 1
