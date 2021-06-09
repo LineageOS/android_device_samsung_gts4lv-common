@@ -50,5 +50,6 @@ type sysfs_lcd_writable, fs_type, sysfs_type;
 type sysfs_mdnie_writable, fs_type, sysfs_type;
 type sysfs_sec_keypad, fs_type, sysfs_type;
 type sysfs_sec_switch, fs_type, sysfs_type;
+type sysfs_sec_thermal, fs_type, sysfs_type;
 type sysfs_tsp, fs_type, sysfs_type;
 type sysfs_wifi, fs_type, sysfs_type;
