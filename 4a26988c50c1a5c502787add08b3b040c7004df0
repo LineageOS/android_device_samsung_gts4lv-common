@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9c896595_088ceab2",
+        "filename": "dap/proguard.flags",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2021-09-20T02:44:43Z",
+      "side": 1,
+      "message": "copy pasta fail?",
+      "revId": "4a26988c50c1a5c502787add08b3b040c7004df0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
