@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version T720XXU2DUD7, unless pinned
+# Common proprietary files - from Samsung package version T720XXS2DUH1, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
