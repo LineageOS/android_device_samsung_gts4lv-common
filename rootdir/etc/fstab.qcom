@@ -51,5 +51,5 @@
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
 
 # VOLD :: fstab_non_AB_variant.qcom
-/devices/platform/soc/8804000.sdhci/mmc_host*           auto    vfat    defaults    voldmanaged=sdcard:auto
+/devices/platform/soc/8804000.sdhci/mmc_host*           auto    vfat    defaults    voldmanaged=sdcard:auto,encryptable=userdata
 /devices/platform/soc/a600000.ssusb/a600000.dwc3*       auto    auto    defaults    voldmanaged=usb:auto
