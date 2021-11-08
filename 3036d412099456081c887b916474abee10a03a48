@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "3e9754c8_ea6aaafa",
         "filename": "gts4lv.mk",
@@ -20,10 +21,34 @@
         "endChar": 57
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2ceda7e_42f5cb34",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e9754c8_ea6aaafa",
+      "range": {
+        "startLine": 104,
+        "startChar": 0,
+        "endLine": 105,
+        "endChar": 57
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "c82bf786_90e6fd40",
         "filename": "gts4lv.mk",
@@ -43,10 +68,34 @@
         "endChar": 37
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "098c90c9_7dfff236",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c82bf786_90e6fd40",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 158,
+        "endChar": 37
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "09438cb7_98af3917",
         "filename": "gts4lv.mk",
@@ -66,10 +115,34 @@
         "endChar": 62
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f03dcf2d_3249b4df",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "09438cb7_98af3917",
+      "range": {
+        "startLine": 181,
+        "startChar": 0,
+        "endLine": 181,
+        "endChar": 62
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "cb799f5a_c09b348f",
         "filename": "gts4lv.mk",
@@ -89,10 +162,34 @@
         "endChar": 38
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "57fa82f6_83e74035",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cb799f5a_c09b348f",
+      "range": {
+        "startLine": 184,
+        "startChar": 0,
+        "endLine": 184,
+        "endChar": 38
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "c170d6a3_3cfb55da",
         "filename": "gts4lv.mk",
@@ -112,10 +209,34 @@
         "endChar": 38
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "79409cb8_5417c342",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c170d6a3_3cfb55da",
+      "range": {
+        "startLine": 186,
+        "startChar": 0,
+        "endLine": 186,
+        "endChar": 38
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "cfe2c160_1d102baa",
         "filename": "gts4lv.mk",
@@ -135,10 +256,34 @@
         "endChar": 40
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "da4006dc_18d50539",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cfe2c160_1d102baa",
+      "range": {
+        "startLine": 192,
+        "startChar": 0,
+        "endLine": 192,
+        "endChar": 40
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "599511f5_faeeda5c",
         "filename": "gts4lv.mk",
@@ -158,8 +303,31 @@
         "endChar": 39
       },
       "revId": "3036d412099456081c887b916474abee10a03a48",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92b64642_731617ff",
+        "filename": "gts4lv.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 285,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-11-08T11:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "599511f5_faeeda5c",
+      "range": {
+        "startLine": 284,
+        "startChar": 0,
+        "endLine": 285,
+        "endChar": 39
+      },
+      "revId": "3036d412099456081c887b916474abee10a03a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
