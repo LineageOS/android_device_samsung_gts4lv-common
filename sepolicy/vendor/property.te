@@ -5,7 +5,6 @@ type receiver_error_prop, property_type;
 type sec_camera_prop, property_type;
 type sec_cnss_diag_prop, property_type;
 type sec_fastcharge_prop, property_type;
-type tzdaemon_prop, property_type;
 type vendor_factory_prop, property_type;
 type vendor_members_prop, property_type;
 type vendor_qseecomd_prop, property_type;
