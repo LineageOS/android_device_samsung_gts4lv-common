@@ -134,7 +134,9 @@ PRODUCT_PACKAGES += \
     gralloc.sdm710 \
     hwcomposer.sdm710 \
     libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
+    libqdMetaData.system \
     memtrack.sdm710 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
