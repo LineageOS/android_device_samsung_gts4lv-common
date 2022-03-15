@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2021 The LineageOS Project
+# Copyright (C) 2019-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -164,7 +164,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2021-08-01
+VENDOR_SECURITY_PATCH := 2021-12-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
