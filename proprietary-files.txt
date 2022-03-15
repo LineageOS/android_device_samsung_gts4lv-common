@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version T720XXS2DUH1, unless pinned
+# Common proprietary files - from Samsung package version T720XXU2DUL1, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -466,6 +466,7 @@ vendor/lib64/libswvdec.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/commonsysnodesconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
@@ -665,7 +666,9 @@ vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
+vendor/lib64/libhypervintf.so
 vendor/lib64/libthermalclient.so
+vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Time
