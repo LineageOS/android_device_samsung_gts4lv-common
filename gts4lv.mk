@@ -34,9 +34,9 @@ TARGET_SCREEN_WIDTH := 1600
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    device/samsung/qcom-common/overlay \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
+    device/samsung/qcom-common/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
