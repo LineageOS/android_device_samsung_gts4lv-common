@@ -166,7 +166,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Device Health
 vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
--vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
+vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
@@ -217,7 +217,7 @@ vendor/lib64/vendor.display.postproc@1.0.so
 # DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libcpion.so
 vendor/lib/libhdcpsrm.so
@@ -284,7 +284,7 @@ vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gps.conf
@@ -406,8 +406,8 @@ vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
 # Hotword Enrollment
--priv-app/HotwordEnrollmentOKGoogleEx2TL3210/HotwordEnrollmentOKGoogleEx2TL3210.apk;PRESIGNED
--priv-app/HotwordEnrollmentXGoogleEx2TL3210/HotwordEnrollmentXGoogleEx2TL3210.apk;PRESIGNED
+priv-app/HotwordEnrollmentOKGoogleEx2TL3210/HotwordEnrollmentOKGoogleEx2TL3210.apk;PRESIGNED
+priv-app/HotwordEnrollmentXGoogleEx2TL3210/HotwordEnrollmentXGoogleEx2TL3210.apk;PRESIGNED
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
@@ -672,7 +672,7 @@ vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
--vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libhypervintf.so
@@ -681,7 +681,7 @@ vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Time
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
@@ -758,7 +758,7 @@ vendor/etc/init/wifi.rc:vendor/etc/init/wifi_sec.rc
 vendor/etc/init/wifi_qcom.rc
 
 # WiFi Display (system) - from IN2020 11.F.06
--system/framework/WfdCommon.jar|da807ef11346e38e3d9058e655b3a565f3e2a32d
+system/framework/WfdCommon.jar|da807ef11346e38e3d9058e655b3a565f3e2a32d
 system_ext/bin/wfdservice|fc204600629fbf60c4c6c187f0943d21643fdb4a
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
@@ -803,7 +803,7 @@ system_ext/lib64/libwfduibcsink.so|d4cc3afb86003f0e26134f82b503b6deac30b6b5
 system_ext/lib64/libwfduibcsinkinterface.so|a875792e5242870cd9a069cb367a6b5031fce2f0
 system_ext/lib64/libwfduibcsrc.so|1529ca18c3484b8a3f3d95e9198def564e86fda3
 system_ext/lib64/libwfduibcsrcinterface.so|69400030817aa8f6994a525b027bb3dd7cabd0d4
--system_ext/priv-app/WfdService/WfdService.apk|33eb0fd6703303f2ff20e39898e278a4358c820b
+system_ext/priv-app/WfdService/WfdService.apk|33eb0fd6703303f2ff20e39898e278a4358c820b
 
 # WiFi Display (vendor) - from PNX - RKQ1.200906.002
 vendor/bin/wfdhdcphalservice|c7a2d70190d8a90a8ed326af0add5cf7c99d1ab6
