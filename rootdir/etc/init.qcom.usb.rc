@@ -29,8 +29,6 @@
 on init
     chown system radio /sys/class/host_notify/usb_otg/booster
     chmod 0660 /sys/class/host_notify/usb_otg/booster
-    chown system radio /sys/class/usb_notify/usb_control/disable
-    chmod 0660 /sys/class/usb_notify/usb_control/disable
 
     # USB HW param
     chown system usb /sys/class/usb_notify/usb_control/usb_hw_param
