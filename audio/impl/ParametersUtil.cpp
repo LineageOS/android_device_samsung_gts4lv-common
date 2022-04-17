@@ -182,7 +182,10 @@ Result ParametersUtil::setParametersImpl(const hidl_vec<ParameterValue>& context
         params.add(String8(pair.key.c_str()), String8(pair.value.c_str()));
     }
     for (size_t i = 0; i < parameters.size(); ++i) {
-        if (parameters[i].key == "rotation") {
+        if (parameters[i].key == "bt_wbs") {
+            params.add(String8("g_sco_samplerate"),
+                       String8(parameters[i].value == AudioParameter::valueOn ? "16000" : "8000"));
+        } else if (parameters[i].key == "rotation") {
             if (parameters[i].value == "0") {
                 setSlotPositions(SLOT_POSITIONS_0);
             } else if (parameters[i].value == "90") {
