@@ -67,7 +67,6 @@ TARGET_BOOTLOADER_BOARD_NAME := sdm710
 SOONG_CONFIG_NAMESPACES += samsungCameraVars
 SOONG_CONFIG_samsungCameraVars += needs_sec_reserved_field
 SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
-TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
 TARGET_SCREEN_DENSITY := 320
