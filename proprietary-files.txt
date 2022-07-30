@@ -16,17 +16,26 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
 vendor/etc/dolby/dax-default.xml
+vendor/lib/hw/audio.primary.sdm710.so
+vendor/lib/lib_SamsungRec_07010.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_soundaliveresampler.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
+vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libqtigef.so
+vendor/lib/librecordalive.so
+vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
+vendor/lib/libsecaudioinfo.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
