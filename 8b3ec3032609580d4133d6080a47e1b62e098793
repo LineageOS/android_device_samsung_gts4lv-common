@@ -16,6 +16,24 @@
       "message": "Just add some explanation in the commit message.",
       "revId": "8b3ec3032609580d4133d6080a47e1b62e098793",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6297016d_3a04549d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-07-30T10:45:09Z",
+      "side": 1,
+      "message": "is this good enough?",
+      "parentUuid": "8b73190d_26d0cf03",
+      "revId": "8b3ec3032609580d4133d6080a47e1b62e098793",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
