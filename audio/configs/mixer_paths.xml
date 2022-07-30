@@ -494,10 +494,6 @@
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="INT0_MI2S_RX" />
     </path>
 
-    <path name="echo-reference handset">
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="INT0_MI2S_RX" />
-    </path>
-
     <path name="echo-reference speaker">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="SEC_TDM_RX_0" />
         <ctl name="EC Reference Channels" value="Four"/>
@@ -508,10 +504,6 @@
     </path>
 
     <path name="echo-reference-voip headphones">
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="INT0_MI2S_RX" />
-    </path>
-
-    <path name="echo-reference-voip handset">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="INT0_MI2S_RX" />
     </path>
 
@@ -533,14 +525,6 @@
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
-        <path name="deep-buffer-playback speaker" />
-    </path>
-
-    <path name="deep-buffer-playback voice-speaker">
-        <path name="deep-buffer-playback speaker" />
-    </path>
-
-    <path name="deep-buffer-playback voice-speaker-2">
         <path name="deep-buffer-playback speaker" />
     </path>
 
@@ -689,14 +673,6 @@
     </path>
 
     <path name="low-latency-playback speaker-protected">
-        <path name="low-latency-playback speaker" />
-    </path>
-
-    <path name="low-latency-playback voice-speaker">
-        <path name="low-latency-playback speaker" />
-    </path>
-
-    <path name="low-latency-playback voice-speaker-2">
         <path name="low-latency-playback speaker" />
     </path>
 
@@ -1745,11 +1721,6 @@
         <ctl name="Voip_Tx Mixer SLIM_7_TX_Voip" value="1" />
     </path>
 
-    <path name="compress-voip-call speaker">
-        <ctl name="SEC_TDM_RX_0_Voice Mixer Voip" value="1" />
-        <ctl name="Voip_Tx Mixer INT3_MI2S_TX_Voip" value="1" />
-    </path>
-
     <path name="compress-voip-call bt-sco-wb">
         <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-voip-call bt-sco" />
@@ -1853,14 +1824,6 @@
         <ctl name="VoiceMMode1_Tx Mixer INT3_MI2S_TX_MMode1" value="1" />
     </path>
 
-    <path name="voicemmode1-call voice-speaker">
-        <path name="voicemmode1-call speaker" />
-    </path>
-
-    <path name="voicemmode1-call voice-speaker-2">
-        <path name="voicemmode1-call speaker" />
-    </path>
-
     <path name="voicemmode2-call">
         <ctl name="INT0_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
@@ -1903,14 +1866,6 @@
     <path name="voicemmode2-call speaker">
         <ctl name="SEC_TDM_RX_0_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer INT3_MI2S_TX_MMode2" value="1" />
-    </path>
-
-    <path name="voicemmode2-call voice-speaker">
-        <path name="voicemmode2-call speaker" />
-    </path>
-
-    <path name="voicemmode2-call voice-speaker-2">
-        <path name="voicemmode2-call speaker" />
     </path>
 
     <path name="voice-wakeup">
@@ -2091,27 +2046,7 @@
         <ctl name="RX2 Digital Volume" value="78" />
     </path>
 
-    <path name="headphones">
-        <path name="headset" />
-    </path>
-
-    <path name="headphones-hifi-filter">
-        <path name="headphones" />
-    </path>
-
     <path name="asrc-mode">
-    </path>
-
-    <path name="bt-sco-headset">
-    </path>
-
-    <path name="bt-sco-mic">
-    </path>
-
-    <path name="bt-sco-headset-wb">
-    </path>
-
-    <path name="bt-sco-mic-wb">
     </path>
 
     <path name="headphones-dsd">
@@ -2147,11 +2082,6 @@
         <ctl name="FL Digital PCM Volume" value="817" />
         <ctl name="RX1 Digital Volume" value="52" />
         <ctl name="RX2 Digital Volume" value="52" />
-    </path>
-
-
-    <path name="speaker-and-headphones-hifi-filter">
-        <path name="speaker-and-headphones" />
     </path>
 
     <path name="dual-speaker-and-headphones">
@@ -2298,10 +2228,6 @@
         <ctl name="ADC2 Volume" value="4" />
     </path>
 
-    <path name="headset-mic">
-        <path name="rec-headset-mic" />
-    </path>
-
     <path name="rec-headset-main-mic">
         <path name="ear-main-mic" />
         <ctl name="ADC1 Volume" value="4" />
@@ -2316,23 +2242,14 @@
 
     <path name="camcorder-stereo-mic">
         <path name="sub-main-mic" />
-        <ctl name="DEC1 Volume" value="92" />
-        <ctl name="DEC2 Volume" value="92" />
+        <ctl name="ADC1 Volume" value="2" />
+        <ctl name="ADC3 Volume" value="2" />
     </path>
 
     <path name="rec-interview-mic">
         <path name="sub-main-mic" />
         <ctl name="ADC1 Volume" value="2" />
         <ctl name="ADC3 Volume" value="2" />
-    </path>
-
-    <path name="voice-rec-mic">
-        <path name="rec-sub-mic" />
-        <ctl name="DEC1 Volume" value="92" />
-    </path>
-
-    <path name="camcorder-mic">
-        <path name="camcorder-stereo-mic" />
     </path>
 
     <path name="echo-main-mic">
@@ -2501,22 +2418,6 @@
         <ctl name="RX2 Digital Volume" value="84" />
     </path>
 
-    <path name="voice-headset">
-        <path name="call-headset" />
-    </path>
-
-    <path name="voice-headphones">
-        <path name="call-headset" />
-    </path>
-
-    <path name="voice-speaker">
-        <path name="call-speaker" />
-    </path>
-
-    <path name="voice-speaker-2">
-        <path name="call-speaker" />
-    </path>
-
     <!-- TX part -->
     <path name="hearing-aid-mic">
         <path name="sub-main-mic" />
@@ -2537,21 +2438,6 @@
         <ctl name="DEC2 Volume" value="92" />
     </path>
 
-    <path name="handset-mic">
-        <path name="rec-sub-mic" />
-        <ctl name="DEC1 Volume" value="92" />
-    </path>
-
-    <path name="voice-speaker-mic">
-        <path name="rec-sub-mic" />
-        <ctl name="DEC1 Volume" value="92" />
-    </path>
-
-    <path name="speaker-mic">
-        <path name="rec-sub-mic" />
-        <ctl name="DEC1 Volume" value="92" />
-    </path>
-
     <path name="call-headphone-mic">
         <path name="main-mic" />
         <ctl name="ADC1 Volume" value="2" />
@@ -2561,10 +2447,6 @@
         <path name="ear-mic" />
         <ctl name="ADC2 Volume" value="2" />
 		<ctl name="DEC1 Volume" value="101" />
-    </path>
-
-    <path name="voice-headset-mic">
-        <path name="call-speaker-mic" />
     </path>
 
     <path name="call-usb-headphone-mic">
@@ -2989,61 +2871,6 @@
         <ctl name="RX2 Digital Volume" value="84" />
     </path>
 
-    <path name="audio-playback-voip">
-        <ctl name="SEC_TDM_RX_0 Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip headphones">
-        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip bt-sco">
-        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip bt-a2dp">
-        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip bt-sco-wb">
-        <ctl name="BT SampleRate" value="KHZ_16" />
-        <path name="audio-playback-voip bt-sco" />
-    </path>
-
-    <path name="audio-playback-voip afe-proxy">
-        <ctl name="AFE_PCM_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip usb-headphones">
-        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip usb-headset">
-        <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip display-port">
-        <ctl name="DISPLAY_PORT Audio Mixer MultiMedia10" value="1" />
-    </path>
-
-    <path name="audio-playback-voip speaker-and-display-port">
-        <path name="audio-playback-voip display-port" />
-        <path name="audio-playback-voip" />
-    </path>
-
-    <path name="audio-playback-voip speaker-safe-and-display-port">
-        <path name="audio-playback-voip display-port" />
-        <path name="audio-playback-voip" />
-    </path>
-
-    <path name="audio-playback-voip voice-speaker">
-        <path name="audio-playback-voip" />
-    </path>
-
-    <path name="audio-playback-voip voice-speaker-2">
-        <path name="audio-playback-voip" />
-    </path>
-
     <!-- TX part -->
     <path name="voip-comm-handset-mic">
         <path name="sub-main-mic" />
@@ -3194,23 +3021,6 @@
     <path name="voip-callforwarding-headphone-mic">
         <path name="main-mic" />
         <ctl name="ADC1 Volume" value="3" />
-    </path>
-
-    <path name="audio-record-voip">
-        <ctl name="MultiMedia10 Mixer INT3_MI2S_TX" value="1" />
-    </path>
-
-    <path name="audio-record-voip usb-headset-mic">
-        <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="1" />
-    </path>
-
-    <path name="audio-record-voip bt-sco">
-        <ctl name="MultiMedia10 Mixer SLIM_7_TX" value="1" />
-    </path>
-
-    <path name="audio-record-voip bt-sco-wb">
-        <ctl name="BT SampleRate" value="KHZ_16" />
-        <path name="audio-record-voip bt-sco" />
     </path>
     <!-- end of VoIP Scenario -->
 
