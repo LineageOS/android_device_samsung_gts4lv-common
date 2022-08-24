@@ -163,7 +163,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2021-12-01
+VENDOR_SECURITY_PATCH := 2022-07-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
