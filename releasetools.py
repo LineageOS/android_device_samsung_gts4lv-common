@@ -53,6 +53,7 @@ def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
 
 def IncrementalOTA_InstallEnd(info):
+  info.input_zip = info.target_zip
   OTA_InstallEnd(info)
 
 def FullOTA_Assertions(info):
@@ -72,7 +73,7 @@ def AddImage(info, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def AddTrustZoneAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt")
+  android_info = input_zip.read("OTA/android-info.txt")
   m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info.decode('utf-8'))
   if m:
     versions = m.group(1).split('|')
