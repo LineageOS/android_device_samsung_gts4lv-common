@@ -16,6 +16,29 @@
       "message": "Inspired by gta4xlwifi. \nI had many OOM kills of background apps on gts4lv, which did not happen on gta4xlwifi. \nBoth devices have the same amount of RAM, though gta4xl* uses ZRAM by default. \nEnabling ZRAM gts4lv* will help with memory management a lot. \nI tested this for some days and the background app kills are far less likely now. \n",
       "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "544b5249_5b2f7360",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-11-18T09:44:27Z",
+      "side": 1,
+      "message": "4.9 kernels do not have this anymore, they automatically create streams equivalent to the number of cpu cores",
+      "range": {
+        "startLine": 57,
+        "startChar": 123,
+        "endLine": 57,
+        "endChar": 142
+      },
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
