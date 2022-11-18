@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77bad969_cb0baaaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2022-11-18T09:18:05Z",
+      "side": 1,
+      "message": "Inspired by gta4xlwifi. \nI had many OOM kills of background apps on gts4lv, which did not happen on gta4xlwifi. \nBoth devices have the same amount of RAM, though gta4xl* uses ZRAM by default. \nEnabling ZRAM gts4lv* will help with memory management a lot. \nI tested this for some days and the background app kills are far less likely now. \n",
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
