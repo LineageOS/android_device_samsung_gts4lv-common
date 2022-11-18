@@ -39,6 +39,29 @@
       },
       "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54962c38_90790658",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-11-18T09:45:56Z",
+      "side": 1,
+      "message": "also, if you serve multiple variants with different ram sizes, i\u0027d set this as a percentage, e.g. qualcomms\u0027 suggestion of 50%",
+      "range": {
+        "startLine": 57,
+        "startChar": 104,
+        "endLine": 57,
+        "endChar": 123
+      },
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
