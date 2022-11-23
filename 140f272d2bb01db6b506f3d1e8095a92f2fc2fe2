@@ -62,6 +62,54 @@
       },
       "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d54002f9_d63e9f6a",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2022-11-23T12:53:38Z",
+      "side": 1,
+      "message": "can confirm, without defining max_comp_streams still 8 threads are used.\n\ngts4lv:/ # cat /sys/block/zram0/max_comp_streams                                                                                                                                                                                           \n8",
+      "parentUuid": "544b5249_5b2f7360",
+      "range": {
+        "startLine": 57,
+        "startChar": 123,
+        "endLine": 57,
+        "endChar": 142
+      },
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d8f580f_bb3b1e0a",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2022-11-23T12:53:38Z",
+      "side": 1,
+      "message": "Where did you get that suggestion from?\nusing 50% nets a size of 1894125568, still 2684354560 are used on gta4xl* which has the same amount of ram.\nthere samsung did chose this number on stock already.\nsamsungs choice would equate to roughtly 70%, so maybe this would be a possible percentage as well",
+      "parentUuid": "54962c38_90790658",
+      "range": {
+        "startLine": 57,
+        "startChar": 104,
+        "endLine": 57,
+        "endChar": 123
+      },
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
