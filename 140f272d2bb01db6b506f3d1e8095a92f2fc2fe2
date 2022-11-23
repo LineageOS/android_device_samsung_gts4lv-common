@@ -110,6 +110,30 @@
       },
       "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c99a93d0_3b1e7ec9",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-11-23T13:11:40Z",
+      "side": 1,
+      "message": "CAF uses 1 GB ZRAM on SDM485 - https://git.codelinaro.org/clo/la/platform/vendor/qcom/skunk/-/commit/7b8c6a894a4de822b6ddd8ec9da8aa95884f9bd8, but I don\u0027t mind having slightly more than that.",
+      "parentUuid": "7d8f580f_bb3b1e0a",
+      "range": {
+        "startLine": 57,
+        "startChar": 104,
+        "endLine": 57,
+        "endChar": 123
+      },
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
