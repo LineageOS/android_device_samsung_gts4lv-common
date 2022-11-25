@@ -134,6 +134,30 @@
       },
       "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc898c9e_59bd0bbc",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2022-11-25T11:27:25Z",
+      "side": 1,
+      "message": "60% should be a nice middle ground then",
+      "parentUuid": "c99a93d0_3b1e7ec9",
+      "range": {
+        "startLine": 57,
+        "startChar": 104,
+        "endLine": 57,
+        "endChar": 123
+      },
+      "revId": "140f272d2bb01db6b506f3d1e8095a92f2fc2fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
