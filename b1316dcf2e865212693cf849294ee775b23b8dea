@@ -16,6 +16,23 @@
       "message": "I\u0027ll try it out for a few days to see if 60% is enough",
       "revId": "b1316dcf2e865212693cf849294ee775b23b8dea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b24e244d_e8aa8140",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2022-12-01T10:54:46Z",
+      "side": 1,
+      "message": "Works very well, switched through multiple apps and no active background services were killed.",
+      "revId": "b1316dcf2e865212693cf849294ee775b23b8dea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
