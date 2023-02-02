@@ -77,6 +77,7 @@ bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
 persist.vendor.qcom.bluetooth.soc=cherokee
+ro.vendor.bt.bdaddr_path=/mnt/vendor/efs/bluetooth/bt_addr
 vendor.qcom.bluetooth.soc=cherokee
 
 # Chipset
