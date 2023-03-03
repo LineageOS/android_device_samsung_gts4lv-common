@@ -66,6 +66,9 @@ on init
     chmod 0660 /sys/class/backlight/panel0-backlight/brightness
     chmod 0660 /sys/class/backlight/panel0-backlight/max_brightness
 
+    # Charger
+    chown system system /sys/class/power_supply/battery/batt_slate_mode
+
     # LCD
     chown system system /sys/class/lcd/panel/hmt_on
     chmod 0660 /sys/class/lcd/panel/hmt_on
