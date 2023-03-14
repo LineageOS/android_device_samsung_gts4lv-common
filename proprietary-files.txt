@@ -92,9 +92,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so|9a09ff5507ed1a8a4d29c15f43a5f
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d1443e04e24cb45dd06f5d222b22a699c9e82cb1
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|1671815a79dab0fde9248d0851085ec1ab314f64
 
-# Bluetooth (aptX)
-system/lib64/libaptX_encoder.so:system_ext/lib64/libaptX_encoder.so
-
 # Bluetooth (firmware)
 vendor/firmware/apbtfw11.tlv
 vendor/firmware/apnv11.bin
