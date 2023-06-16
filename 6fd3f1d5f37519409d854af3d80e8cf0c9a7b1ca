@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "479a041d_22f15f4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2644
+      },
+      "writtenOn": "2023-06-16T19:42:46Z",
+      "side": 1,
+      "message": "Works fine so far on gts4lvwifi.",
+      "revId": "6fd3f1d5f37519409d854af3d80e8cf0c9a7b1ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
