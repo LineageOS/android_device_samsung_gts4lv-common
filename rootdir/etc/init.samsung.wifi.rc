@@ -1,0 +1,288 @@
+# This was generated from the following /product/omc/**/customer.xml XPaths:
+# - /CustomerData/GeneralInfo/SalesCode
+# - /CustomerData/GeneralInfo/CountryISO
+
+on property:ro.boot.sales_code=ACR
+    setprop ro.boot.wificountrycode GH
+
+on property:ro.boot.sales_code=AFG
+    setprop ro.boot.wificountrycode AF
+
+on property:ro.boot.sales_code=AFR
+    setprop ro.boot.wificountrycode AE
+
+on property:ro.boot.sales_code=ARO
+    setprop ro.boot.wificountrycode AR
+
+on property:ro.boot.sales_code=ATO
+    setprop ro.boot.wificountrycode AT
+
+on property:ro.boot.sales_code=ATT
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=AUT
+    setprop ro.boot.wificountrycode CH
+
+on property:ro.boot.sales_code=BGL
+    setprop ro.boot.wificountrycode BG
+
+on property:ro.boot.sales_code=BNG
+    setprop ro.boot.wificountrycode BD
+
+on property:ro.boot.sales_code=BRI
+    setprop ro.boot.wificountrycode TW
+
+on property:ro.boot.sales_code=BST
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=BTC
+    setprop ro.boot.wificountrycode LY
+
+on property:ro.boot.sales_code=BTU
+    setprop ro.boot.wificountrycode GB
+
+on property:ro.boot.sales_code=BVO
+    setprop ro.boot.wificountrycode CL
+
+on property:ro.boot.sales_code=CAC
+    setprop ro.boot.wificountrycode UZ
+
+on property:ro.boot.sales_code=CAM
+    setprop ro.boot.wificountrycode TH
+
+on property:ro.boot.sales_code=CAU
+    setprop ro.boot.wificountrycode GE
+
+on property:ro.boot.sales_code=CHC
+    setprop ro.boot.wificountrycode CN
+
+on property:ro.boot.sales_code=CHN
+    setprop ro.boot.wificountrycode CN
+
+on property:ro.boot.sales_code=CHO
+    setprop ro.boot.wificountrycode CL
+
+on property:ro.boot.sales_code=COO
+    setprop ro.boot.wificountrycode CO
+
+on property:ro.boot.sales_code=CPW
+    setprop ro.boot.wificountrycode GB
+
+on property:ro.boot.sales_code=DBT
+    setprop ro.boot.wificountrycode DE
+
+on property:ro.boot.sales_code=DKR
+    setprop ro.boot.wificountrycode SN
+
+on property:ro.boot.sales_code=ECO
+    setprop ro.boot.wificountrycode EC
+
+on property:ro.boot.sales_code=ECT
+    setprop ro.boot.wificountrycode NG
+
+on property:ro.boot.sales_code=EGY
+    setprop ro.boot.wificountrycode EG
+
+on property:ro.boot.sales_code=EON
+    setprop ro.boot.wificountrycode EC
+
+on property:ro.boot.sales_code=EUR
+    setprop ro.boot.wificountrycode GR
+
+on property:ro.boot.sales_code=GCF
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=GTO
+    setprop ro.boot.wificountrycode GT
+
+on property:ro.boot.sales_code=ILO
+    setprop ro.boot.wificountrycode IL
+
+on property:ro.boot.sales_code=INU
+    setprop ro.boot.wificountrycode IN
+
+on property:ro.boot.sales_code=ITV
+    setprop ro.boot.wificountrycode IT
+
+on property:ro.boot.sales_code=KOO
+    setprop ro.boot.wificountrycode KR
+
+on property:ro.boot.sales_code=KSA
+    setprop ro.boot.wificountrycode SA
+
+on property:ro.boot.sales_code=LUX
+    setprop ro.boot.wificountrycode LU
+
+on property:ro.boot.sales_code=LYS
+    setprop ro.boot.wificountrycode LY
+
+on property:ro.boot.sales_code=MID
+    setprop ro.boot.wificountrycode IQ
+
+on property:ro.boot.sales_code=MM1
+    setprop ro.boot.wificountrycode SG
+
+on property:ro.boot.sales_code=MWD
+    setprop ro.boot.wificountrycode MA
+
+on property:ro.boot.sales_code=MXO
+    setprop ro.boot.wificountrycode MX
+
+on property:ro.boot.sales_code=MYM
+    setprop ro.boot.wificountrycode TH
+
+on property:ro.boot.sales_code=NEE
+    setprop ro.boot.wificountrycode SE
+
+on property:ro.boot.sales_code=PAK
+    setprop ro.boot.wificountrycode PK
+
+on property:ro.boot.sales_code=PEO
+    setprop ro.boot.wificountrycode PE
+
+on property:ro.boot.sales_code=PET
+    setprop ro.boot.wificountrycode PE
+
+on property:ro.boot.sales_code=PHE
+    setprop ro.boot.wificountrycode ES
+
+on property:ro.boot.sales_code=PHN
+    setprop ro.boot.wificountrycode NL
+
+on property:ro.boot.sales_code=PNT
+    setprop ro.boot.wificountrycode PE
+
+on property:ro.boot.sales_code=ROM
+    setprop ro.boot.wificountrycode RO
+
+on property:ro.boot.sales_code=SEB
+    setprop ro.boot.wificountrycode LV
+
+on property:ro.boot.sales_code=SEE
+    setprop ro.boot.wificountrycode RS
+
+on property:ro.boot.sales_code=SEK
+    setprop ro.boot.wificountrycode UA
+
+on property:ro.boot.sales_code=SER
+    setprop ro.boot.wificountrycode RU
+
+on property:ro.boot.sales_code=SIN
+    setprop ro.boot.wificountrycode SG
+
+on property:ro.boot.sales_code=SIO
+    setprop ro.boot.wificountrycode SI
+
+on property:ro.boot.sales_code=SKZ
+    setprop ro.boot.wificountrycode KZ
+
+on property:ro.boot.sales_code=SLK
+    setprop ro.boot.wificountrycode LK
+
+on property:ro.boot.sales_code=SPR
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=STH
+    setprop ro.boot.wificountrycode SG
+
+on property:ro.boot.sales_code=TCE
+    setprop ro.boot.wificountrycode MX
+
+on property:ro.boot.sales_code=TGY
+    setprop ro.boot.wificountrycode HK
+
+on property:ro.boot.sales_code=THL
+    setprop ro.boot.wificountrycode TH
+
+on property:ro.boot.sales_code=TIM
+    setprop ro.boot.wificountrycode IT
+
+on property:ro.boot.sales_code=TMB
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=TPA
+    setprop ro.boot.wificountrycode PA
+
+on property:ro.boot.sales_code=TPH
+    setprop ro.boot.wificountrycode PT
+
+on property:ro.boot.sales_code=TUR
+    setprop ro.boot.wificountrycode TR
+
+on property:ro.boot.sales_code=UPO
+    setprop ro.boot.wificountrycode PY
+
+on property:ro.boot.sales_code=USC
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=UYO
+    setprop ro.boot.wificountrycode UY
+
+on property:ro.boot.sales_code=VMU
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=VZW
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=XAA
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=XAC
+    setprop ro.boot.wificountrycode CA
+
+on property:ro.boot.sales_code=XAR
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=XAS
+    setprop ro.boot.wificountrycode US
+
+on property:ro.boot.sales_code=XEF
+    setprop ro.boot.wificountrycode FR
+
+on property:ro.boot.sales_code=XEH
+    setprop ro.boot.wificountrycode HU
+
+on property:ro.boot.sales_code=XEO
+    setprop ro.boot.wificountrycode PL
+
+on property:ro.boot.sales_code=XEZ
+    setprop ro.boot.wificountrycode CZ
+
+on property:ro.boot.sales_code=XFA
+    setprop ro.boot.wificountrycode ZA
+
+on property:ro.boot.sales_code=XFV
+    setprop ro.boot.wificountrycode ZA
+
+on property:ro.boot.sales_code=XID
+    setprop ro.boot.wificountrycode ID
+
+on property:ro.boot.sales_code=XJP
+    setprop ro.boot.wificountrycode JP
+
+on property:ro.boot.sales_code=XME
+    setprop ro.boot.wificountrycode MY
+
+on property:ro.boot.sales_code=XNZ
+    setprop ro.boot.wificountrycode NZ
+
+on property:ro.boot.sales_code=XSA
+    setprop ro.boot.wificountrycode AU
+
+on property:ro.boot.sales_code=XSG
+    setprop ro.boot.wificountrycode AE
+
+on property:ro.boot.sales_code=XSK
+    setprop ro.boot.wificountrycode SK
+
+on property:ro.boot.sales_code=XSP
+    setprop ro.boot.wificountrycode SG
+
+on property:ro.boot.sales_code=XTC
+    setprop ro.boot.wificountrycode PH
+
+on property:ro.boot.sales_code=XXV
+    setprop ro.boot.wificountrycode VN
+
+on property:ro.boot.sales_code=ZTO
+    setprop ro.boot.wificountrycode BR
