@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2022 The LineageOS Project
+# Copyright (C) 2019-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.samsung.rc \
     init.samsung.bsp.rc \
+    init.samsung.wifi.rc \
     init.target.rc \
     ueventd.qcom.rc
 
