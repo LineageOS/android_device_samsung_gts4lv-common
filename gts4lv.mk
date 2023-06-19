@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.samsung.rc \
     init.samsung.bsp.rc \
+    init.samsung.wifi.rc \
     init.target.rc \
     ueventd.qcom.rc
 
