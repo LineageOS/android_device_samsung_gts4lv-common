@@ -26,6 +26,9 @@ function blob_fixup() {
         vendor/lib/libsensorlistener.so)
             "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.sdm710-samsung.so)
+            "${PATCHELF}" --set-soname "audio.primary.sdm710-samsung.so" "${2}"
+            ;;
         vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
