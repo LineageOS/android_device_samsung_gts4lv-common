@@ -17,6 +17,7 @@ ro.af.client_heap_size_kbyte=7168
 ro.audio.monitorRotation=true
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
+ro.hardware.audio.primary=sdm710-samsung
 ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.apptype.multirec.enabled=false
