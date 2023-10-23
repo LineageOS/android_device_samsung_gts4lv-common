@@ -1,0 +1,5 @@
+cc_library_headers {
+    name: "libhardware_headers.gts4lv",
+    export_include_dirs: ["include"],
+    vendor_available: true,
+}
