@@ -1758,6 +1758,9 @@ typedef struct camera3_stream {
     /* reserved for future use */
     void *reserved[6];
 
+    /* used by samsung */
+    char reserved_sec[0x28];
+
 } camera3_stream_t;
 
 /**
