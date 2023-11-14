@@ -74,7 +74,7 @@ function blob_fixup() {
             ;;
         vendor/lib/libsensorlistener.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
+            grep -q "libshim_sensorndkbridge.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
             ;;
         vendor/lib64/hw/gatekeeper.mdfpp.so|vendor/lib64/libkeymaster_helper.so|vendor/lib64/libskeymaster4device.so)
             [ "$2" = "" ] && return 0
