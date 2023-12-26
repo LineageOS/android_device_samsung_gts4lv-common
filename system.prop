@@ -1,5 +1,8 @@
 # Audio
 ro.vendor.qti.va_aosp.support=1
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Netflix
 ro.netflix.bsp_rev=Q670-14477-1
