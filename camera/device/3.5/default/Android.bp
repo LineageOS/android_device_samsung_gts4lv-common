@@ -16,6 +16,7 @@
 
 cc_library_shared {
     name: "camera.device@3.5-impl.gts4lv",
+    stem: "camera.device@3.5-impl",
     defaults: ["hidl_defaults"],
     proprietary: true,
     vendor: true,
