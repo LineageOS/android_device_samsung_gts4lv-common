@@ -2,8 +2,8 @@
 <device name="Android">
     <item name="none">0</item>
     <item name="ambient.on">22</item>
-    <item name="screen.on">62</item>
-    <item name="screen.full">301</item>
+    <item name="screen.on.display0">62</item>
+    <item name="screen.full.display0">301</item>
     <item name="bluetooth.active">34</item>
     <item name="bluetooth.on">1</item>
     <item name="wifi.on">2.4</item>
