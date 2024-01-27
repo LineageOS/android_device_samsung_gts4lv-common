@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c4e578d_fb51497b",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-27T20:53:43Z",
+      "side": 1,
+      "message": "IMO there\u0027s no point in touching these lines just for the sake of OCD.",
+      "range": {
+        "startLine": 171,
+        "startChar": 0,
+        "endLine": 176,
+        "endChar": 132
+      },
+      "revId": "e6faf9c2b37666902524a97820fecb20fe085d6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
