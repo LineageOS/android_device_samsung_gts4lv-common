@@ -117,6 +117,10 @@ vendor.display.idle_time_inactive=0
 # fastbootd
 ro.fastbootd.available=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.sensor_location=1636|325|130
+
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
 

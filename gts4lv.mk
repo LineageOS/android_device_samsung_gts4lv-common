@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2023 The LineageOS Project
+# Copyright (C) 2019-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -163,7 +163,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.samsung
+    android.hardware.biometrics.fingerprint-service.samsung
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
