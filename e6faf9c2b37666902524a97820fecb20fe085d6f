@@ -22,6 +22,30 @@
       },
       "revId": "e6faf9c2b37666902524a97820fecb20fe085d6f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a247a56_b9d2aca3",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-27T20:55:08Z",
+      "side": 1,
+      "message": "eh, we are the upstream here so imo it\u0027s ok.",
+      "parentUuid": "6c4e578d_fb51497b",
+      "range": {
+        "startLine": 171,
+        "startChar": 0,
+        "endLine": 176,
+        "endChar": 132
+      },
+      "revId": "e6faf9c2b37666902524a97820fecb20fe085d6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
