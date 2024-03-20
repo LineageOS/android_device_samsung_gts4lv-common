@@ -399,8 +399,8 @@ vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
 # Hotword Enrollment
-priv-app/HotwordEnrollmentOKGoogleEx2TL3210/HotwordEnrollmentOKGoogleEx2TL3210.apk;PRESIGNED
-priv-app/HotwordEnrollmentXGoogleEx2TL3210/HotwordEnrollmentXGoogleEx2TL3210.apk;PRESIGNED
+priv-app/HotwordEnrollmentOKGoogleEx2TL3210/HotwordEnrollmentOKGoogleEx2TL3210.apk
+priv-app/HotwordEnrollmentXGoogleEx2TL3210/HotwordEnrollmentXGoogleEx2TL3210.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
