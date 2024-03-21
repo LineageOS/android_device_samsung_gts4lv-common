@@ -1,0 +1,8 @@
+version 1
+flash boot
+flash dtbo
+flash recovery
+flash vbmeta
+flash system
+flash vendor
+if-wipe erase userdata
