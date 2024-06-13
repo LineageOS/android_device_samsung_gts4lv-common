@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.device@2.0.vendor \
     android.frameworks.cameraservice.service@2.1.vendor \
     android.hardware.camera.provider@2.5-service.samsung \
+    libcamera_metadata.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Charger
@@ -285,8 +286,10 @@ PRODUCT_PACKAGES += \
 # QCOM
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor:64 \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libsqlite.vendor:64 \
     libtinyxml
 
 # QTI
@@ -350,6 +353,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     libnl \
+    libion.vendor \
+    libpng.vendor:32 \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
