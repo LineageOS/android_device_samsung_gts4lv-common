@@ -49,6 +49,8 @@ on late-fs
     mount_all /vendor/etc/fstab.samsung --late
 
 on post-fs-data
+    mkdir /data/vendor/gatekeeper 0770 system system
+
     # carrier partition
     chown system system /carrier
     chmod 0771 /carrier
@@ -101,3 +103,10 @@ on boot
     chmod 0660 /dev/p61
     chown nfc nfc /dev/pn547
     chown system system /dev/p61
+
+service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    interface android.hardware.gatekeeper@1.0::IGatekeeper default
+    override
+    class hal
+    user system
+    group system 5678
