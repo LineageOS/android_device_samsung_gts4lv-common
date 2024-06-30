@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e663dedd_92dd78a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-06-30T13:38:51Z",
+      "side": 1,
+      "message": "Didn\u0027t try removing audio.primary.sdm710 from PRODUCT_PACKAGES, but the original change does that.",
+      "revId": "38a2ace62091156724602fb5a82eb5dc577a02d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
