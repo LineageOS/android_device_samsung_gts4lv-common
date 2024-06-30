@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cdefe869_066d5977",
+        "filename": "shims/libsensorndkbridge/ASensorManager.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-06-30T11:48:18Z",
+      "side": 1,
+      "message": "Mutex::Autolock autoLock(gLock);\n    return new ALooper;",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 19
+      },
+      "revId": "1602c9368f573c045be9adb4e330e41a5b2b5b9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
