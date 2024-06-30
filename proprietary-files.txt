@@ -156,13 +156,6 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Device Health
-vendor/bin/hw/android.hardware.health@2.1-service-samsung
-vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib64/vendor.samsung.hardware.health@2.0.so
-
 # Display (HDR)
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
@@ -495,26 +488,6 @@ vendor/lib/libperipheral_client.so
 vendor/lib/libspcom.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
-
-# Power-off charging - from gts7lwifi - RP1A.200720.012
-system/bin/lpm|ba60e7e4338c86c1efdc35e7d9fb3715fbbd3073
-system/lib64/libmaet.so
-system/lib64/libsxqk_skia.so
-system/media/battery_error.spi
-system/media/battery_low.spi
-system/media/battery_temperature_error.spi
-system/media/battery_temperature_limit.spi
-system/media/battery_water_usb.spi
-system/media/charging_New_Fast.spi
-system/media/charging_New_Normal.spi
-system/media/dock_error_usb.spi
-system/media/incomplete_connect.spi
-system/media/lcd_density.txt
-system/media/percentage.spi
-system/media/safety_timer_usb.spi
-system/media/slow_charging_usb.spi
-system/media/temperature_limit_usb.spi
-system/media/water_protection_usb.spi
 
 # QMI
 vendor/bin/irsc_util
