@@ -24,14 +24,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.health</name>
-        <version>2.0</version>
-        <interface>
-            <name>ISehHealth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.radio</name>
         <version>2.1</version>
         <interface>
