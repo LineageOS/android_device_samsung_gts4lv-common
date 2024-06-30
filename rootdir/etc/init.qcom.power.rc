@@ -97,47 +97,6 @@ on boot
     write /dev/cpuset/system-background/cpus 0-7
 
 on charger
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    wait /dev/block/bootdevice/by-name/efs
-    mount ext4 /dev/block/bootdevice/by-name/efs /efs nosuid nodev noatime noauto_da_alloc,discard,data=ordered,errors=panic
-    mkdir /efs/Battery 0775 radio system
-    chown radio system /efs/Battery
-    chmod 0775 /efs/Battery
-    chmod 0664 /sys/class/power_supply/battery/batt_temp_table
-    chown system radio /sys/class/power_supply/battery/batt_temp_table
-    chmod 0664 /sys/class/power_supply/battery/batt_capacity_max
-    chown system radio /sys/class/power_supply/battery/batt_capacity_max
-    chmod 0664 /sys/class/power_supply/battery/battery_cycle
-    chown system radio /sys/class/power_supply/battery/battery_cycle
-    chown system radio /sys/class/power_supply/battery/cisd_fullcaprep_max
-    chmod 0660 /sys/class/power_supply/battery/cisd_fullcaprep_max
-    chown system radio /sys/class/power_supply/battery/cisd_data
-    chmod 0660 /sys/class/power_supply/battery/cisd_data
-    chown system system /efs/FactoryApp/cisd_data
-    chmod 0660 /efs/FactoryApp/cisd_data
-    chown system system /efs/FactoryApp/cisd_wc_data
-    chmod 0660 /efs/FactoryApp/cisd_wc_data
-    chown system system /efs/FactoryApp/asoc
-    chmod 0660 /efs/FactoryApp/asoc
-    chown system system /efs/FactoryApp/batt_after_manufactured
-    chmod 0640 /efs/FactoryApp/batt_after_manufactured
-    chown system system /efs/FactoryApp/batt_discharge_level
-    chmod 0640 /efs/FactoryApp/batt_discharge_level
-    chown system radio /sys/class/power_supply/battery/cisd_data_json
-    chmod 0660 /sys/class/power_supply/battery/cisd_data_json
-    copy /system/vendor/firmware/battery_data.dat /efs/Battery/battery_data.dat
-    chmod 0400 /efs/Battery/battery_data.dat
-    write /sys/class/power_supply/battery/batt_update_data "/efs/Battery/battery_data.dat"
-    chown radio system /efs
-    chmod 0771 /efs
-    chown radio system /efs/usb_hw_param
-    chmod 771 /efs/usb_hw_param
-    chown system system /efs/usb_hw_param/usb_hw_param.log
-    chmod 0660 /efs/usb_hw_param/usb_hw_param.log
-    mkdir /efs/lpm 0775 system system
-    class_start sec-charger
-
     trigger enable-low-power
 
     setprop sys.usb.configfs 1
@@ -295,13 +254,6 @@ on property:sys.boot_completed=1
 
 on property:init.svc.recovery=running
     trigger enable-low-power
-
-service charger /system/bin/lpm
-    class sec-charger
-    user system
-    group system radio graphics input
-    capabilities SYS_BOOT
-    seclabel u:r:charger:s0
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core

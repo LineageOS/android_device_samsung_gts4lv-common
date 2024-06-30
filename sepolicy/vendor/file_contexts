@@ -15,7 +15,6 @@
 /dev/block/platform/soc/7c4000\.sdhci/by-name/vendor        u:object_r:system_block_device:s0
 
 # Binaries
-/system/bin/lpm                                u:object_r:charger_exec:s0
 /(vendor|system/vendor)/bin/hw/macloader       u:object_r:macloader_exec:s0
 /(vendor|system/vendor)/bin/secril_config_svc  u:object_r:secril_config_svc_exec:s0
 
@@ -169,7 +168,7 @@
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.samsung    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider-service_32\.samsung        u:object_r:hal_camera_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung                 u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.samsung                     u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.samsung             u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.samsung-multihal           u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@1\.0-service\.samsung              u:object_r:hal_lineage_fastcharge_default_exec:s0
