@@ -16,6 +16,24 @@
       "message": "Even with all the open commits for gts4lv-common applied, this fails with:\nFAILED: \nbuild/make/core/Makefile:161: error: overriding commands for target `out/target/product/gts4lvwifi/vendor/etc/init/android.hardware.\ngatekeeper@1.0-service.rc\u0027, previously defined at out/soong/installs-lineage_gts4lvwifi.mk:371891\n11:49:25 ckati failed with: exit status 1\nWe still have a duplicate rule.",
       "revId": "3334257aab3ca7c1926a4cc42a042e4d157fe208",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10d00f77_3fa94cdc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-07-02T18:13:26Z",
+      "side": 1,
+      "message": "regen vendor.",
+      "parentUuid": "81afaa26_d0537e24",
+      "revId": "3334257aab3ca7c1926a4cc42a042e4d157fe208",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
