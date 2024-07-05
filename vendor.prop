@@ -141,9 +141,6 @@ ro.opengles.version=196610
 # Keystore
 ro.hardware.keystore=mdfpp
 
-# Media
-debug.stagefright.omx_default_rank=0
-
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
