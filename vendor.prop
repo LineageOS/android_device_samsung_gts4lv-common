@@ -40,7 +40,6 @@ vendor.audio.feature.multi_voice_session.enable=false
 vendor.audio.feature.snd_mon.enable=true
 vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.usb_offload.enable=true
-vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio_hal.period_size=192
 vendor.audio.hw.aac.encoder=true
