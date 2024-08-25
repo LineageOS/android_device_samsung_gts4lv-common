@@ -12,7 +12,7 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
 # ANT+
--system/lib64/libantradio.so;DISABLE_CHECKELF
+system/lib64/libantradio.so;DISABLE_CHECKELF
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor
@@ -407,7 +407,7 @@ vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
--vendor/lib64/libskeymaster4device.so
+vendor/lib64/libskeymaster4device.so
 
 # Machine Learning
 vendor/etc/lm/AdaptLaunchFeature.xml
