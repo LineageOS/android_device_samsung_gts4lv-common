@@ -86,6 +86,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
 # Camera
+$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung
 
