@@ -63,11 +63,6 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := sdm710
 
-# Camera
-SOONG_CONFIG_NAMESPACES += samsungCameraVars
-SOONG_CONFIG_samsungCameraVars += needs_sec_reserved_field
-SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
-
 # Display
 TARGET_SCREEN_DENSITY := 320
 
