@@ -332,7 +332,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb-service.qti
 
 # VNDK
 PRODUCT_PACKAGES += \
