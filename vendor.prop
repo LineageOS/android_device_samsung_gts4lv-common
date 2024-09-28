@@ -120,7 +120,7 @@ ro.fastbootd.available=true
 
 # Fingerprint
 ro.vendor.fingerprint.type=side
-ro.vendor.fingerprint.sensor_location=1636|325|130
+ro.vendor.fingerprint.sensor_location=1636|325|130|local:4630947232161729153
 
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
