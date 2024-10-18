@@ -22,6 +22,30 @@
       },
       "revId": "f91d3f17921447204162db5810a686a2e661a661",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5cb217b1_57daee77",
+        "filename": "extract-files.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-18T16:43:06Z",
+      "side": 1,
+      "message": "no, it\u0027s on purpose, cause ruff reformats this variable in an unacceptable way.",
+      "parentUuid": "0b3ef628_c6ce3ee2",
+      "range": {
+        "startLine": 67,
+        "startChar": 3,
+        "endLine": 67,
+        "endChar": 14
+      },
+      "revId": "f91d3f17921447204162db5810a686a2e661a661",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
