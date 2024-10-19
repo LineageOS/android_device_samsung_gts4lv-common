@@ -71,7 +71,7 @@ function blob_fixup() {
     case "${1}" in
         system_ext/lib/libwfdservice.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
+            sed -i "s/android.media.audio.common.types-V2-cpp.so/android.media.audio.common.types-V3-cpp.so/" "${2}"
             ;;
         vendor/lib/libsensorlistener.so)
             [ "$2" = "" ] && return 0
