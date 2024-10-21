@@ -20,7 +20,7 @@ genfscon sysfs /devices/platform/soc/soc:i2c@24/i2c-3/3-0071/power_supply/sm5705
 genfscon sysfs /devices/platform/soc/soc:i2c@26/i2c-5/5-0049/sm5705-charger u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/virtual/lcd/panel u:object_r:sysfs_lcd_writable:s0
 genfscon sysfs /devices/virtual/sensors/ssc_core/ssc_hw_rev u:object_r:sysfs_sensors:s0
-genfscon sysfs /devices/virtual/usb_notify/usb_control/disable u:object_r:sysfs_usb:s0
+genfscon sysfs /devices/virtual/usb_notify/usb_control/disable u:object_r:vendor_sysfs_usb_data_enabled:s0
 genfscon sysfs /power/cpufreq_max_limit u:object_r:sysfs_power:s0
 genfscon sysfs /power/cpufreq_min_limit u:object_r:sysfs_power:s0
 genfscon sysfs /power/cpufreq_table u:object_r:sysfs_power:s0
