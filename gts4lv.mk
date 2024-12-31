@@ -20,6 +20,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Override with Samsung specifics
+PRODUCT_PACKAGES += \
+    rfs_mdm_mpss_readonly_firmware_symlink_samsung \
+    rfs_msm_mpss_readonly_firmware_symlink_samsung
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/gts4lv-common/gts4lv-common-vendor.mk)
 

@@ -12,3 +12,25 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
+
+install_symlink {
+    name: "rfs_mdm_mpss_readonly_firmware_symlink_samsung",
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/readonly/firmware",
+    symlink_target: "/vendor/firmware-modem",
+
+    overrides: [
+        "rfs_mdm_mpss_readonly_firmware_symlink",
+    ],
+}
+
+install_symlink {
+    name: "rfs_msm_mpss_readonly_firmware_symlink_samsung",
+    vendor: true,
+    installed_location: "rfs/msm/mpss/readonly/firmware",
+    symlink_target: "/vendor/firmware-modem",
+
+    overrides: [
+        "rfs_msm_mpss_readonly_firmware_symlink",
+    ],
+}
