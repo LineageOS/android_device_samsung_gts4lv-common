@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4625e068_c7edf6e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-31T11:32:31Z",
+      "side": 1,
+      "message": "Might be possible after this https://android-review.googlesource.com/c/platform/build/soong/+/3241433, still untested.",
+      "revId": "d1337b700fa517e9851c2886d3b8850d1c74c2b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
