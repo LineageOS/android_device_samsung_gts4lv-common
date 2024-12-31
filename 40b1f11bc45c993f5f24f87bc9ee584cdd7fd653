@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1176da47_248da1a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-31T11:42:00Z",
+      "side": 1,
+      "message": "FAILED: \nout/soong/installs-lineage_gts4lv.mk:421429: error: overriding commands for target `out/target/product/gts4lv/vendor/rfs/mdm/mpss/readonly/firmware\u0027, previously defined at out/soong/installs-lineage_gts4lv.mk:418073",
+      "revId": "40b1f11bc45c993f5f24f87bc9ee584cdd7fd653",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
