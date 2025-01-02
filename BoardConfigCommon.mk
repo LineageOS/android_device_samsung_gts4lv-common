@@ -115,9 +115,6 @@ TARGET_KERNEL_SOURCE := kernel/samsung/sdm670
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
