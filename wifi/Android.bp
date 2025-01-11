@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_firmware {
+    name: "dummy_wlanmdsp.mbn",
+    filename: "wlanmdsp.mbn",
+    src: "dummy_wlanmdsp.mbn",
+    soc_specific: true,
+}
