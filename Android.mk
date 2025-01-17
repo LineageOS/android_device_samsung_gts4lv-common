@@ -6,14 +6,6 @@
 
 ifneq ($(filter gts4lv gts4lvwifi,$(TARGET_DEVICE)),)
 
-DSP_SYMLINK := $(TARGET_OUT_VENDOR)/lib/dsp
-$(DSP_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating DSP folder symlink: $@"
-	@rm -rf $@
-	@mkdir -p $(TARGET_OUT_VENDOR)/lib/dsp
-
-ALL_DEFAULT_INSTALLED_MODULES += $(DSP_SYMLINK)
-
 FIRMWARE_MODEM_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware-modem
 FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
 DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
