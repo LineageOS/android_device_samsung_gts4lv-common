@@ -1,7 +1,5 @@
 # Common proprietary files - from Samsung package version T720XXS3DWA1, unless pinned
 
-# lowi-server depends on libwpa_client, which is a GNU makefile target
-
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
@@ -268,7 +266,7 @@ vendor/lib64/hw/gatekeeper.mdfpp.so
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server;DISABLE_CHECKELF
+vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
