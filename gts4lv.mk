@@ -183,6 +183,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
 
+$(call soong_config_set,samsung_keymaster,SKEYMASTER4DEVICE_LIBRARY,"//vendor/samsung/gts4lv-common:libskeymaster4device")
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
